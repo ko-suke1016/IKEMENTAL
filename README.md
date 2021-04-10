@@ -28,3 +28,7 @@
 
 会社に属しているがメンタルヘルスマネジメントがどういったものかわからない社会人
 会社に属しながら勉強している社会人
+
+# 画面遷移図
+
+https://www.figma.com/file/lQAlxt0mAeCrFiKxLlzwRN/mhm_design?node-id=0%3A1
