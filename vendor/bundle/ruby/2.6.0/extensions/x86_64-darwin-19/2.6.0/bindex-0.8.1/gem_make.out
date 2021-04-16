@@ -1,0 +1,15 @@
+current directory: /Users/kosuke.s/mentalhealth_management_test/vendor/bundle/ruby/2.6.0/gems/bindex-0.8.1/ext/skiptrace
+/Users/kosuke.s/.rbenv/versions/2.6.5/bin/ruby -I /Users/kosuke.s/.rbenv/versions/2.6.5/lib/ruby/2.6.0 -r ./siteconf20210411-25964-1mlaekw.rb extconf.rb
+creating Makefile
+
+current directory: /Users/kosuke.s/mentalhealth_management_test/vendor/bundle/ruby/2.6.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" clean
+
+current directory: /Users/kosuke.s/mentalhealth_management_test/vendor/bundle/ruby/2.6.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR="
+compiling cruby.c
+linking shared-object skiptrace/internal/cruby.bundle
+
+current directory: /Users/kosuke.s/mentalhealth_management_test/vendor/bundle/ruby/2.6.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cruby.bundle ./.gem.20210411-25964-1qhd8un/skiptrace/internal
