@@ -32,7 +32,3 @@
 # 画面遷移図
 
 https://www.figma.com/file/lQAlxt0mAeCrFiKxLlzwRN/mhm_design?node-id=0%3A1
-
-# ER図
-
-https://viewer.diagrams.net/?highlight=0000ff&edit=_blank&layers=1&nav=1&title=Untitled%20Diagram.drawio#Uhttps%3A%2F%2Fraw.githubusercontent.com%2Fko-suke1016%2Fmentalhealth_management_test%2Fmain%2FUntitled%2520Diagram.drawio
