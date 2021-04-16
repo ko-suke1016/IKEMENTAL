@@ -1645,3 +1645,47 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 31ms (Views: 18.3ms | ActiveRecord: 0.0ms | Allocations: 3093)
 
 
+Started GET "/" for ::1 at 2021-04-16 15:22:55 +0900
+  [1m[35m (4.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 392)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 38ms (Views: 29.9ms | ActiveRecord: 0.0ms | Allocations: 10577)
+
+
+Started GET "/" for ::1 at 2021-04-16 15:24:37 +0900
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 5)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/kosuke.s/mentalhealth_management_test/public/packs
+[Webpacker] Hash: 649fa450d733a6ad332c
+Version: webpack 4.46.0
+Time: 3164ms
+Built at: 2021-04-16 15:24:41
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-5580b89ffc54c5d65936.js   1.72 MiB  application  [emitted] [immutable]  application
+js/application-5580b89ffc54c5d65936.js.map   1.83 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-5580b89ffc54c5d65936.js js/application-5580b89ffc54c5d65936.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 824 bytes {application} [built]
+[./app/javascript/src/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/src/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/src/application.scss 670 KiB {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 115 hidden modules
+
+Completed 200 OK in 4848ms (Views: 4847.2ms | ActiveRecord: 0.0ms | Allocations: 7174)
+
+
+Started GET "/" for ::1 at 2021-04-16 15:25:22 +0900
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 87)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 9.8ms | ActiveRecord: 0.0ms | Allocations: 6235)
+
+
