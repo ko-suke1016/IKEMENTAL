@@ -1637,3 +1637,11 @@ Processing by SelectsController#new as HTML
 Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.0ms | Allocations: 4779)
 
 
+Started GET "/" for ::1 at 2021-04-16 12:20:46 +0900
+  [1m[35m (4.1ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering vendor/bundle/ruby/2.6.0/gems/railties-6.0.3.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered vendor/bundle/ruby/2.6.0/gems/railties-6.0.3.6/lib/rails/templates/rails/welcome/index.html.erb (Duration: 10.3ms | Allocations: 480)
+Completed 200 OK in 31ms (Views: 18.3ms | ActiveRecord: 0.0ms | Allocations: 3093)
+
+
