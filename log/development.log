@@ -1,0 +1,1639 @@
+Started GET "/" for ::1 at 2021-04-11 21:39:13 +0900
+  
+ActiveRecord::NoDatabaseError (Unknown database 'mentalhealth_management_test_development'):
+  
+activerecord (6.0.3.6) lib/active_record/connection_adapters/mysql2_adapter.rb:28:in `rescue in mysql2_connection'
+activerecord (6.0.3.6) lib/active_record/connection_adapters/mysql2_adapter.rb:14:in `mysql2_connection'
+activerecord (6.0.3.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:887:in `new_connection'
+activerecord (6.0.3.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `checkout_new_connection'
+activerecord (6.0.3.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:910:in `try_to_checkout_new_connection'
+activerecord (6.0.3.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:871:in `acquire_connection'
+activerecord (6.0.3.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:593:in `checkout'
+activerecord (6.0.3.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:437:in `connection'
+activerecord (6.0.3.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:1119:in `retrieve_connection'
+activerecord (6.0.3.6) lib/active_record/connection_handling.rb:221:in `retrieve_connection'
+activerecord (6.0.3.6) lib/active_record/connection_handling.rb:189:in `connection'
+activerecord (6.0.3.6) lib/active_record/migration.rb:562:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.6) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.6) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.6) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  [1m[35m (5.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (9.7ms)[0m  [1m[35mCREATE DATABASE `mentalhealth_management_test_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE DATABASE `mentalhealth_management_test_test` DEFAULT CHARACTER SET `utf8mb4`[0m
+Started GET "/" for ::1 at 2021-04-11 21:44:22 +0900
+  [1m[35m (1.7ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering vendor/bundle/ruby/2.6.0/gems/railties-6.0.3.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered vendor/bundle/ruby/2.6.0/gems/railties-6.0.3.6/lib/rails/templates/rails/welcome/index.html.erb (Duration: 7.0ms | Allocations: 311)
+Completed 200 OK in 15ms (Views: 9.5ms | ActiveRecord: 0.0ms | Allocations: 1869)
+
+
+Started GET "/" for ::1 at 2021-04-11 22:03:35 +0900
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering vendor/bundle/ruby/2.6.0/gems/railties-6.0.3.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered vendor/bundle/ruby/2.6.0/gems/railties-6.0.3.6/lib/rails/templates/rails/welcome/index.html.erb (Duration: 6.3ms | Allocations: 187)
+Completed 200 OK in 10ms (Views: 7.6ms | ActiveRecord: 0.0ms | Allocations: 960)
+
+
+Started GET "/" for ::1 at 2021-04-11 22:26:50 +0900
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering vendor/bundle/ruby/2.6.0/gems/railties-6.0.3.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered vendor/bundle/ruby/2.6.0/gems/railties-6.0.3.6/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.2ms | Allocations: 8)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 477)
+
+
+Started GET "/" for ::1 at 2021-04-12 13:25:09 +0900
+  [1m[35m (1.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering vendor/bundle/ruby/2.6.0/gems/railties-6.0.3.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered vendor/bundle/ruby/2.6.0/gems/railties-6.0.3.6/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.6ms | Allocations: 7)
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 471)
+
+
+Started GET "/" for ::1 at 2021-04-12 13:29:27 +0900
+  
+ActionController::RoutingError (uninitialized constant TopController
+Did you mean?  TopsController
+               ActionController):
+  
+actionpack (6.0.3.6) lib/action_dispatch/http/request.rb:92:in `rescue in controller_class_for'
+actionpack (6.0.3.6) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (6.0.3.6) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (6.0.3.6) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (6.0.3.6) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (6.0.3.6) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.6) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.6) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.6) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.6) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.6) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.6) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.6) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.6) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.6) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2021-04-12 13:30:04 +0900
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 80)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/kosuke.s/mentalhealth_management_test/public/packs
+[Webpacker] Hash: ef270c56fa66020c9089
+Version: webpack 4.46.0
+Time: 1666ms
+Built at: 2021-04-12 13:30:08
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e88c6c3304a15e6886b6.js    124 KiB  application  [emitted] [immutable]  application
+js/application-e88c6c3304a15e6886b6.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-e88c6c3304a15e6886b6.js js/application-e88c6c3304a15e6886b6.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 749 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 3769ms (Views: 3768.3ms | ActiveRecord: 0.0ms | Allocations: 18009)
+
+
+Started GET "/" for ::1 at 2021-04-12 22:12:40 +0900
+  [1m[35m (5.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 5)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 41ms (Views: 32.3ms | ActiveRecord: 0.0ms | Allocations: 4003)
+
+
+Started GET "/" for ::1 at 2021-04-12 22:27:25 +0900
+  [1m[35m (4.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 200)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 2393ms (Views: 2383.9ms | ActiveRecord: 0.0ms | Allocations: 241358)
+
+
+Started GET "/" for ::1 at 2021-04-13 10:36:02 +0900
+  [1m[35m (4.8ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 95)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 32ms (Views: 29.8ms | ActiveRecord: 0.0ms | Allocations: 13350)
+
+
+Started GET "/" for ::1 at 2021-04-13 10:39:32 +0900
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 15.4ms | ActiveRecord: 0.0ms | Allocations: 13352)
+
+
+Started GET "/" for ::1 at 2021-04-13 10:39:34 +0900
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 5)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 22.1ms | ActiveRecord: 0.0ms | Allocations: 12377)
+
+
+Started GET "/" for ::1 at 2021-04-13 10:39:34 +0900
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.0ms | Allocations: 12362)
+
+
+Started GET "/" for ::1 at 2021-04-13 10:39:42 +0900
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 144)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 14.0ms | ActiveRecord: 0.0ms | Allocations: 13409)
+
+
+Started GET "/selects/top" for ::1 at 2021-04-13 10:39:44 +0900
+Processing by SelectsController#top as HTML
+Completed 406 Not Acceptable in 4ms (ActiveRecord: 0.0ms | Allocations: 2439)
+
+
+
+ActionController::MissingExactTemplate - SelectsController#top is missing a template for request formats: text/html:
+
+Started POST "/__better_errors/fd06146345b2f8b4/variables" for ::1 at 2021-04-13 10:39:45 +0900
+Started GET "/selects/top" for ::1 at 2021-04-13 10:41:07 +0900
+Processing by SelectsController#top as HTML
+  Rendering selects/top.html.erb within layouts/application
+  Rendered selects/top.html.erb within layouts/application (Duration: 0.3ms | Allocations: 77)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 17.1ms | ActiveRecord: 0.0ms | Allocations: 13358)
+
+
+Started GET "/selects/top" for ::1 at 2021-04-13 10:41:39 +0900
+Processing by SelectsController#top as HTML
+  Rendering selects/top.html.erb within layouts/application
+  Rendered selects/top.html.erb within layouts/application (Duration: 0.4ms | Allocations: 79)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.0ms | Allocations: 13346)
+
+
+Started GET "/selects/top" for ::1 at 2021-04-13 10:47:01 +0900
+Processing by SelectsController#top as HTML
+  Rendering selects/top.html.erb within layouts/application
+  Rendered selects/top.html.erb within layouts/application (Duration: 0.3ms | Allocations: 84)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 14.2ms | ActiveRecord: 0.0ms | Allocations: 13354)
+
+
+Started GET "/" for ::1 at 2021-04-13 10:56:23 +0900
+  [1m[35m (1.1ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 6.5ms | Allocations: 2596)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms | Allocations: 3916)
+
+
+
+ActionView::SyntaxErrorInTemplate - Encountered a syntax error while rendering template: check <h1>MHM firster</h1>
+<%= link_to "初級", "scores/top", class: "btn btn-info" %>
+<%= link_to "中級", "counts/top", class: "btn btn-warning" %>
+<%= link_to "上級”, "selects/top", class: "btn btn-danger" %>
+<%= link_to "MHMとは", "tops/introduse" %>
+<%= link_to "ログイン", new_user_path %>:
+
+Started POST "/__better_errors/37fb2f6a754739e5/variables" for ::1 at 2021-04-13 10:56:23 +0900
+Started GET "/" for ::1 at 2021-04-13 10:56:29 +0900
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 2286)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2866)
+
+
+
+ActionView::SyntaxErrorInTemplate - Encountered a syntax error while rendering template: check <h1>MHM firster</h1>
+<%= link_to "初級", "scores/top", class: "btn btn-info" %>
+<%= link_to "中級", "counts/top", class: "btn btn-warning" %>
+<%= link_to "上級”, "selects/top", class: "btn btn-danger" %>
+<%= link_to "MHMとは", "tops/introduse" %>
+<%= link_to "ログイン", new_user_path %>:
+
+Started POST "/__better_errors/bc35562615e258d5/variables" for ::1 at 2021-04-13 10:56:30 +0900
+Started GET "/" for ::1 at 2021-04-13 10:57:41 +0900
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 2299)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 3614)
+
+
+
+ActionView::SyntaxErrorInTemplate - Encountered a syntax error while rendering template: check <h1>MHM firster</h1>
+<%= link_to "初級", "scores/top", class: "btn btn-info" %>
+<%= link_to "中級", "counts/top", class: "btn btn-warning" %>
+<%= link_to "上級”, "selects/top", class: "btn btn-danger" %>
+<%= link_to "MHMとは", "tops/introduse" %>
+<%= link_to "ログイン", new_user_path %>:
+
+Started POST "/__better_errors/16cef0e1e9ffc7e8/variables" for ::1 at 2021-04-13 10:57:41 +0900
+Started GET "/" for ::1 at 2021-04-13 11:00:51 +0900
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 2265)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms | Allocations: 3588)
+
+
+
+ActionView::SyntaxErrorInTemplate - Encountered a syntax error while rendering template: check <h1>MHM firster</h1>
+<%= link_to "初級", "scores/top", class: "btn btn-info" %>
+<%= link_to "中級", "counts/top", class: "btn btn-warning" %>
+<%= link_to "上級”, "selects/top", class: "btn btn-danger" %>
+<%= link_to "MHMとは", "tops/introduse" %>
+<%= link_to "ログイン", new_user_path %>:
+
+Started POST "/__better_errors/f2496064f3f37333/variables" for ::1 at 2021-04-13 11:00:52 +0900
+Started GET "/" for ::1 at 2021-04-13 11:01:16 +0900
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 2294)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 3609)
+
+
+
+ActionView::SyntaxErrorInTemplate - Encountered a syntax error while rendering template: check <h1>MHM firster</h1>
+<%= link_to "初級", "scores/top", class: "btn btn-info" %>
+<%= link_to "中級", "counts/top", class: "btn btn-warning" %>
+<%= link_to "上級”, "selects/top", class: "btn btn-danger" %>
+<%= link_to "MHMとは", "tops/new" %>
+<%= link_to "ログイン", new_user_path %>:
+
+Started POST "/__better_errors/ee25e6f0f0bd55b9/variables" for ::1 at 2021-04-13 11:01:16 +0900
+Started GET "/" for ::1 at 2021-04-13 11:02:47 +0900
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 2252)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 2990)
+
+
+
+ActionView::SyntaxErrorInTemplate - Encountered a syntax error while rendering template: check <h1>MHM firster</h1>
+<%= link_to "初級", "scores/top", class: "btn btn-info" %>
+<%= link_to "中級", "counts/top", class: "btn btn-warning" %>
+<%= link_to "上級”, "selects/top", class: "btn btn-danger" %>
+<%= link_to "MHMとは", "tops/new" %>
+<%= link_to "ログイン", new_user_path %>:
+
+Started POST "/__better_errors/e5341837152a32ea/variables" for ::1 at 2021-04-13 11:02:47 +0900
+Started GET "/" for ::1 at 2021-04-13 11:03:27 +0900
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 2297)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 3615)
+
+
+
+ActionView::SyntaxErrorInTemplate - Encountered a syntax error while rendering template: check <h1>MHM firster</h1>
+<%= link_to "初級", "scores/top", class: "btn btn-info" %>
+<%= link_to "中級", "counts/top", class: "btn btn-warning" %>
+<%= link_to "上級”, "selects/top", class: "btn btn-danger" %>
+<%= link_to "MHMとは", new_top_path %>
+<%= link_to "ログイン", new_user_path %>:
+
+Started POST "/__better_errors/acc8736c3528c9f1/variables" for ::1 at 2021-04-13 11:03:27 +0900
+Started GET "/" for ::1 at 2021-04-13 11:04:11 +0900
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 11.1ms | Allocations: 2284)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms | Allocations: 3596)
+
+
+
+ActionView::SyntaxErrorInTemplate - Encountered a syntax error while rendering template: check <h1>MHM firster</h1>
+<%= link_to "初級", "scores/top", class: "btn btn-info" %>
+<%= link_to "中級", "counts/top", class: "btn btn-warning" %>
+<%= link_to "上級”, "selects/top", class: "btn btn-danger" %>
+<%= link_to "MHMとは", new_top_path %>:
+
+Started POST "/__better_errors/8f1303ed292fb852/variables" for ::1 at 2021-04-13 11:04:11 +0900
+Started GET "/" for ::1 at 2021-04-13 11:04:17 +0900
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 12.7ms | Allocations: 2279)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms | Allocations: 3596)
+
+
+
+ActionView::SyntaxErrorInTemplate - Encountered a syntax error while rendering template: check <h1>MHM firster</h1>
+<%= link_to "初級", "scores/top", class: "btn btn-info" %>
+<%= link_to "中級", "counts/top", class: "btn btn-warning" %>
+<%= link_to "上級”, "selects/top", class: "btn btn-danger" %>:
+
+Started POST "/__better_errors/0f1a253136baaa66/variables" for ::1 at 2021-04-13 11:04:17 +0900
+Started GET "/" for ::1 at 2021-04-13 11:04:18 +0900
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 11.3ms | Allocations: 2266)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms | Allocations: 2848)
+
+
+
+ActionView::SyntaxErrorInTemplate - Encountered a syntax error while rendering template: check <h1>MHM firster</h1>
+<%= link_to "初級", "scores/top", class: "btn btn-info" %>
+<%= link_to "中級", "counts/top", class: "btn btn-warning" %>
+<%= link_to "上級”, "selects/top", class: "btn btn-danger" %>:
+
+Started POST "/__better_errors/c622148b4bd5053a/variables" for ::1 at 2021-04-13 11:04:18 +0900
+Started GET "/" for ::1 at 2021-04-13 11:05:07 +0900
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 88)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 21ms (Views: 19.7ms | ActiveRecord: 0.0ms | Allocations: 13369)
+
+
+Started GET "/" for ::1 at 2021-04-13 11:05:15 +0900
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 129)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 17.1ms | ActiveRecord: 0.0ms | Allocations: 13398)
+
+
+Started GET "/" for ::1 at 2021-04-13 11:05:24 +0900
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 176)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 33ms (Views: 30.7ms | ActiveRecord: 0.0ms | Allocations: 13447)
+
+
+Started GET "/" for ::1 at 2021-04-13 11:05:29 +0900
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 2274)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 3584)
+
+
+
+ActionView::SyntaxErrorInTemplate - Encountered a syntax error while rendering template: check <h1>MHM firster</h1>
+<%= link_to "初級", "scores/top", class: "btn btn-info" %>
+<%= link_to "中級", "counts/top", class: "btn btn-warning" %>
+<%= link_to "上級”, "selects/top", class: "btn btn-danger" %>:
+
+Started POST "/__better_errors/a4cd7ef5f4592859/variables" for ::1 at 2021-04-13 11:05:29 +0900
+Started GET "/" for ::1 at 2021-04-13 11:06:35 +0900
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 2276)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 3591)
+
+
+
+ActionView::SyntaxErrorInTemplate - Encountered a syntax error while rendering template: check <h1>MHM firster</h1>
+<%= link_to "初級", "scores/top", class: "btn btn-info" %>
+<%= link_to "中級", "counts/top", class: "btn btn-warning" %>
+<%= link_to "上級”, "selects/top", class: "btn btn-danger" %>:
+
+Started POST "/__better_errors/cfcab02ebf25a1a2/variables" for ::1 at 2021-04-13 11:06:35 +0900
+Started GET "/" for ::1 at 2021-04-13 11:08:06 +0900
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 270)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 26ms (Views: 25.0ms | ActiveRecord: 0.0ms | Allocations: 13548)
+
+
+Started GET "/" for ::1 at 2021-04-13 11:09:21 +0900
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 308)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 15.4ms | ActiveRecord: 0.0ms | Allocations: 13578)
+
+
+Started GET "/selects/top" for ::1 at 2021-04-13 11:09:23 +0900
+Processing by SelectsController#top as HTML
+  Rendering selects/top.html.erb within layouts/application
+  Rendered selects/top.html.erb within layouts/application (Duration: 0.2ms | Allocations: 80)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 12.4ms | ActiveRecord: 0.0ms | Allocations: 12958)
+
+
+Started GET "/tops/new" for ::1 at 2021-04-13 11:09:29 +0900
+Processing by TopsController#new as HTML
+  Rendering tops/new.html.erb within layouts/application
+  Rendered tops/new.html.erb within layouts/application (Duration: 0.4ms | Allocations: 82)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 18.7ms | ActiveRecord: 0.0ms | Allocations: 12583)
+
+
+Started GET "/tops/new" for ::1 at 2021-04-13 11:10:55 +0900
+Processing by TopsController#new as HTML
+  Rendering tops/new.html.erb within layouts/application
+  Rendered tops/new.html.erb within layouts/application (Duration: 0.3ms | Allocations: 79)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 24ms (Views: 22.6ms | ActiveRecord: 0.0ms | Allocations: 13346)
+
+
+Started GET "/" for ::1 at 2021-04-13 11:10:57 +0900
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 317)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 16.8ms | ActiveRecord: 0.0ms | Allocations: 12804)
+
+
+Started GET "/" for ::1 at 2021-04-13 11:10:58 +0900
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 121)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 13.5ms | ActiveRecord: 0.0ms | Allocations: 12485)
+
+
+Started GET "/scores/top" for ::1 at 2021-04-13 11:12:36 +0900
+Processing by ScoresController#top as HTML
+  Rendering scores/top.html.erb within layouts/application
+  Rendered scores/top.html.erb within layouts/application (Duration: 0.3ms | Allocations: 80)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 15.5ms | ActiveRecord: 0.0ms | Allocations: 12964)
+
+
+Started GET "/scores/top" for ::1 at 2021-04-13 11:19:11 +0900
+  [1m[35m (2.1ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by ScoresController#top as HTML
+  Rendering scores/top.html.erb within layouts/application
+  Rendered scores/top.html.erb within layouts/application (Duration: 0.5ms | Allocations: 148)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.0ms | Allocations: 13378)
+
+
+Started GET "/selects/new" for ::1 at 2021-04-13 11:19:37 +0900
+Processing by SelectsController#new as HTML
+  Rendering selects/new.html.erb within layouts/application
+  Rendered selects/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 73)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 20.0ms | ActiveRecord: 0.0ms | Allocations: 13293)
+
+
+Started GET "/" for ::1 at 2021-04-14 21:10:44 +0900
+  [1m[35m (18.0ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 472)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 219ms (Views: 211.5ms | ActiveRecord: 0.0ms | Allocations: 47734)
+
+
+Started GET "/scores/top" for ::1 at 2021-04-14 21:10:50 +0900
+Processing by ScoresController#top as HTML
+  Rendering scores/top.html.erb within layouts/application
+  Rendered scores/top.html.erb within layouts/application (Duration: 1.3ms | Allocations: 151)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 18.3ms | ActiveRecord: 0.0ms | Allocations: 13080)
+
+
+Started GET "/counts/top" for ::1 at 2021-04-14 21:12:14 +0900
+Processing by CountsController#top as HTML
+  Rendering counts/top.html.erb within layouts/application
+  Rendered counts/top.html.erb within layouts/application (Duration: 0.6ms | Allocations: 81)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 26ms (Views: 24.4ms | ActiveRecord: 0.0ms | Allocations: 13355)
+
+
+Started GET "/scores/top" for ::1 at 2021-04-14 21:12:17 +0900
+Processing by ScoresController#top as HTML
+  Rendering scores/top.html.erb within layouts/application
+  Rendered scores/top.html.erb within layouts/application (Duration: 0.6ms | Allocations: 140)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 29ms (Views: 28.1ms | ActiveRecord: 0.0ms | Allocations: 13116)
+
+
+Started GET "/selects/new" for ::1 at 2021-04-14 21:12:19 +0900
+Processing by SelectsController#new as HTML
+  Rendering selects/new.html.erb within layouts/application
+  Rendered selects/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 83)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 29ms (Views: 26.5ms | ActiveRecord: 0.0ms | Allocations: 13000)
+
+
+Started GET "/" for ::1 at 2021-04-14 22:37:37 +0900
+  [1m[35m (7.7ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 472)
+[Webpacker] Compiling...
+Started GET "/" for ::1 at 2021-04-14 22:37:40 +0900
+  [1m[35m (21.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 128)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/kosuke.s/mentalhealth_management_test/public/packs
+[Webpacker] Hash: f5b27f293855302aac49
+Version: webpack 4.46.0
+Time: 4281ms
+Built at: 2021-04-14 22:37:45
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-a1c15b9886cf97d2e592.js    844 KiB  application  [emitted] [immutable]  application
+js/application-a1c15b9886cf97d2e592.js.map    900 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-a1c15b9886cf97d2e592.js js/application-a1c15b9886cf97d2e592.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 769 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 111 hidden modules
+
+Completed 200 OK in 8493ms (Views: 8484.9ms | ActiveRecord: 0.0ms | Allocations: 277859)
+
+
+[Webpacker] Compiled all packs in /Users/kosuke.s/mentalhealth_management_test/public/packs
+[Webpacker] Hash: f5b27f293855302aac49
+Version: webpack 4.46.0
+Time: 3530ms
+Built at: 2021-04-14 22:37:45
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-a1c15b9886cf97d2e592.js    844 KiB  application  [emitted] [immutable]  application
+js/application-a1c15b9886cf97d2e592.js.map    900 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-a1c15b9886cf97d2e592.js js/application-a1c15b9886cf97d2e592.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 769 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 111 hidden modules
+
+Completed 200 OK in 4767ms (Views: 4765.9ms | ActiveRecord: 0.0ms | Allocations: 18028)
+
+
+Started GET "/" for ::1 at 2021-04-14 23:11:12 +0900
+  [1m[35m (1.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 314)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/kosuke.s/mentalhealth_management_test/public/packs
+[Webpacker] Hash: e72198630a4812586737
+Version: webpack 4.46.0
+Time: 851ms
+Built at: 2021-04-14 23:11:14
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-962bd65fdb4f687bf260.js    434 KiB  application  [emitted] [immutable]  application
+js/application-962bd65fdb4f687bf260.js.map    506 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-962bd65fdb4f687bf260.js js/application-962bd65fdb4f687bf260.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 769 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 4 hidden modules
+
+Completed 500 Internal Server Error in 2895ms (ActiveRecord: 0.0ms | Allocations: 15186)
+
+
+
+SassC::SyntaxError - Error: File to import not found or unreadable: ~bootstrap/scss/bootstrap.
+        on line 14:2 of app/assets/stylesheets/application.scss
+>>  @import '~bootstrap/scss/bootstrap';
+   -^:
+  app/views/layouts/application.html.erb:9
+
+Started POST "/__better_errors/b0d9ecce60bf3f03/variables" for ::1 at 2021-04-14 23:11:15 +0900
+Started GET "/" for ::1 at 2021-04-14 23:14:32 +0900
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 316)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms | Allocations: 5904)
+
+
+
+SassC::SyntaxError - Error: File to import not found or unreadable: ~bootstrap/scss/bootstrap.
+        on line 14:2 of app/assets/stylesheets/application.scss
+>>  @import '~bootstrap/scss/bootstrap';
+   -^:
+  app/views/layouts/application.html.erb:8
+
+Started POST "/__better_errors/d213a243dcc5c9ea/variables" for ::1 at 2021-04-14 23:14:32 +0900
+Started GET "/" for ::1 at 2021-04-14 23:14:33 +0900
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 128)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 4803)
+
+
+
+SassC::SyntaxError - Error: File to import not found or unreadable: ~bootstrap/scss/bootstrap.
+        on line 14:2 of app/assets/stylesheets/application.scss
+>>  @import '~bootstrap/scss/bootstrap';
+   -^:
+  app/views/layouts/application.html.erb:8
+
+Started POST "/__better_errors/10199f159a58fb39/variables" for ::1 at 2021-04-14 23:14:34 +0900
+Started GET "/" for ::1 at 2021-04-14 23:14:43 +0900
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 317)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms | Allocations: 5908)
+
+
+
+SassC::SyntaxError - Error: File to import not found or unreadable: ~bootstrap/scss/bootstrap.
+        on line 14:2 of app/assets/stylesheets/application.scss
+>>  @import '~bootstrap/scss/bootstrap';
+   -^:
+  app/views/layouts/application.html.erb:7
+
+Started POST "/__better_errors/8d202e28edee2b8e/variables" for ::1 at 2021-04-14 23:14:43 +0900
+Started GET "/" for ::1 at 2021-04-14 23:14:44 +0900
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 127)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 4799)
+
+
+
+SassC::SyntaxError - Error: File to import not found or unreadable: ~bootstrap/scss/bootstrap.
+        on line 14:2 of app/assets/stylesheets/application.scss
+>>  @import '~bootstrap/scss/bootstrap';
+   -^:
+  app/views/layouts/application.html.erb:7
+
+Started POST "/__better_errors/cc0c5a66ba2b4b84/variables" for ::1 at 2021-04-14 23:14:44 +0900
+Started GET "/" for ::1 at 2021-04-14 23:15:06 +0900
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 316)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms | Allocations: 9077)
+
+
+
+SassC::SyntaxError - Error: File to import not found or unreadable: ~bootstrap/scss/bootstrap.
+        on line 14:2 of app/assets/stylesheets/application.scss
+>>  @import '~bootstrap/scss/bootstrap';
+   -^:
+  app/views/layouts/application.html.erb:8
+
+Started POST "/__better_errors/ed6f3317e145bdc5/variables" for ::1 at 2021-04-14 23:15:06 +0900
+Started GET "/" for ::1 at 2021-04-14 23:15:07 +0900
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 127)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 7973)
+
+
+
+SassC::SyntaxError - Error: File to import not found or unreadable: ~bootstrap/scss/bootstrap.
+        on line 14:2 of app/assets/stylesheets/application.scss
+>>  @import '~bootstrap/scss/bootstrap';
+   -^:
+  app/views/layouts/application.html.erb:8
+
+Started POST "/__better_errors/2c987b8ec667f6a8/variables" for ::1 at 2021-04-14 23:15:07 +0900
+Started GET "/" for ::1 at 2021-04-14 23:17:56 +0900
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 316)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 5248)
+
+
+Started GET "/" for ::1 at 2021-04-14 23:18:18 +0900
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 309)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms | Allocations: 5241)
+
+
+Started GET "/" for ::1 at 2021-04-14 23:18:19 +0900
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 127)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.0ms | Allocations: 4152)
+
+
+Started GET "/" for ::1 at 2021-04-14 23:18:19 +0900
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 121)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms | Allocations: 4135)
+
+
+Started GET "/scores/top" for ::1 at 2021-04-14 23:18:21 +0900
+Processing by ScoresController#top as HTML
+  Rendering scores/top.html.erb within layouts/application
+  Rendered scores/top.html.erb within layouts/application (Duration: 0.9ms | Allocations: 144)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 5.5ms | ActiveRecord: 0.0ms | Allocations: 4691)
+
+
+Started GET "/selects/new" for ::1 at 2021-04-14 23:18:22 +0900
+Processing by SelectsController#new as HTML
+  Rendering selects/new.html.erb within layouts/application
+  Rendered selects/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 84)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms | Allocations: 4638)
+
+
+Started GET "/" for ::1 at 2021-04-14 23:18:37 +0900
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 309)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms | Allocations: 9065)
+
+
+
+SassC::SyntaxError - Error: File to import not found or unreadable: ~bootstrap/scss/bootstrap.
+        on line 14:2 of app/assets/stylesheets/application.scss
+>>  @import '~bootstrap/scss/bootstrap';
+   -^:
+  app/views/layouts/application.html.erb:8
+
+Started POST "/__better_errors/e94e5702e6ea8be9/variables" for ::1 at 2021-04-14 23:18:37 +0900
+Started GET "/" for ::1 at 2021-04-14 23:22:04 +0900
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 127)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms | Allocations: 7974)
+
+
+
+SassC::SyntaxError - Error: File to import not found or unreadable: ~bootstrap/scss/bootstrap.
+        on line 14:2 of app/assets/stylesheets/application.scss
+>>  @import '~bootstrap/scss/bootstrap';
+   -^:
+  app/views/layouts/application.html.erb:8
+
+Started POST "/__better_errors/6abf2bf899f5ab74/variables" for ::1 at 2021-04-14 23:22:04 +0900
+Started GET "/" for ::1 at 2021-04-14 23:24:19 +0900
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 314)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 3861)
+
+
+
+ActionView::SyntaxErrorInTemplate - Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+  <head>
+    <title>MentalhealthManagementTest</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application', data-turbolinks-track': 'reload' %>
+  </head>
+  <body>
+    <%= yield %>
+  </body>
+</html>:
+
+Started POST "/__better_errors/391429a4f7e3610c/variables" for ::1 at 2021-04-14 23:24:19 +0900
+Started GET "/" for ::1 at 2021-04-14 23:24:42 +0900
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 314)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms | Allocations: 9071)
+
+
+
+SassC::SyntaxError - Error: File to import not found or unreadable: ~bootstrap/scss/bootstrap.
+        on line 14:2 of app/assets/stylesheets/application.scss
+>>  @import '~bootstrap/scss/bootstrap';
+   -^:
+  app/views/layouts/application.html.erb:8
+
+Started POST "/__better_errors/fbd2ac4b9b773f2d/variables" for ::1 at 2021-04-14 23:24:42 +0900
+Started GET "/" for ::1 at 2021-04-14 23:37:15 +0900
+  [1m[35m (4.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 585)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 15.2ms | ActiveRecord: 0.0ms | Allocations: 6988)
+
+
+Started GET "/scores/top" for ::1 at 2021-04-14 23:39:08 +0900
+Processing by ScoresController#top as HTML
+  Rendering scores/top.html.erb within layouts/application
+  Rendered scores/top.html.erb within layouts/application (Duration: 35.8ms | Allocations: 146)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 44ms (Views: 42.2ms | ActiveRecord: 0.0ms | Allocations: 4688)
+
+
+Started GET "/" for ::1 at 2021-04-14 23:45:44 +0900
+  [1m[35m (7.0ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 585)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/kosuke.s/mentalhealth_management_test/public/packs
+[Webpacker] Hash: e72198630a4812586737
+Version: webpack 4.46.0
+Time: 806ms
+Built at: 2021-04-14 23:45:46
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-962bd65fdb4f687bf260.js    434 KiB  application  [emitted] [immutable]  application
+js/application-962bd65fdb4f687bf260.js.map    506 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-962bd65fdb4f687bf260.js js/application-962bd65fdb4f687bf260.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 769 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 4 hidden modules
+
+Completed 200 OK in 2277ms (Views: 2268.6ms | ActiveRecord: 0.0ms | Allocations: 8913)
+
+
+Started GET "/" for ::1 at 2021-04-14 23:49:24 +0900
+  [1m[35m (9.9ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 585)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 11.0ms | ActiveRecord: 0.0ms | Allocations: 6997)
+
+
+Started GET "/" for ::1 at 2021-04-14 23:52:41 +0900
+  [1m[35m (3.0ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 585)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 14.2ms | ActiveRecord: 0.0ms | Allocations: 6985)
+
+
+Started GET "/" for ::1 at 2021-04-14 23:57:27 +0900
+  [1m[35m (5.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 585)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 24ms (Views: 17.1ms | ActiveRecord: 0.0ms | Allocations: 6997)
+
+
+Started GET "/" for ::1 at 2021-04-14 23:57:29 +0900
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 128)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms | Allocations: 4142)
+
+
+Started GET "/" for ::1 at 2021-04-14 23:58:47 +0900
+  [1m[35m (4.8ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 585)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/kosuke.s/mentalhealth_management_test/public/packs
+[Webpacker] Hash: f5b27f293855302aac49
+Version: webpack 4.46.0
+Time: 1217ms
+Built at: 2021-04-14 23:58:50
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-a1c15b9886cf97d2e592.js    844 KiB  application  [emitted] [immutable]  application
+js/application-a1c15b9886cf97d2e592.js.map    900 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-a1c15b9886cf97d2e592.js js/application-a1c15b9886cf97d2e592.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 769 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 111 hidden modules
+
+Completed 200 OK in 2699ms (Views: 2691.2ms | ActiveRecord: 0.0ms | Allocations: 8915)
+
+
+Started GET "/" for ::1 at 2021-04-15 00:07:45 +0900
+  [1m[35m (5.7ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 585)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/kosuke.s/mentalhealth_management_test/public/packs
+[Webpacker] Hash: 83d39dcf4d9dfa3cce51
+Version: webpack 4.46.0
+Time: 4301ms
+Built at: 2021-04-15 0:07:51
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-a28fad22349e3d8eaca8.js   1.72 MiB  application  [emitted] [immutable]  application
+js/application-a28fad22349e3d8eaca8.js.map   1.83 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-a28fad22349e3d8eaca8.js js/application-a28fad22349e3d8eaca8.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 824 bytes {application} [built]
+[./app/javascript/src/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/src/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/src/application.scss 670 KiB {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 115 hidden modules
+
+Completed 200 OK in 5929ms (Views: 5921.7ms | ActiveRecord: 0.0ms | Allocations: 8931)
+
+
+Started GET "/" for ::1 at 2021-04-15 00:13:41 +0900
+  [1m[35m (5.9ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 615)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 10.5ms | ActiveRecord: 0.0ms | Allocations: 7023)
+
+
+Started GET "/scores/top" for ::1 at 2021-04-15 00:22:39 +0900
+  [1m[35m (9.8ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by ScoresController#top as HTML
+  Rendering scores/top.html.erb within layouts/application
+  Rendered scores/top.html.erb within layouts/application (Duration: 1.0ms | Allocations: 151)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 16.2ms | ActiveRecord: 0.0ms | Allocations: 4716)
+
+
+Started GET "/selects/new" for ::1 at 2021-04-15 00:22:41 +0900
+Processing by SelectsController#new as HTML
+  Rendering selects/new.html.erb within layouts/application
+  Rendered selects/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 84)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 11.9ms | ActiveRecord: 0.0ms | Allocations: 4626)
+
+
+Started GET "/scores/top" for ::1 at 2021-04-15 13:11:41 +0900
+  [1m[35m (22.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by ScoresController#top as HTML
+  Rendering scores/top.html.erb within layouts/application
+  Rendered scores/top.html.erb within layouts/application (Duration: 1.1ms | Allocations: 50)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 32ms (Views: 24.3ms | ActiveRecord: 0.0ms | Allocations: 4083)
+
+
+Started GET "/selects/new" for ::1 at 2021-04-15 13:11:42 +0900
+Processing by SelectsController#new as HTML
+  Rendering selects/new.html.erb within layouts/application
+  Rendered selects/new.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.0ms | Allocations: 4041)
+
+
+Started GET "/" for ::1 at 2021-04-15 13:11:58 +0900
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 311)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.4ms | ActiveRecord: 0.0ms | Allocations: 5247)
+
+
+Started GET "/users/new" for ::1 at 2021-04-15 13:13:41 +0900
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.3ms | Allocations: 73)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 4612)
+
+
+Started GET "/users/new" for ::1 at 2021-04-15 13:22:54 +0900
+  [1m[35m (3.1ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2729)
+
+
+
+NameError - uninitialized constant UsersController::User:
+  app/controllers/users_controller.rb:3:in `new'
+
+Started POST "/__better_errors/2e1a200f0dcffda5/variables" for ::1 at 2021-04-15 13:22:55 +0900
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /Users/kosuke.s/mentalhealth_management_test/config/environment.rb:5)
+  [1m[35m (4.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (56.6ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  [1m[35m (14.6ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('1004882896115940975', 0)[0m
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateUsers (20210415042412)
+  [1m[35m (3.2ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_users_on_email`  ON `users` (`email`) [0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT RELEASE_LOCK('1004882896115940975')[0m
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /Users/kosuke.s/mentalhealth_management_test/config/environment.rb:5)
+  [1m[35m (4.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('1004882896115940975', 0)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateUsers (20210415042412)
+  [1m[35m (9.5ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_users_on_email`  ON `users` (`email`) [0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('1004882896115940975')[0m
+Started GET "/users/new" for ::1 at 2021-04-15 14:01:48 +0900
+  [1m[35m (1.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.0ms | Allocations: 4590)
+
+
+
+NameError - undefined local variable or method `ture' for User(Table doesn't exist):Class
+Did you mean?  true:
+  app/models/user.rb:2:in `<class:User>'
+  app/models/user.rb:1:in `<top (required)>'
+  app/controllers/users_controller.rb:3:in `new'
+
+Started POST "/__better_errors/85ee249052448d35/variables" for ::1 at 2021-04-15 14:01:48 +0900
+Started GET "/users/new" for ::1 at 2021-04-15 14:01:49 +0900
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 8.9ms | Allocations: 2341)
+
+
+
+ActiveRecord::StatementInvalid - Mysql2::Error: Table 'mentalhealth_management_test_development.users' doesn't exist:
+  app/controllers/users_controller.rb:3:in `new'
+
+Started POST "/__better_errors/fdf44d6ccc7d672f/variables" for ::1 at 2021-04-15 14:01:49 +0900
+Started GET "/users/new" for ::1 at 2021-04-15 14:01:50 +0900
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 2.2ms | Allocations: 2289)
+
+
+
+ActiveRecord::StatementInvalid - Mysql2::Error: Table 'mentalhealth_management_test_development.users' doesn't exist:
+  app/controllers/users_controller.rb:3:in `new'
+
+Started POST "/__better_errors/c94de770630bfcfe/variables" for ::1 at 2021-04-15 14:01:50 +0900
+Started GET "/users/new" for ::1 at 2021-04-15 14:02:10 +0900
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 18.8ms | Allocations: 14240)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.0ms | Allocations: 22130)
+
+
+
+ActionView::MissingTemplate - Missing partial users/_header, application/_header with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/kosuke.s/mentalhealth_management_test/app/views"
+  * "/Users/kosuke.s/mentalhealth_management_test/vendor/bundle/ruby/2.6.0/gems/actiontext-6.0.3.6/app/views"
+  * "/Users/kosuke.s/mentalhealth_management_test/vendor/bundle/ruby/2.6.0/gems/actionmailbox-6.0.3.6/app/views":
+  app/views/layouts/application.html.erb:12
+
+Started POST "/__better_errors/4d4224498c228d76/variables" for ::1 at 2021-04-15 14:02:10 +0900
+Started GET "/users/new" for ::1 at 2021-04-15 14:03:26 +0900
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 5.5ms | Allocations: 9959)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 500 Internal Server Error in 319ms (ActiveRecord: 0.0ms | Allocations: 189484)
+
+
+
+NameError - undefined local variable or method `header' for #<#<Class:0x00007fd89a293db0>:0x00007fd89d942708>
+Did you mean?  headers:
+  app/views/layouts/application.html.erb:12
+
+Started POST "/__better_errors/b189e5dfbdc357d4/variables" for ::1 at 2021-04-15 14:03:27 +0900
+Started GET "/users/new" for ::1 at 2021-04-15 14:03:41 +0900
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 6.5ms | Allocations: 9958)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms | Allocations: 17244)
+
+
+
+ActionView::MissingTemplate - Missing partial users/_header, application/_header with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/kosuke.s/mentalhealth_management_test/app/views"
+  * "/Users/kosuke.s/mentalhealth_management_test/vendor/bundle/ruby/2.6.0/gems/actiontext-6.0.3.6/app/views"
+  * "/Users/kosuke.s/mentalhealth_management_test/vendor/bundle/ruby/2.6.0/gems/actionmailbox-6.0.3.6/app/views":
+  app/views/layouts/application.html.erb:12
+
+Started POST "/__better_errors/d5610f146e115d9e/variables" for ::1 at 2021-04-15 14:03:41 +0900
+Started GET "/users/new" for ::1 at 2021-04-15 14:05:33 +0900
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 5.8ms | Allocations: 9957)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shard/_header.html.erb (Duration: 0.3ms | Allocations: 106)
+Completed 200 OK in 19ms (Views: 17.0ms | ActiveRecord: 0.0ms | Allocations: 15121)
+
+
+Started GET "/" for ::1 at 2021-04-15 14:05:50 +0900
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 333)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shard/_header.html.erb (Duration: 0.1ms | Allocations: 6)
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.0ms | Allocations: 5013)
+
+
+Started GET "/" for ::1 at 2021-04-15 14:07:57 +0900
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 121)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shard/_header.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.0ms | Allocations: 4218)
+
+
+Started GET "/" for ::1 at 2021-04-15 14:08:14 +0900
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 310)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shard/_header.html.erb (Duration: 0.4ms | Allocations: 105)
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.0ms | Allocations: 5571)
+
+
+Started GET "/" for ::1 at 2021-04-15 14:08:16 +0900
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 127)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shard/_header.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.0ms | Allocations: 4227)
+
+
+Started GET "/" for ::1 at 2021-04-15 14:08:52 +0900
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 310)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shard/_header.html.erb (Duration: 0.3ms | Allocations: 105)
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.0ms | Allocations: 5569)
+
+
+Started GET "/" for ::1 at 2021-04-15 14:09:31 +0900
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 310)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shard/_header.html.erb (Duration: 0.3ms | Allocations: 105)
+Completed 200 OK in 9ms (Views: 7.3ms | ActiveRecord: 0.0ms | Allocations: 5567)
+
+
+Started GET "/" for ::1 at 2021-04-15 14:09:32 +0900
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 127)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shard/_header.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.0ms | Allocations: 4217)
+
+
+Started GET "/" for ::1 at 2021-04-15 14:09:43 +0900
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 310)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shard/_header.html.erb (Duration: 0.3ms | Allocations: 105)
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 0.0ms | Allocations: 5577)
+
+
+Started GET "/" for ::1 at 2021-04-15 14:12:10 +0900
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 310)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shard/_header.html.erb (Duration: 0.4ms | Allocations: 105)
+Completed 200 OK in 10ms (Views: 8.2ms | ActiveRecord: 0.0ms | Allocations: 5573)
+
+
+Started GET "/" for ::1 at 2021-04-15 14:13:33 +0900
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 310)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shard/_header.html.erb (Duration: 0.4ms | Allocations: 105)
+Completed 200 OK in 18ms (Views: 16.2ms | ActiveRecord: 0.0ms | Allocations: 5569)
+
+
+Started GET "/" for ::1 at 2021-04-15 14:13:57 +0900
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 310)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shard/_header.html.erb (Duration: 1.1ms | Allocations: 105)
+Completed 200 OK in 12ms (Views: 9.8ms | ActiveRecord: 0.0ms | Allocations: 5569)
+
+
+Started GET "/" for ::1 at 2021-04-15 14:14:08 +0900
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 315)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shard/_header.html.erb (Duration: 0.3ms | Allocations: 105)
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 5587)
+
+
+Started GET "/" for ::1 at 2021-04-15 14:14:19 +0900
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 310)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shard/_header.html.erb (Duration: 0.3ms | Allocations: 104)
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.0ms | Allocations: 5570)
+
+
+Started GET "/" for ::1 at 2021-04-15 14:14:19 +0900
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 127)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shard/_header.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.0ms | Allocations: 4239)
+
+
+Started GET "/" for ::1 at 2021-04-15 14:14:50 +0900
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 310)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shard/_header.html.erb (Duration: 0.5ms | Allocations: 105)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.0ms | Allocations: 5575)
+
+
+Started GET "/" for ::1 at 2021-04-15 14:14:57 +0900
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 310)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shard/_header.html.erb (Duration: 0.3ms | Allocations: 104)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms | Allocations: 5566)
+
+
+Started GET "/" for ::1 at 2021-04-15 14:16:59 +0900
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 310)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shard/_header.html.erb (Duration: 0.3ms | Allocations: 105)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms | Allocations: 5569)
+
+
+Started GET "/" for ::1 at 2021-04-15 14:17:09 +0900
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 310)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shard/_header.html.erb (Duration: 0.3ms | Allocations: 105)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms | Allocations: 5565)
+
+
+Started GET "/" for ::1 at 2021-04-15 14:21:36 +0900
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 310)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shard/_header.html.erb (Duration: 1.2ms | Allocations: 104)
+Completed 200 OK in 16ms (Views: 15.4ms | ActiveRecord: 0.0ms | Allocations: 5566)
+
+
+Started GET "/" for ::1 at 2021-04-15 14:22:05 +0900
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 310)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shard/_header.html.erb (Duration: 0.3ms | Allocations: 104)
+  Rendered shard/_footer.html.erb (Duration: 1.2ms | Allocations: 91)
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.0ms | Allocations: 5887)
+
+
+Started GET "/" for ::1 at 2021-04-15 14:23:15 +0900
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 310)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shard/_header.html.erb (Duration: 0.3ms | Allocations: 110)
+  Rendered shard/_footer.html.erb (Duration: 0.2ms | Allocations: 91)
+Completed 200 OK in 22ms (Views: 20.8ms | ActiveRecord: 0.0ms | Allocations: 5893)
+
+
+Started GET "/" for ::1 at 2021-04-15 14:24:39 +0900
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 310)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shard/_header.html.erb (Duration: 0.4ms | Allocations: 104)
+  Rendered shard/_footer.html.erb (Duration: 0.4ms | Allocations: 88)
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.0ms | Allocations: 5890)
+
+
+Started GET "/" for ::1 at 2021-04-15 14:25:16 +0900
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 310)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shard/_header.html.erb (Duration: 0.3ms | Allocations: 104)
+  Rendered shard/_footer.html.erb (Duration: 0.2ms | Allocations: 88)
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.0ms | Allocations: 5879)
+
+
+Started GET "/" for ::1 at 2021-04-15 14:25:56 +0900
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 310)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shard/_header.html.erb (Duration: 0.4ms | Allocations: 104)
+  Rendered shard/_footer.html.erb (Duration: 0.3ms | Allocations: 88)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.0ms | Allocations: 5875)
+
+
+Started GET "/" for ::1 at 2021-04-15 14:26:09 +0900
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 310)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shard/_header.html.erb (Duration: 0.3ms | Allocations: 104)
+  Rendered shard/_footer.html.erb (Duration: 0.2ms | Allocations: 88)
+Completed 200 OK in 12ms (Views: 10.4ms | ActiveRecord: 0.0ms | Allocations: 5881)
+
+
+Started GET "/" for ::1 at 2021-04-15 14:26:12 +0900
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 127)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shard/_header.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered shard/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 4296)
+
+
+Started GET "/" for ::1 at 2021-04-15 14:26:12 +0900
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 121)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shard/_header.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered shard/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms | Allocations: 4284)
+
+
+Started GET "/" for ::1 at 2021-04-15 14:26:12 +0900
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 121)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shard/_header.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered shard/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.0ms | Allocations: 4306)
+
+
+Started GET "/" for ::1 at 2021-04-15 14:26:12 +0900
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 121)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shard/_header.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered shard/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms | Allocations: 4290)
+
+
+Started GET "/" for ::1 at 2021-04-15 14:28:43 +0900
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 310)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shard/_header.html.erb (Duration: 0.6ms | Allocations: 104)
+  Rendered shard/_footer.html.erb (Duration: 0.2ms | Allocations: 88)
+Completed 200 OK in 22ms (Views: 19.7ms | ActiveRecord: 0.0ms | Allocations: 5885)
+
+
+Started GET "/scores/top" for ::1 at 2021-04-15 14:57:58 +0900
+  [1m[35m (2.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by ScoresController#top as HTML
+  Rendering scores/top.html.erb within layouts/application
+  Rendered scores/top.html.erb within layouts/application (Duration: 0.8ms | Allocations: 149)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shard/_header.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shard/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 17ms (Views: 15.4ms | ActiveRecord: 0.0ms | Allocations: 4848)
+
+
+Started GET "/selects/new" for ::1 at 2021-04-15 14:57:59 +0900
+Processing by SelectsController#new as HTML
+  Rendering selects/new.html.erb within layouts/application
+  Rendered selects/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 83)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shard/_header.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered shard/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 10ms (Views: 8.1ms | ActiveRecord: 0.0ms | Allocations: 4793)
+
+
+Started GET "/selects/top" for ::1 at 2021-04-15 14:58:14 +0900
+Processing by SelectsController#top as HTML
+  Rendering selects/top.html.erb within layouts/application
+  Rendered selects/top.html.erb within layouts/application (Duration: 0.8ms | Allocations: 80)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shard/_header.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered shard/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.0ms | Allocations: 4391)
+
+
+Started GET "/" for ::1 at 2021-04-15 14:58:58 +0900
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 127)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shard/_header.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered shard/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 4306)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /Users/kosuke.s/mentalhealth_management_test/config/environment.rb:5)
+  [1m[35m (5.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('1004882896115940975', 0)[0m
+  [1m[35m (10.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (12.5ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (16.5ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2021-04-15 06:59:23.718340', '2021-04-15 06:59:23.718340')[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('1004882896115940975')[0m
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at /Users/kosuke.s/mentalhealth_management_test/config/environment.rb:5)
+Started GET "/" for ::1 at 2021-04-15 17:44:37 +0900
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 586)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shard/_header.html.erb (Duration: 1.3ms | Allocations: 108)
+  Rendered shard/_footer.html.erb (Duration: 1.8ms | Allocations: 90)
+Completed 200 OK in 35ms (Views: 27.2ms | ActiveRecord: 0.0ms | Allocations: 7674)
+
+
+Started GET "/scores/top" for ::1 at 2021-04-15 17:45:11 +0900
+Processing by ScoresController#top as HTML
+  Rendering scores/top.html.erb within layouts/application
+  Rendered scores/top.html.erb within layouts/application (Duration: 1.1ms | Allocations: 145)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shard/_header.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shard/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.0ms | Allocations: 4846)
+
+
+Started GET "/tops/new" for ::1 at 2021-04-15 22:07:58 +0900
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by TopsController#new as HTML
+  Rendering tops/new.html.erb within layouts/application
+  Rendered tops/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 88)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shard/_header.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered shard/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 18ms (Views: 15.8ms | ActiveRecord: 0.0ms | Allocations: 4414)
+
+
+Started GET "/" for ::1 at 2021-04-16 10:28:46 +0900
+  [1m[35m (8.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by TopsController#index as HTML
+  Rendering tops/index.html.erb within layouts/application
+  Rendered tops/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 127)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shard/_header.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shard/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 48ms (Views: 41.8ms | ActiveRecord: 0.0ms | Allocations: 4299)
+
+
+Started GET "/scores/top" for ::1 at 2021-04-16 10:28:50 +0900
+Processing by ScoresController#top as HTML
+  Rendering scores/top.html.erb within layouts/application
+  Rendered scores/top.html.erb within layouts/application (Duration: 0.2ms | Allocations: 49)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shard/_header.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered shard/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms | Allocations: 4234)
+
+
+Started GET "/selects/new" for ::1 at 2021-04-16 10:28:51 +0900
+Processing by SelectsController#new as HTML
+  Rendering selects/new.html.erb within layouts/application
+  Rendered selects/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 84)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered shard/_header.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered shard/_footer.html.erb (Duration: 0.2ms | Allocations: 5)
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.0ms | Allocations: 4779)
+
+
