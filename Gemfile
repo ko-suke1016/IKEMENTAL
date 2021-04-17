@@ -34,7 +34,6 @@ gem 'rubocop','~> 0.82.0', require: false
 # ユーザーログイン管理
 gem 'sorcery'
 
-
 group :development, :test do
   # デバック関連
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
