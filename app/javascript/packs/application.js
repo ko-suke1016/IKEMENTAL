@@ -8,10 +8,13 @@ require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 require("jquery")
+require('score.js')
 import 'bootstrap'
 import '../src/application.scss'
 import toastr from 'toastr'
 window.toastr = toastr
+
+
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference
