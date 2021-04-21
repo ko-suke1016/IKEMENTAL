@@ -9,7 +9,7 @@ class UserSessionsController < ApplicationController
             redirect_to users_path
         else
             flash[:warning] = 'ログインに失敗しました'
-            render :login
+            render :new
         end
     end
 
