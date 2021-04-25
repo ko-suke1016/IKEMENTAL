@@ -8,8 +8,8 @@ require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 require("jquery")
+require("bootstrap") 
 require('score.js')
-import 'bootstrap'
 import '../src/application.scss'
 import toastr from 'toastr'
 window.toastr = toastr
