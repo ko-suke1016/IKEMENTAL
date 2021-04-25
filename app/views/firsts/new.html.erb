@@ -1,54 +1,68 @@
 <div id="q_01" >
-  <p>Q1: <%=  @first_question1.question %></p>
-  <%= form_with url: firsts_path, method: :post, remote: true do %>
-    <% @first_answers1.each do |first_answer| %>
-      <p class="send_data_selection1" data-send-id = <% first_answer %> ><%= first_answer.answer %></p>
-    <% end %>
-    <input type="hidden" name="id" id="send_data">
-    <input class="next_question_button" href="#q_02" type="submit" value="次へ">
+<p>Q1: <%=  @first_question1.question %></p>
+<%= form_with model: @total, method: :post, remote: true do %>
+  <% @first_answers1.each do |first_answer| %>
+    <p class="send_data_selection1" href="#q_02" type="submit" data-send-id = <%= first_answer.score %> type="submit" href="#q_02" ><%= first_answer.answer %></p>
   <% end %>
+<% end %>
 </div>
 
+
 <div id="q_02" style="display: none;" >
-<p>Q1: <%=  @first_question2.question %></p>
-<%= form_with url: firsts_path, method: :post, remote: true do %>
+<p>Q2: <%=  @first_question2.question %></p>
+<%= form_with model: @total, method: :post, remote: true do %>
   <% @first_answers2.each do |first_answer| %>
-    <p class="send_data_selection2" data-send-id = <% first_answer %> ><%= first_answer.answer %></p>
+    <p class="send_data_selection2" href="#q_03" type="submit" data-send-id = <%= first_answer.score %> ><%= first_answer.answer %></p>
   <% end %>
-    <input type="hidden" name="id" id="send_data">
-    <input class="next_question_button"  href="#q_03" type="submit" value="次へ">
-  <% end %>
+<% end %>
 </div>
 
 <div id="q_03" style="display: none;" >
-<p>Q1: <%=  @first_question3.question %></p>
-<%= form_with url: firsts_path, method: :post, remote: true do %>
+<p>Q3: <%=  @first_question3.question %></p>
+<%= form_with model: @total, method: :post, remote: true do %>
   <% @first_answers3.each do |first_answer| %>
-    <p class="send_data_selection3" data-send-id = <% first_answer %> ><%= first_answer.answer %></p>
+    <p class="send_data_selection3" href="#q_04" type="submit" data-send-id = <%= first_answer.score %> ><%= first_answer.answer %></p>
   <% end %>
-    <input type="hidden" name="id" id="send_data">
-    <input class="next_question_button"  href="#q_04" type="submit" value="次へ">
-  <% end %>
+<% end %>
 </div>
 
 <div id="q_04" style="display: none;">
-<p>Q1: <%=  @first_question4.question %></p>
-<%= form_with url: firsts_path, method: :post, remote: true do %>
+<p>Q4: <%=  @first_question4.question %></p>
+<%= form_with model: @total, method: :post, remote: true do %>
   <% @first_answers4.each do |first_answer| %>
-    <p class="send_data_selection4" data-send-id = <% first_answer %> ><%= first_answer.answer %></p>
+    <p class="send_data_selection4" href="#q_05" type="submit" data-send-id = <%= first_answer.score %> ><%= first_answer.answer %></p>
   <% end %>
-    <input type="hidden" name="id" id="send_data">
-    <input class="next_question_button"  href="#q_05" type="submit" value="次へ">
-  <% end %>
+<% end %>
 </div>
 
 <div id="q_05" style="display: none;">
-<p>Q1: <%=  @first_question5.question %></p>
-<%= form_with url: firsts_path, method: :post, remote: true do %>
+<p>Q5: <%=  @first_question5.question %></p>
+<%= form_with model: @total, method: :post, remote: true do %>
   <% @first_answers5.each do |first_answer| %>
-    <p class="send_data_selection5" data-send-id = <% first_answer %> ><%= first_answer.answer %></p>
+    <p class="send_data_selection5" type="submit" data-toggle="modal" data-target="#demoNormalModal"　href="#demoNormalModal" data-send-id = <%= first_answer.score %> ><%= first_answer.answer %></p>
   <% end %>
-    <input type="hidden" name="id" id="send_data">
-    <input class="next_question_button" type="submit" value="次へ">
-  <% end %>
+<% end %>
 </div>
+
+<div class="modal fade" id="demoNormalModal" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true">
+    <div class="modal-dialog.modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="demoModalTitle">タイトル</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                内容・・・
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
+                <button type="button" class="btn btn-primary">ボタン</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<meter max="100" low="20" high="40" value="100"></meter>
+
