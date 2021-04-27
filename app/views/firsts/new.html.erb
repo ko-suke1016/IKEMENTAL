@@ -7,7 +7,6 @@
 <% end %>
 </div>
 
-
 <div id="q_02" style="display: none;" >
 <p>Q2: <%=  @first_question2.question %></p>
 <%= form_with model: @total, method: :post, remote: true do %>
@@ -35,6 +34,7 @@
 <% end %>
 </div>
 
+
 <div id="q_05" style="display: none;">
 <p>Q5: <%=  @first_question5.question %></p>
 <%= form_with model: @total, method: :post, remote: true do %>
@@ -45,24 +45,30 @@
 </div>
 
 <div class="modal fade" id="demoNormalModal" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true">
-    <div class="modal-dialog.modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="demoModalTitle">タイトル</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                内容・・・
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
-                <button type="button" class="btn btn-primary">ボタン</button>
-            </div>
-        </div>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h1>なんでモーダルが出たかわからないけど嬉しいピー</h1>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
     </div>
+  </div>
 </div>
 
-<meter max="100" low="20" high="40" value="100"></meter>
+
+
+<div class="progress" style="width: 200px">
+  <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 200px"></div>
+</div>
+
+
 
