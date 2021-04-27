@@ -14,14 +14,18 @@ $(document).on('turbolinks:load', function() {
         $.ajax({
             url: "/firsts",
             type: "post",
+            dataType: 'json',
             data: params
         })
+        // プログレスバーの値変化
+        var life1 = 200 - result*2;
+        $('.progress-bar').css('width', life1);
         // 次の質問に遷移
         var clickButtonHref = $(this).attr('href');
         $.when(
-            $('div').fadeOut()
+            $('#q_01').fadeOut()
         ).done(function(){
-            $('div').next(clickButtonHref).fadeIn()
+            $(clickButtonHref).fadeIn()
         });
     });
 
@@ -39,14 +43,19 @@ $(document).on('turbolinks:load', function() {
         $.ajax({
             url: "/firsts",
             type: "post",
+            dataType: 'json',
             data: params
         })
+        // プログレスバーの値変化
+        var rial_life = $(".progress-bar").width();
+        var life2 = rial_life - result*2;
+        $('.progress-bar').css('width', life2);
         // 次の質問に遷移
         var clickButtonHref = $(this).attr('href');
         $.when(
-            $('div').fadeOut()
+            $('#q_02').fadeOut()
         ).done(function(){
-            $('div').next(clickButtonHref).fadeIn()
+            $(clickButtonHref).fadeIn()
         });
     });
 
@@ -64,14 +73,19 @@ $(document).on('turbolinks:load', function() {
         $.ajax({
             url: "/firsts",
             type: "post",
+            dataType: 'json',
             data: params
         })
+        // プログレスバーの値変化
+        var rial_life = $(".progress-bar").width();
+        var life3 = rial_life - result*2;
+        $('.progress-bar').css('width', life3);
         // 次の質問に遷移
         var clickButtonHref = $(this).attr('href');
         $.when(
-            $('div').fadeOut()
+            $('#q_03').fadeOut()
         ).done(function(){
-            $('div').next(clickButtonHref).fadeIn()
+            $(clickButtonHref).fadeIn()
         });
     });
 
@@ -89,14 +103,19 @@ $(document).on('turbolinks:load', function() {
         $.ajax({
             url: "/firsts",
             type: "post",
+            dataType: 'json',
             data: params
         })
+        // // プログレスバーの値変化
+        var rial_life = $(".progress-bar").width();
+        var life4 = rial_life - result*2;
+        $('.progress-bar').css('width', life4);
         // 次の質問に遷移
         var clickButtonHref = $(this).attr('href');
         $.when(
-            $('div').fadeOut()
+            $('#q_04').fadeOut()
         ).done(function(){
-            $('div').next(clickButtonHref).fadeIn()
+            $(clickButtonHref).fadeIn()
         });
     });
 
@@ -114,9 +133,19 @@ $(document).on('turbolinks:load', function() {
         $.ajax({
             url: "/firsts",
             type: "post",
+            dataType: 'json',
             data: params
         })
+        // // プログレスバーの値変化
+        var rial_life = $(".progress-bar").width();
+        var life5 = rial_life - result*2;
+        $('.progress-bar').css('width', life5);
         // 質問を非表示にしてモーダルを表示
-        $('div').fadeOut();
+        $.when(
+            $('#q_05').fadeOut(),
+            $('.progress').fadeOut()
+        ).done(function(){
+            $("#demoNormalModal").show()
+        });
     });
-})
+});
