@@ -1,0 +1,97 @@
+.position {
+    position: absolute;
+    z-index: 20;
+}
+
+#life {
+    position: absolute;
+    z-index: 20;
+    margin-top: 30px;
+    margin-left: 11%;
+}
+
+// 吹き出し(result=0)
+.bubble01 {
+    position: absolute;
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+    color:#FFF;
+    padding: 10px;
+    background-color: #50C1E9;
+    border-radius: 5px;
+    z-index: 20;
+    margin-left: 55%;
+    margin-top: 40px;
+
+}
+.bubble01:before {
+    content: '';
+    position: absolute;
+    display: block;
+    z-index: 1;
+    border-style: solid;
+    border-color: #50C1E9 transparent;
+    border-width: 10px 10px 0 10px;
+    bottom: -10px;
+    left: 50%;
+    margin-left: -10px;
+}
+
+// 吹き出し(result=5)
+
+.bubble02 {
+    position: absolute;
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+    color:#FFF;
+    padding: 10px;
+    background-color: #F7B32D;
+    border-radius: 5px;
+    z-index: 20;
+    margin-left: 55%;
+    margin-top: 40px;
+
+}
+.bubble02:before {
+    content: '';
+    position: absolute;
+    display: block;
+    z-index: 1;
+    border-style: solid;
+    border-color: #F7B32D transparent;
+    border-width: 10px 10px 0 10px;
+    bottom: -10px;
+    left: 50%;
+    margin-left: -10px;
+}
+
+// 吹き出し(result=10)
+
+.bubble03 {
+    position: absolute;
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+    color:#FFF;
+    padding: 10px;
+    background-color: #d9534f;
+    border-radius: 5px;
+    z-index: 20;
+    margin-left: 55%;
+    margin-top: 40px;
+
+}
+.bubble03:before {
+    content: '';
+    position: absolute;
+    display: block;
+    z-index: 1;
+    border-style: solid;
+    border-color: #d9534f transparent;
+    border-width: 10px 10px 0 10px;
+    bottom: -10px;
+    left: 50%;
+    margin-left: -10px;
+}
