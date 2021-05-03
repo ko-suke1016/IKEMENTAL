@@ -8,12 +8,14 @@ require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 require("jquery")
-require("bootstrap") 
+require("bootstrap")
 require('score.js')
+require('score_result.js')
+require('slick.js')
 import '../src/application.scss'
 import toastr from 'toastr'
 window.toastr = toastr
-
+import '@fortawesome/fontawesome-free/js/all';
 
 
 

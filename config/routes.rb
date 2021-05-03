@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   resources :users
   #3択問題から選ばれたものの合計値を出す
   resources :firsts
+  get 'firsts_top' => 'firsts#top'
   #性格診断でtypeごとに適正値を出す
   resources :seconds
   #二択問題の正解数を出す
