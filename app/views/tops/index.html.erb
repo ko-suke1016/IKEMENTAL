@@ -1,8 +1,21 @@
-<h3>MHM診断</h3>
+<div class="container" >
+<div class="row">
+<div class="col-sm-12 positiond-flex justify-content-center align-items-center mx-auto">
 
-<%= link_to '初級', firsts_top_path, class: 'btn btn-outline-primary' %>
-<%= link_to '中級', new_second_path, class: 'btn btn-outline-warning' %>
-<%= link_to '上級', new_third_path, class: 'btn btn-outline-danger' %>
+<h3>部下の気持ちがわかる大臣</h3>
+
+<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    初級編
+</button>
+<div class="collapse" id="collapseExample">
+    <div class="border p-3">
+        あなたには上司になっていただき部下の坂本君を指導していただきます。
+        健やかに働けるよう相手の立場に立って答えてみてください。
+        <%= link_to 'スタート', new_first_path, class: 'btn btn-outline-primary' %>
+    </div>
+</div>
+
+
 
 <%= link_to 'ログイン', login_path, class: 'btn btn-info' %>
 

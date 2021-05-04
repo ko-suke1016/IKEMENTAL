@@ -500,7 +500,7 @@ $(document).on('turbolinks:load', function() {
          // フロントから送られてきた値
         var rial_life = $(".progress-bar").width();
         var life = rial_life - result*2;
-        // countdown
+        // メンタル値の残りをカウントダウン
         $({count: rial_life}).animate({count: life}, {
             duration: 1000,
             easing: 'linear',
@@ -516,8 +516,23 @@ $(document).on('turbolinks:load', function() {
             type: "post",
             data: params,
         });
-        // 質問を非表示にしてモーダルを表示
-        $('#q_10').fadeOut();
-        $('.progress').fadeOut();
+        // 質問を非表示にして結果画面を表示
+        var clickButtonHref = $(this).attr('href');
+            $('#q_10').fadeOut(function(){
+                $(clickButtonHref).fadeIn();
+        });
+
+        var last_life = $(".progress-bar").width();
+        // countup
+        var life_score = 100-(200-last_life)/2;
+        $({count: 0}).animate({count: life_score}, {
+	            duration: 2500,
+	            easing: 'linear',
+	            progress: function() {
+	            $('#result_score span').text(Math.ceil(this.count));
+	            }
+        });
+        $(".hukidasi4").fadeIn();
+        $("#life").fadeOut();
     });
 });

@@ -57,7 +57,6 @@ class FirstsController < ApplicationController
         @update_score = @total_score.total + @score_data.to_i
         #update
         @total_score.update_column(:total, @update_score)
-        #最後の問題が答えられた場合結果画面へ
     end
 
     def reset

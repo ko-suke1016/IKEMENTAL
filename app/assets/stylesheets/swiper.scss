@@ -17,16 +17,20 @@
   }
 
   .swiper-container2 {
-    img {
-        border-radius: 30px;
-        width:97%;
-        height:600px;
-        padding: 5px;
-        border: 9px solid #60c5ba;
-        position: relative;
-        z-index: 1;
-        margin: 10px;
-    }
+    .swiper-wrapper {
+      border-radius: 5px;
+      width:97%;
+      padding: 0;
+      border: 9px solid #60c5ba;
+      position: relative;
+      z-index: 1;
+      margin: 10px;
+  }
+
+img {
+    height: 600px;
+  }
+
   }
 //   // スワイパーの処理は最後に
   // レスポンシブデザインも最後
