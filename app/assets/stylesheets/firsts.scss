@@ -3,18 +3,19 @@
     z-index: 20;
 }
 
+// プログレスバー
 #life {
     position: absolute;
     z-index: 20;
     margin-top: 30px;
-    margin-left: 11%;
+    margin-left: 9%;
 }
 
 // 吹き出し(result=0)
 .bubble01 {
     position: absolute;
     display: inline-block;
-    width: 200px;
+    width: 150px;
     text-align: center;
     color:#FFF;
     padding: 10px;
@@ -43,7 +44,7 @@
 .bubble02 {
     position: absolute;
     display: inline-block;
-    width: 200px;
+    width: 150px;
     text-align: center;
     color:#FFF;
     padding: 10px;
@@ -72,14 +73,14 @@
 .bubble03 {
     position: absolute;
     display: inline-block;
-    width: 200px;
+    width: 150px;
     text-align: center;
     color:#FFF;
     padding: 10px;
     background-color: #d9534f;
     border-radius: 5px;
     z-index: 20;
-    margin-left: 55%;
+    margin-left: 48%;
     margin-top: 40px;
 
 }
@@ -90,6 +91,34 @@
     z-index: 1;
     border-style: solid;
     border-color: #d9534f transparent;
+    border-width: 10px 10px 0 10px;
+    bottom: -10px;
+    left: 50%;
+    margin-left: -10px;
+}
+
+// Last Q終了後に表示
+
+.bubble04 {
+    position: absolute;
+    display: inline-block;
+    width: 170px;
+    text-align: center;
+    color:#FFF;
+    padding: 10px;
+    background-color: #50C1E9;
+    border-radius: 5px;
+    z-index: 20;
+    margin-left: 55%;
+    margin-top: 30px;
+}
+.bubble04:before {
+    content: '';
+    position: absolute;
+    display: block;
+    z-index: 1;
+    border-style: solid;
+    border-color: #50C1E9 transparent;
     border-width: 10px 10px 0 10px;
     bottom: -10px;
     left: 50%;
