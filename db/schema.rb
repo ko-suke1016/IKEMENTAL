@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_04_19_022001) do
+ActiveRecord::Schema.define(version: 2021_05_05_051526) do
 
   create_table "first_answers", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "answer", null: false
@@ -36,6 +36,21 @@ ActiveRecord::Schema.define(version: 2021_04_19_022001) do
     t.index ["user_id"], name: "index_question_results_on_user_id"
   end
 
+  create_table "second_answers", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "answer", null: false
+    t.integer "score", null: false
+    t.bigint "second_question_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["second_question_id"], name: "index_second_answers_on_second_question_id"
+  end
+
+  create_table "second_questions", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "question", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name", null: false
     t.string "email", null: false
@@ -48,4 +63,5 @@ ActiveRecord::Schema.define(version: 2021_04_19_022001) do
 
   add_foreign_key "first_answers", "first_questions"
   add_foreign_key "question_results", "users"
+  add_foreign_key "second_answers", "second_questions"
 end

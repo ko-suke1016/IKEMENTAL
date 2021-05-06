@@ -1,8 +1,8 @@
 class FirstsController < ApplicationController
     def new
-        @total = QuestionResult.find_by(user_id: current_user.id)
+        @total = QuestionResult.find_by(user_id: current_user.id, question_type: 0)
         if @total == nil
-            @total = QuestionResult.new(user_id: current_user.id)
+            @total = QuestionResult.new(user_id: current_user.id, question_type: 0)
         elsif @total.total == nil
             @total.total = 0
         elsif @total.total != 0
@@ -46,7 +46,7 @@ class FirstsController < ApplicationController
     end
 
     def create
-        @total_score = QuestionResult.find_by(user_id: current_user.id)
+        @total_score = QuestionResult.find_by(user_id: current_user.id, question_type: 0)
         # nilだった場合DBにnilではなく0を代入
         if @total_score.total == nil
             @total_score.total = 0
