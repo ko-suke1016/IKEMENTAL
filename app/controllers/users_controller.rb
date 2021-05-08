@@ -1,6 +1,14 @@
 class UsersController < ApplicationController
     def index
         @user = User.find(current_user.id)
+        @third_question = ThirdQuestion.order("RAND()").first
+        @third_answers = ThirdAnswer.where(third_question_id: @third_question)
+
+        @total = QuestionResult.find_by(user_id: current_user.id, question_type: 2)
+        if @total == nil
+            @total = QuestionResult.new(user_id: current_user.id, question_type: 2)
+        end
+        @total.save
     end
 
     def new
