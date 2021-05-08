@@ -9,9 +9,9 @@ require("@rails/activestorage").start()
 require("channels")
 require("jquery")
 require("bootstrap")
-require('score.js')
-require('score_result.js')
+require('first_second_question.js')
 require('slick.js')
+require('third_question.js')
 import '../src/application.scss'
 import toastr from 'toastr'
 window.toastr = toastr
