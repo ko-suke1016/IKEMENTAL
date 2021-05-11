@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   #ユーザー登録
   resources :users
+  post 'physical' => 'thirds#physical'
   #3択問題から選ばれたものの合計値を出す
   resources :firsts
   get 'firsts_top' => 'firsts#top'

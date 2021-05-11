@@ -10,8 +10,8 @@ $(document).on('turbolinks:load', function() {
     $(".send_data_third_question").on('click',function(){
         var target = $(this);
         // 対象となる要素の文字色を選択されたものに変更
-        target.css("color", "#FF0000");
-        // クリックされた要素の指定するIDを取得
+        // target.css("color", "#FF0000");
+        // // クリックされた要素の指定するIDを取得
         var result = target.data("send-id");
         // paramsに値を代入
         var params = {
@@ -23,6 +23,7 @@ $(document).on('turbolinks:load', function() {
             type: "post",
             data: params
         });
+        // 正解か不正解かで呼び出す結果を変える
         if (result == 0) {
             $('.third_question').fadeOut(function(){
                 $(".third_answer_success").fadeIn();
@@ -32,5 +33,11 @@ $(document).on('turbolinks:load', function() {
                 $(".third_answer_failure").fadeIn();
             });
         }
+        // 最後に解答結果を押すと閉じる
+        $(".third_answer_success , .third_answer_failure").on('click',function(){
+            $(".third_answer_success , .third_answer_failure").fadeOut();
+        })
     });
+
+    
 })

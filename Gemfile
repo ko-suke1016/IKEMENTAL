@@ -37,6 +37,9 @@ gem 'sorcery'
 # 初期データの格納
 gem 'seed-fu'
 
+# グラフ
+gem 'chart-js-rails', '~> 0.1.4'
+
 group :development, :test do
   # デバック関連
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
