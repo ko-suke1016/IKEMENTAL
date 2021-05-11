@@ -1,5 +1,12 @@
 <h3><%= @user.name %></h3>
 
+<div style=" height:200px; width:500px" >
+<canvas id="myChart" style=" height:10px; width:60px"></canvas>
+<%= javascript_pack_tag 'graph/mental' %>
+<script>var physicals = <%= @user_physical_gage %> </script>
+</div>
+
+
 <div class="container" >
 <div class="row">
 <div class="col-12 positiond-flex justify-content-center align-items-center mx-auto">
@@ -41,11 +48,6 @@
 
 
 
-
-
-
-
-
 <div class="fixed-bottom">
 <%= link_to 'Top', root_path, class: 'btn btn-info' %>
 <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
@@ -55,7 +57,7 @@
     <div class="border p-3">
         あなたには上司になっていただき部下の坂本君を指導していただきます。
         健やかに働けるよう相手の立場に立って答えてみてください。
-        <%= link_to 'スタート', new_first_path, class: 'btn btn-outline-primary' %>
+        <%= link_to 'スタート', new_first_path, class: 'little_difficult_question btn btn-outline-primary', remote: true %>
     </div>
 </div>
 
@@ -66,11 +68,11 @@
     <div class="border p-3">
         あなたには上司になっていただき部下の坂本君を指導していただきます。
         健やかに働けるよう相手の立場に立って答えてみてください。
-        <%= link_to 'スタート', new_second_path, class: 'btn btn-outline-primary' %>
+        <%= link_to 'スタート', new_second_path, class: 'difficult_question btn btn-outline-primary' %>
     </div>
 </div>
 
-<button type="button" class="simple_task btn btn-danger" >
+<button type="button" class="simple_task btn btn-danger" data-send-id = "5">
     簡単タスク
 </button>
 

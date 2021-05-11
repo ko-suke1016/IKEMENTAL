@@ -12,10 +12,13 @@ require("bootstrap")
 require('first_second_question.js')
 require('slick.js')
 require('third_question.js')
+require('physical_gage.js')
+require('chart.js')
 import '../src/application.scss'
 import toastr from 'toastr'
 window.toastr = toastr
 import '@fortawesome/fontawesome-free/js/all';
+
 
 
 
