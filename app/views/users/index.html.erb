@@ -6,6 +6,12 @@
 <script>var physicals = <%= @user_physical_gage %> </script>
 </div>
 
+<div style=" height:200px; width:500px" >
+<canvas id="experience" style=" height:10px; width:60px"></canvas>
+<%= javascript_pack_tag 'graph/experience' %>
+<script>var experiences = <%= @user_experience_gage %> </script>
+</div>
+
 
 <div class="container" >
 <div class="row">
@@ -22,6 +28,7 @@
         <p class="send_data_third_question shadow-lg p-3 mb-3 bg-white rounded" data-send-id = <%= third_answer.score %> >×</p>
     <% end %>
 <% end %>
+<script>var mental_gage = <%= @user.physical_gage %> </script>
 </div>
 
 <div class="third_answer_success" style="display: none;">
@@ -44,7 +51,11 @@
 </div>
 </div>
 
-
+<div class="loss_mental" style="display: none;">
+    <div class="shadow-lg p-1 mb-3 bg-white rounded" style="padding:10px; margin-top: 3px; width: 400px">
+        <p>今の状態ではこの仕事を行うとメンタルが持ちません。メンタルが回復したら仕事をしてください。</p>
+    </div>
+</div>
 
 
 
@@ -68,13 +79,15 @@
     <div class="border p-3">
         あなたには上司になっていただき部下の坂本君を指導していただきます。
         健やかに働けるよう相手の立場に立って答えてみてください。
-        <%= link_to 'スタート', new_second_path, class: 'difficult_question btn btn-outline-primary' %>
+        <%= link_to 'スタート', new_second_path, class: 'difficult_question btn btn-outline-primary', remote: true%>
     </div>
 </div>
 
+<div>
 <button type="button" class="simple_task btn btn-danger" data-send-id = "5">
     簡単タスク
 </button>
+</div>
 
 </div>
 
