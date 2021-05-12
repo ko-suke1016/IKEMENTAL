@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_08_085533) do
+ActiveRecord::Schema.define(version: 2021_05_11_032952) do
 
   create_table "first_answers", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "answer", null: false
@@ -75,6 +75,7 @@ ActiveRecord::Schema.define(version: 2021_05_08_085533) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.integer "physical_gage", default: 100
+    t.integer "experience_gage", default: 0
     t.index ["email"], name: "index_users_on_email", unique: true
   end
 
