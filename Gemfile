@@ -40,6 +40,9 @@ gem 'seed-fu'
 # グラフ
 gem 'chart-js-rails', '~> 0.1.4'
 
+# 定期実行
+gem 'whenever', require: false
+
 group :development, :test do
   # デバック関連
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

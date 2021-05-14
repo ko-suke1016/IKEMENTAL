@@ -45,4 +45,12 @@ class ThirdsController < ApplicationController
             @user.update_column(:experience_gage, 0 )
         end
     end
+
+    def execution
+        @user = User.find_by(id: current_user.id)
+        @user_score = @user.physical_gage
+        respond_to do |format|
+            format.json { render json: @user_score}
+        end
+    end
 end

@@ -27,6 +27,9 @@ $(document).on('turbolinks:load', function() {
                         max: 50
                     }
                 }]
+            },
+            legend: {
+                display: false
             }
         }
     });
