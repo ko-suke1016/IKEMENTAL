@@ -29,7 +29,7 @@ set :environment, rails_env
 set :output, "#{Rails.root}/log/cron.log"
 
 
-every 3.minutes do
+every 30.minutes do
     rake "mental_recovery:plus_mental_gage"
 end
 
