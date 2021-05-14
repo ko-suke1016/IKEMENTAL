@@ -4,7 +4,7 @@ var ctx = document.getElementById('myChart');
 var myChart = new Chart(ctx, {
     type: 'horizontalBar',
     data: {
-        labels: ['mental'],
+        labels: ['メンタル'],
         datasets: [{
             data: physicals,
             backgroundColor: [
@@ -27,6 +27,9 @@ var myChart = new Chart(ctx, {
                     max: 100
                 }
             }]
+        },
+        legend: {
+            display: false
         }
     }
 });
@@ -40,7 +43,6 @@ $(".simple_task").on('click',function(){
     console.log('neko');
     var target = $(this);
     var result = target.data("send-id");
-    console.log(result);
     myChart.data.datasets[0].data = myChart.data.datasets[0].data.map(function(X){return X - result})
     myChart.update();
 });
@@ -66,4 +68,22 @@ $(".difficult_question").on('click',function(){
 });
 }
 
+
+// 3分おきに実行
+setInterval(tree_minutes_plus_two, 18000);
+
+// dbの値を監視しにいき差分をchart.jsに反映させていく
+function tree_minutes_plus_two(){
+$.ajax({
+    type: "get",
+    url: "execution",
+    detaType: "json",
+})
+.done(function(deta){
+    var result = deta;
+    myChart.data.datasets[0].data = myChart.data.datasets[0].data.map(function(X){return X + (result - X)})
+    myChart.update();
+    console.log(result);
+ })
+}
 });

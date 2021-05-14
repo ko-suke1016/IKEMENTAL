@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   resources :users
   post 'physical' => 'thirds#physical'
   post 'experience' => 'thirds#experience'
+  get 'execution' => 'thirds#execution'
   #3択問題から選ばれたものの合計値を出す
   resources :firsts
   get 'firsts_top' => 'firsts#top'
