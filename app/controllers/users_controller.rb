@@ -3,6 +3,9 @@ class UsersController < ApplicationController
         # ユーザー情報の取得
         @user = User.find(current_user.id)
 
+        # recovery_item情報取得
+        @recovery_items = RecoveryItem.all
+
         # 一問一答問題の質問と答え(このままだと同じ問題しか出ないのでfirstを変更する)
         @third_question = ThirdQuestion.order("RAND()").first
         @third_answers = ThirdAnswer.where(third_question_id: @third_question)

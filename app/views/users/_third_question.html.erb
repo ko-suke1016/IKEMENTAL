@@ -1,0 +1,37 @@
+<div class="container" >
+<div class="row">
+<div class="col-12 positiond-flex justify-content-center align-items-center mx-auto">
+
+<div class="third_question" style="display: none;" >
+<div class="shadow-lg p-1 mb-3 bg-white rounded" style="padding:10px; margin-top: 3px;">
+    <p><%= @third_question.question %></p>
+</div>
+<% @third_answers.each do |third_answer| %>
+    <% if third_answer.answer == "true" %>
+        <p class="send_data_third_question shadow-lg p-3 mb-3 bg-white rounded" data-send-id = <%= third_answer.score %> >◯</p>
+    <% elsif third_answer.answer == "false" %>
+        <p class="send_data_third_question shadow-lg p-3 mb-3 bg-white rounded" data-send-id = <%= third_answer.score %> >×</p>
+    <% end %>
+<% end %>
+<script>var mental_gage = <%= @user.physical_gage %> </script>
+</div>
+
+<div class="third_answer_success" style="display: none;">
+    <div class="shadow-lg p-1 mb-3 bg-white rounded" style="padding:10px; margin-top: 3px;">
+        <p>大正解</p>
+        <p><%= @third_question.comentary %>
+        <p>獲得ポイント: 5</p>
+    </div>
+</div>
+
+<div class="third_answer_failure" style="display: none;">
+    <div class="shadow-lg p-1 mb-3 bg-white rounded" style="padding:10px; margin-top: 3px;">
+        <p>不正解</p>
+        <p><%= @third_question.comentary %>
+        <p>獲得ポイント: 0</p>
+    </div>
+</div>
+
+</div>
+</div>
+</div>

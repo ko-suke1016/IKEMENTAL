@@ -43,6 +43,9 @@ gem 'chart-js-rails', '~> 0.1.4'
 # 定期実行
 gem 'whenever', require: false
 
+# 画像の加工
+gem 'mini_magick', '~> 4.8'
+
 group :development, :test do
   # デバック関連
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

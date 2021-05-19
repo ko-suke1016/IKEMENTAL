@@ -18,6 +18,7 @@ default: &default
   socket: /tmp/mysql.sock
   host: localhost
 
+
 development:
   <<: *default
   database: mentalhealth_management_test_development

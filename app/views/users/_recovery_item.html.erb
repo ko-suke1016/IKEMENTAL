@@ -1,0 +1,12 @@
+<% @recovery_items.each do |recovery_item| %>
+    <div class="recovery_icon" style="display: none;" data-send-id = <%= recovery_item.item_score %>>
+        <%= image_tag recovery_item.image_item.variant(resize: "100x100"), class:"user-icon" %>
+    </div>
+    <div class="recovery_comentary" style="display: none;">
+        <div class="shadow-lg p-1 mb-3 bg-white rounded" style="padding:10px; margin-top: 3px; width: 400px">
+        <div><p><%= recovery_item.item_name %></p></div>
+        <div><p><%= recovery_item.item_comentary %></p></div>
+        <div><p>メンタル: <%= recovery_item.item_score %>回復</p></div>
+        </div>
+    </div>
+<% end %>
