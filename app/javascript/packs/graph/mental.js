@@ -69,8 +69,8 @@ $(".difficult_question").on('click',function(){
 }
 
 
-// 3分おきに実行
-setInterval(tree_minutes_plus_two, 18000);
+// 30分おきに実行
+setInterval(tree_minutes_plus_two, 180000);
 
 // dbの値を監視しにいき差分をchart.jsに反映させていく
 function tree_minutes_plus_two(){
@@ -83,7 +83,15 @@ $.ajax({
     var result = deta;
     myChart.data.datasets[0].data = myChart.data.datasets[0].data.map(function(X){return X + (result - X)})
     myChart.update();
-    console.log(result);
  })
 }
+
+// 回復アイテムを使用した場合、メンタルゲージに該当scoreが非同期で反映
+$(".recovery_icon").on('click',function(){
+    var target = $(this);
+    var result = target.data("send-id");
+    myChart.data.datasets[0].data = myChart.data.datasets[0].data.map(function(X){return X + result})
+    myChart.update();
 });
+});
+

@@ -43,9 +43,12 @@ class ThirdsController < ApplicationController
         #experience_gageの値が50を超えたら0にする
         if @user.experience_gage >= 50
             @user.update_column(:experience_gage, 0 )
+            @user_position = @user.position_before_type_cast + 1
+            @user.update_column(:position, @user_position)
         end
     end
 
+    # cronで一定時間置きに値が増加する処理
     def execution
         @user = User.find_by(id: current_user.id)
         @user_score = @user.physical_gage

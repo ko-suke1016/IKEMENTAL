@@ -42,6 +42,7 @@ $(".send_data_third_question").on('click',function(){
     experience.data.datasets[0].data = experience.data.datasets[0].data.map(function(X){return X + result})
         if (experience.data.datasets[0].data >= 50) {
             experience.data.datasets[0].data = 0
+            $(".status_up").fadeIn();
         }
     experience.update();
 })

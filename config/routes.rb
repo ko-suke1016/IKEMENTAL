@@ -3,9 +3,6 @@ Rails.application.routes.draw do
 
   #ユーザー登録
   resources :users
-  post 'physical' => 'thirds#physical'
-  post 'experience' => 'thirds#experience'
-  get 'execution' => 'thirds#execution'
   #3択問題から選ばれたものの合計値を出す
   resources :firsts
   get 'firsts_top' => 'firsts#top'
@@ -13,6 +10,12 @@ Rails.application.routes.draw do
   resources :seconds
   #二択問題の正解数を出す
   resources :thirds
+  post 'physical' => 'thirds#physical'
+  post 'experience' => 'thirds#experience'
+  get 'execution' => 'thirds#execution'
+  #回復アイテムの実装
+  resources :cures
+  post 'recovery' => 'cures#recovery'
   #各回答の結果を保存するテーブル
   resources :question_results
   #ユーザーログイン機能

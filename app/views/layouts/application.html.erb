@@ -14,7 +14,6 @@
     <script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
   </head>
   <body>
-    <%= render 'shard/header' %>
     <% if flash.any? %>
       <script type="text/javascript">
         <% flash.each do |key, value| %>
@@ -24,7 +23,8 @@
         <% end %>
       </script>
     <% end %>
+    <div>
     <%= yield %>
-    <%= render 'shard/footer' %>
+    </div>
   </body>
 </html>
