@@ -1,22 +1,23 @@
-<h3>新規登録画面</h3>
 
-<%= form_with model: @user, local: true do |f| %>
-    <div class="form-group" >
-        <%= f.label :name %>
-        <%= f.text_field :name, class: "form-control" %>
+<div class="login-title">
+    <div class="text-center">
+        <h3>Create User</h3>
     </div>
-    <div class="form-group" >
-        <%= f.label :email %>
-        <%= f.email_field :email, class: "form-control" %>
+
+	<div class="login-container">
+            <div id="output"></div>
+            <div class="avatar"></div>
+            <div class="form-box">
+                <form action="/users" method="post">
+                    <input name="name" type="text" placeholder="name">
+                    <input name="email" type="text" placeholder="email" class="email1">
+                    <input name="password" type="password" placeholder="password">
+                    <input name="password_confirmation" type="password" placeholder="password_confirmation">
+                    <button class="btn btn-outline-info btn-block login" type="submit">Create</button>
+                </form>
+            </div>
     </div>
-    <div class="form-group" >
-        <%= f.label :password %>
-        <%= f.password_field :password, class: "form-control" %>
-    </div>
-    <div class="form-group" >
-        <%= f.label :password_confirmation %>
-        <%= f.password_field :password_confirmation, class: "form-control" %>
-    </div>
-    <%= f.submit '登録', class: 'btn btn-info' %>
-<% end %>
-<%= link_to 'ログイン', login_path %>
+
+</div>
+
+

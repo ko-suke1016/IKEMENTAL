@@ -1,11 +1,17 @@
-<div style="width:90%; margin:15px;" >
-<canvas id="myChart" style=" height:6px; width:60px;"></canvas>
+<div class="graph-style">
+
+<div class="graph-position" style="width:90%; height: 20px;" >
+<canvas id="myChart" style=" height:12px; width:65px;"></canvas>
 <%= javascript_pack_tag 'graph/mental' %>
 <script>var physicals = <%= @user_physical_gage %> </script>
 </div>
 
-<div style="width:90%; margin:15px;" >
-<canvas id="experience" style=" height:6px; width:60px"></canvas>
+<div class="score-text">
+</div>
+<div style="width:90%; height: 15px;" >
+<canvas id="experience" style=" height:12px; width:65px"></canvas>
 <%= javascript_pack_tag 'graph/experience' %>
 <script>var experiences = <%= @user_experience_gage %> </script>
+</div>
+
 </div>

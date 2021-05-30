@@ -15,6 +15,8 @@ require('third_question.js')
 require('physical_gage.js')
 require('chart.js')
 require('recovery_items.js')
+require('long_question.js')
+
 import '../src/application.scss'
 import toastr from 'toastr'
 window.toastr = toastr

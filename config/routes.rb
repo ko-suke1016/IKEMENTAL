@@ -3,6 +3,8 @@ Rails.application.routes.draw do
 
   #ユーザー登録
   resources :users
+  get 'level_up' => 'users#level_up'
+  get 'less_mental' => 'users#less_mental'
   #3択問題から選ばれたものの合計値を出す
   resources :firsts
   get 'firsts_top' => 'firsts#top'
@@ -15,7 +17,8 @@ Rails.application.routes.draw do
   get 'execution' => 'thirds#execution'
   #回復アイテムの実装
   resources :cures
-  post 'recovery' => 'cures#recovery'
+  get 'recovery' => 'cures#recovery'
+  post 'recovery_icon' => 'cures#recovery_icon'
   #各回答の結果を保存するテーブル
   resources :question_results
   #ユーザーログイン機能
