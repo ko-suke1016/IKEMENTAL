@@ -1,50 +1,55 @@
-<div class="container" >
 <div class="row">
-<div class="col-12 positiond-flex justify-content-center align-items-center mx-auto">
+    <div class="letter">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="status-page">
 
-<h3><%= @user.name %></h3>
-<%= render 'graph', user_physical_gage: @user_physical_gage, user_experience_gage: @user_experience_gage %>
-<h4>役職: <div class="status"><%= @user.position %></div></h4>
-<%= render 'third_question', third_question: @third_question, third_answers: @third_answers %>
-<%= render 'recovery_item', recovery_items: @recovery_items %>
+                    <div>
+                        <p>Worker Name</p>
+                        <h4><%= @user.name %></h4>
+                    </div>
 
-<div class="loss_mental" style="display: none;">
-    <div class="shadow-lg p-1 mb-3 bg-white rounded" style="padding:10px; margin-top: 3px; width: 400px">
-        <p>今の状態ではこの仕事を行うとメンタルが持ちません。メンタルが回復したら仕事をしてください。</p>
+                    <p>Position</p>
+                    <div id="position">
+                        <%= render 'position', user: @user %>
+                    </div>
+
+                    <div>
+                        <p>Status</p>
+                        <%= render 'graph', user_physical_gage: @user_physical_gage, user_experience_gage: @user_experience_gage %>
+                    </div>
+
+
+                    <div class="task-btn">
+                        <p>Task</p>
+                        <div class="text-center task-menu">
+                            <div>
+                                <button type="button" class="btn btn-outline-secondary w-75 long-task">
+                                    出張タスク
+                                </button>
+                            </div>
+
+                            <div>
+                                <button type="button" class="neko btn btn-outline-secondary w-75">
+                                    回復アイテム
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-7">
+                <div class="light-page">
+                    <%= render 'long_question', user: @user%>
+                    <%= render 'firsts_question'%>
+                    <%= render 'second_question'%>
+                </div>
+            </div>
+
+            <%= render "modal" %>
+        </div>
     </div>
-</div>
-
-<div class="status_up" style="display: none;">
-    <div class="shadow-lg p-1 mb-3 bg-white rounded" style="padding:10px; margin-top: 3px;">
-        <p>おめでとうございます！昇進の打診がありました！</p>
-        <p>ここからは部下の面倒を見ながら自身のメンタルケアも忘れずにとりくみましょう！</p>
-        <%= link_to '辞令を受け取る', users_path, class: 'btn btn-info' %>
-    </div>
-</div>
-
-<div class="row row-40">
-<div class="col-12 d-flex justify-content-around">
-<div>
-<%= link_to '出張タスク', firsts_path, class: 'btn btn-warning' %>
-</div>
-
-<div>
-<button type="button" class="simple_task btn btn-danger" data-send-id = "5">
-    簡単タスク
-</button>
-</div>
-
-<div>
-<button type="button" class="recovery_charge btn btn-info">
-    回復アイテム
-</button>
-</div>
-</div>
-</div>
-
-
-</div>
-</div>
 </div>
 
 

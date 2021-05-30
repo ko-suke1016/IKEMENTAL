@@ -44,7 +44,9 @@ class ThirdsController < ApplicationController
         if @user.experience_gage >= 50
             @user.update_column(:experience_gage, 0 )
             @user_position = @user.position_before_type_cast + 1
-            @user.update_column(:position, @user_position)
+            if @user.update_column(:position, @user_position)
+                redirect_to level_up_path
+            end
         end
     end
 

@@ -19,11 +19,11 @@ $(document).on('turbolinks:load', function() {
 
 
     // 基礎編のスタートボタンの発火
-    $(".little_difficult_question").on('click',function(){
+    $(".first_question_start").on('click',function(){
         //mental_gageが10以下の場合遷移できないようにする
-        if (mental_gage < 10){
-            $(".loss_mental").fadeIn();
-        }else if (mental_gage > 10){
+        // if (mental_gage < 10){
+        //     $(".loss_mental").fadeIn();
+        // }else if (mental_gage > 10){
         //mental_gageが10以上の場合遷移できる
         var result = 10
         var params = {
@@ -35,17 +35,17 @@ $(document).on('turbolinks:load', function() {
             type: "post",
             data: params,
         })
-        window.location.href = 'firsts/new';
-    }
+        // window.location.href = 'firsts/new';
+    // }
     })
 
 
     // 実践編のスタートボタンの発火
-    $(".difficult_question").on('click',function(){
+    $(".second_question_start").on('click',function(){
         //mental_gageが20以下の場合遷移できないようにする
-        if (mental_gage < 20){
-            $(".loss_mental").fadeIn();
-        }else if (mental_gage > 20){
+        // if (mental_gage < 20){
+        //     $(".loss_mental").fadeIn();
+        // }else if (mental_gage > 20){
         //mental_gageが20以上の場合遷移できる
         var result = 20
         var params = {
@@ -57,8 +57,8 @@ $(document).on('turbolinks:load', function() {
             type: "post",
             data: params,
         })
-        window.location.href = 'seconds/new';
-    }
+    //     window.location.href = 'seconds/new';
+    // }
     })
 
 

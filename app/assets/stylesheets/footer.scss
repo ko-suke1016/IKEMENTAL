@@ -1,0 +1,23 @@
+.navbar-brand {
+    color: #000000;
+}
+
+.text-size1 {
+    font-size: 15px;
+}
+
+footer{
+    position: absolute;/*←絶対位置*/
+    bottom: 0; /*下に固定*/
+    width: 100%;
+    margin-left: 0;
+}
+
+.inner {
+    padding-top: 6px;
+}
+
+.footer {
+    background-color: #E5E8EF;
+    height: 70px;
+}

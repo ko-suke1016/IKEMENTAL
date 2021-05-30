@@ -1,8 +1,20 @@
-// 回復アイテム画像に影をつける
-.user-icon{
-    border-radius: 50%;
-    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
-  }
+
+a:text-size {
+  font-size: 6px;
+}
+
+.top-title {
+  margin-top: 170px;
+}
+
+.top-login {
+  margin-top: 100px;
+}
+
+.text-size{
+  font-size: 45px;
+}
+
 
 // bootstrap ガター幅
 .row-0{
@@ -44,3 +56,9 @@
 .row-40{
   margin-top:310px;
   }
+
+
+
+  .modal-dialog{
+    margin-top: 15px;
+}
