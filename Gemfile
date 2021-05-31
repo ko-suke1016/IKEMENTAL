@@ -32,7 +32,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 gem 'rubocop','~> 0.82.0', require: false
 
 # ユーザーログイン管理
-gem 'sorcery'
+gem 'sorcery', '0.14.0'
 
 # 初期データの格納
 gem 'seed-fu'
@@ -45,6 +45,7 @@ gem 'whenever', require: false
 
 # 画像の加工
 gem 'mini_magick', '~> 4.8'
+
 
 group :development, :test do
   # デバック関連
@@ -67,6 +68,8 @@ group :development do
   # エラー画面の整形
   gem 'better_errors'
   gem 'binding_of_caller'
+  # パスワードリセットをメールで確認
+  gem 'letter_opener_web'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

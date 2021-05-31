@@ -25,5 +25,9 @@ Rails.application.routes.draw do
   get 'login' => 'user_sessions#new', :as => :login
   post 'login' => "user_sessions#create"
   post 'logout' => 'user_sessions#destroy', :as => :logout
+  #パスワードリセット
+  resources :password_resets, only: %i[new create edit update]
+
+  mount LetterOpenerWeb::Engine, at: '/letter_opener' if Rails.env.development?
 
 end
