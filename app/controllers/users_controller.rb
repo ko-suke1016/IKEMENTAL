@@ -3,6 +3,10 @@ class UsersController < ApplicationController
         # ユーザー情報の取得
         @user = User.find_by(id: current_user)
 
+        # recovery_question & recovery_answerの取得
+        @recovery_question = RecoveryQuestion.where( 'id >= ?', rand(RecoveryQuestion.first.id..RecoveryQuestion.last.id) ).first
+        @recovery_answers = RecoveryAnswer.where(recovery_question_id: @recovery_question)
+
         # 一問一答問題の質問と答え(このままだと同じ問題しか出ないのでfirstを変更する)
         @third_question = ThirdQuestion.order("RAND()").first
         @third_answers = ThirdAnswer.where(third_question_id: @third_question)

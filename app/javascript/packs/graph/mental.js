@@ -81,6 +81,13 @@ $(".second_question_start").on('click',function(){
     myChart.update();
 });
 
+// recovery_questionで回復
+$(".send_selection").on('click',function(){
+    var target = $(this);
+    var result = target.data("send-id");
+    myChart.data.datasets[0].data = myChart.data.datasets[0].data.map(function(X){return X + result})
+    myChart.update();
+});
 
 
 // 30分おきに実行
@@ -114,7 +121,6 @@ $.ajax({
 $(document).on('click','.recovery_up',function(){
     var target = $(this);
     var result = target.data("send-id");
-    console.log(result);
     myChart.data.datasets[0].data = myChart.data.datasets[0].data.map(function(X){return X + result})
     myChart.update();
     // メンタルが10を超えた時ボタンを作動させにいく

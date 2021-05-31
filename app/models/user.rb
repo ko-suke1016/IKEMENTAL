@@ -12,7 +12,11 @@ class User < ApplicationRecord
   validates :password, confirmation: true, if: -> { new_record? || changes[:crypted_password] }
   validates :password_confirmation, presence: true, if: -> { new_record? || changes[:crypted_password] }
 
-  validates :email, uniqueness: true
+  validates :email, uniqueness: { case_sensitive: true }
+
+  validates :reset_password_token, uniqueness: { case_sensitive: true }, allow_nil: true
+
+  has_many :question_results
 
   def experience_gage_gard
     if experience_gage >= 50

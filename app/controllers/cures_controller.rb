@@ -17,11 +17,6 @@ class CuresController < ApplicationController
         @update_score = @user_mental + @score_data.to_i
         #update
         @user.update_column(:physical_gage, @update_score)
-        #recoveryの内容を取得
-        @recovery_result = RecoveryItem.find_by(id: params[:id])
-        respond_to do |format|
-            format.js {render 'users/result.js.erb'}
-        end
     end
 
 end

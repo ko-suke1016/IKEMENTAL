@@ -30,8 +30,8 @@ $(document).on('turbolinks:load', function() {
     })
 
     // 回復アイテムのルーレットを表示
-    $('.neko').on('click',function(){
-            $('#recovery_item').fadeIn();
-    });
+    // $('.neko').on('click',function(){
+    //         $('#recovery_item').fadeIn();
+    // });
 
 });

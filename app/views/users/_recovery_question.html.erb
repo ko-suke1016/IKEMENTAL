@@ -1,0 +1,64 @@
+<div id="recovery-item" style="display: none;">
+<div class="balloon_l">
+  <div class="faceicon">
+    <img src="https://stand-4u.com/stand-4u/wp-content/uploads/2019/09/s4man.png" alt="" >
+  </div>
+  <p class="says">Q1: <%= recovery_question.question %></p>
+</div>
+<div class="answer_after">
+    <% recovery_answers.each do |recovery_answer| %>
+        <div class="balloon_r">
+            <div class="faceicon">
+                <img src="https://stand-4u.com/stand-4u/wp-content/uploads/2019/09/s4man.png" alt="" >
+            </div>
+            <div class="says send_selection " data-send-id = <%= recovery_answer.score %>><p>A. <%= recovery_answer.answer %></p></div>
+        </div>
+    <% end %>
+</div>
+
+    <div class="not-btn" style="display: none;">
+    <div class="balloon_r">
+            <div class="faceicon">
+                <img src="https://stand-4u.com/stand-4u/wp-content/uploads/2019/09/s4man.png" alt="" >
+            </div>
+            <div class="says"><p>回答済み</p></div>
+    </div>
+    </div>
+</div>
+
+<div class="recovery-false" style="display: none;">
+<div class="balloon_l">
+  <div class="faceicon">
+    <img src="https://stand-4u.com/stand-4u/wp-content/uploads/2019/09/s4man.png" alt="" >
+  </div>
+  <p class="says">不正解! メンタルは回復されません</p>
+</div>
+</div>
+
+<div class="recovery-true" style="display: none;">
+<div class="balloon_l">
+  <div class="faceicon">
+    <img src="https://stand-4u.com/stand-4u/wp-content/uploads/2019/09/s4man.png" alt="" >
+  </div>
+  <p class="says">正解！！ メンタルが７回復！</p>
+</div>
+</div>
+
+<div class="recovery-comentary" style="display: none;">
+<div class="balloon_l">
+  <div class="faceicon">
+    <img src="https://stand-4u.com/stand-4u/wp-content/uploads/2019/09/s4man.png" alt="" >
+  </div>
+  <p class="says"> <%= recovery_question.comentary %></p>
+</div>
+</div>
+
+<div class="remove" style="display: none;">
+    <div class="balloon_r">
+            <div class="faceicon">
+                <img src="https://stand-4u.com/stand-4u/wp-content/uploads/2019/09/s4man.png" alt="" >
+            </div>
+            <div class="says"><p><%= link_to 'Top', users_path%>へ戻る</P></div>
+    </div>
+</div>
+
