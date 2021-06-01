@@ -49,7 +49,7 @@ $(document).on('turbolinks:load', function() {
         $('.progress-bar').css('width', life);
         // 次の質問に遷移
         var clickButtonHref = $(this).attr('href');
-        $('.q_01').fadeOut(function(){
+        $('.q_1').fadeOut(function(){
             $(clickButtonHref).fadeIn();
         });
     });
@@ -101,7 +101,7 @@ $(document).on('turbolinks:load', function() {
         $('.progress-bar').css('width', life);
         // 次の質問に遷移
         var clickButtonHref = $(this).attr('href');
-            $('.q_02').fadeOut(function(){
+            $('.q_2').fadeOut(function(){
                 $(clickButtonHref).fadeIn();
         });
     });
@@ -153,7 +153,7 @@ $(document).on('turbolinks:load', function() {
         $('.progress-bar').css('width', life);
         // 次の質問に遷移
         var clickButtonHref = $(this).attr('href');
-            $('.q_03').fadeOut(function(){
+            $('.q_3').fadeOut(function(){
                 $(clickButtonHref).fadeIn();
         });
     });
@@ -205,7 +205,7 @@ $(document).on('turbolinks:load', function() {
         $('.progress-bar').css('width', life);
         // 次の質問に遷移
         var clickButtonHref = $(this).attr('href');
-            $('.q_04').fadeOut(function(){
+            $('.q_4').fadeOut(function(){
                 $(clickButtonHref).fadeIn();
         });
     });
@@ -257,7 +257,7 @@ $(document).on('turbolinks:load', function() {
         $('.progress-bar').css('width', life);
         // 次の質問に遷移
         var clickButtonHref = $(this).attr('href');
-            $('.q_05').fadeOut(function(){
+            $('.q_5').fadeOut(function(){
                 $(clickButtonHref).fadeIn();
         });
     });
@@ -309,7 +309,7 @@ $(document).on('turbolinks:load', function() {
         $('.progress-bar').css('width', life);
         // 次の質問に遷移
         var clickButtonHref = $(this).attr('href');
-            $('.q_06').fadeOut(function(){
+            $('.q_6').fadeOut(function(){
                 $(clickButtonHref).fadeIn();
         });
     });
@@ -361,7 +361,7 @@ $(document).on('turbolinks:load', function() {
         $('.progress-bar').css('width', life);
         // 次の質問に遷移
         var clickButtonHref = $(this).attr('href');
-            $('.q_07').fadeOut(function(){
+            $('.q_7').fadeOut(function(){
                 $(clickButtonHref).fadeIn();
         });
     });
@@ -414,7 +414,7 @@ $(document).on('turbolinks:load', function() {
         // 次の質問に遷移
         var clickButtonHref = $(this).attr('href');
         var clickButtonHref = $(this).attr('href');
-            $('.q_08').fadeOut(function(){
+            $('.q_8').fadeOut(function(){
                 $(clickButtonHref).fadeIn();
         });
     });
@@ -466,7 +466,7 @@ $(document).on('turbolinks:load', function() {
         $('.progress-bar').css('width', life);
         // 次の質問に遷移
         var clickButtonHref = $(this).attr('href');
-            $('.q_09').fadeOut(function(){
+            $('.q_9').fadeOut(function(){
                 $(clickButtonHref).fadeIn();
         });
     });

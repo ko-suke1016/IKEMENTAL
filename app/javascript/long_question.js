@@ -29,9 +29,4 @@ $(document).on('turbolinks:load', function() {
         $('#second_question').fadeOut();
     })
 
-    // 回復アイテムのルーレットを表示
-    // $('.neko').on('click',function(){
-    //         $('#recovery_item').fadeIn();
-    // });
-
 });
