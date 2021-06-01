@@ -7,9 +7,6 @@ Rails.application.routes.draw do
   get 'less_mental' => 'users#less_mental'
   #3択問題から選ばれたものの合計値を出す
   resources :firsts
-  get 'firsts_top' => 'firsts#top'
-  #性格診断でtypeごとに適正値を出す
-  resources :seconds
   #二択問題の正解数を出す
   resources :thirds
   post 'physical' => 'thirds#physical'
@@ -28,8 +25,10 @@ Rails.application.routes.draw do
   #パスワードリセット
   resources :password_resets, only: %i[new create edit update]
 
+  # パスワードリセットのテストのためLetter＿openerへのPath
   mount LetterOpenerWeb::Engine, at: '/letter_opener' if Rails.env.development?
 
+  # 例外処理を披露Path
   get '*path', to: 'application#render_404'
 
 end

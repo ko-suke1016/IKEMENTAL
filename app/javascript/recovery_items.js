@@ -13,7 +13,7 @@ $(document).on('turbolinks:load', function() {
      });
    })
 
-
+   // 解答した際の挙動
    $(".send_selection").on('click',function(){
    // コメントとデータの送信
    var target = $(this);

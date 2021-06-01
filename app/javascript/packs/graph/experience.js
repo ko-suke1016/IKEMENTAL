@@ -62,16 +62,4 @@ $(document).on('turbolinks:load', function() {
             detaType: "json",
         })
       });
-
-// third_question(簡単タスク)実行後経験値の増加
-// $(".send_data_third_question").on('click',function(){
-//     var target = $(this);
-//     var result = target.data("send-id");
-//     experience.data.datasets[0].data = experience.data.datasets[0].data.map(function(X){return X + result})
-//         if (experience.data.datasets[0].data >= 50) {
-//             experience.data.datasets[0].data = 0
-//             $(".status_up").fadeIn();
-//         }
-//     experience.update();
-// })
 });
