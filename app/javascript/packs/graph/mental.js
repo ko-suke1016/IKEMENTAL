@@ -124,7 +124,7 @@ $(document).on('click','.recovery_up',function(){
     myChart.data.datasets[0].data = myChart.data.datasets[0].data.map(function(X){return X + result})
     myChart.update();
     // メンタルが10を超えた時ボタンを作動させにいく
-    if (myChart.data.datasets[0].data>10) {
+    if (myChart.data.datasets[0].data>=10) {
         // ajaxで送信処理
         $.ajax({
             type: "get",

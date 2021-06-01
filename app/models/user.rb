@@ -3,7 +3,7 @@ class User < ApplicationRecord
 
   validates :name, presence: true
   validates :email, presence: true
-  validates :physical_gage, presence: true, numericality: {only_integer: true, greater_than_or_equal_to: 0, less_than_or_equal_to: 100}
+  validates :physical_gage, presence: true, numericality: {only_integer: true, greater_than_or_equal_to: 0, less_than_or_equal_to: 100}, if: :physical_gage_gard
   validates :experience_gage, presence: true, numericality: {only_integer: true, greater_than_or_equal_to: 0, less_than_or_equal_to: 50}, if: :experience_gage_gard
 
   enum position: { "ヨワヨワメンタル新入社員": 0, "そこそこメンタル中間管理職": 1, "つよつよメンタル幹部社員": 2 }
@@ -21,6 +21,12 @@ class User < ApplicationRecord
   def experience_gage_gard
     if experience_gage >= 50
       experience_gage == 0
+    end
+  end
+
+  def physical_gage_gard
+    if physical_gage >= 100
+      physical_gage == 100
     end
   end
 
