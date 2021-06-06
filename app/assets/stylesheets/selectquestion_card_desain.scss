@@ -1,43 +1,160 @@
-.masking-tape{
-    position: absolute;
-    top: -1em;
-    left: 26%;
-    width:100px;
-    height:30px;
-    background-image: linear-gradient(-45deg, rgba(227,155,140,.4) 25%, transparent 25%, transparent 50%, rgba(227,155,140,.4) 50%, rgba(227,155,140,.4) 75%, transparent 75%, transparent 100%);
-    background-size: 20px 20px;
-    border-left:2px dotted rgba(0,0,0,.1);
-    border-right:2px dotted rgba(0,0,0,.1);
-    box-shadow:0 0 5px rgba(0,0,0,.2);
-    padding: 0.25em 2em;
-    color: #65513f;
-    transform: rotate(-4deg);
-  }
-  .memo p {
-    color: #65513f;
-    padding: 1px;
-  }
+//基礎編
+.memo {
+  position: relative;
+  margin: 2em 0;
+  padding: 0.5em 1em;
+  border: solid 3px #9ede73;
+  border-radius: 8px;
+}
+.memo .masking-tape {
+  position: absolute;
+  display: inline-block;
+  top: -13px;
+  left: 10px;
+  padding: 0 9px;
+  line-height: 1;
+  font-size: 19px;
+  background: #FFF;
+  color: #29bb89;
+  font-weight: bold;
+}
+.memo p {
+  margin: 0; 
+  padding: 0;
+}
 
-  .memo {
-    margin-top: 10px;
-    position: relative;
-    background: #F8F0D7;
-    border-left:4px dotted rgba(0,0,0,.1);
-    border-right:4px dotted rgba(0,0,0,.1);
-    box-shadow:0 0 5px rgba(0,0,0,.2);
-    padding: 1px;
-    color: #65513f;
-    width: 300px;
+//中級編
+.memo1 {
+  position: relative;
+  margin: 2em 0;
+  padding: 0.5em 1em;
+  border: solid 3px #eb596e;
+  border-radius: 8px;
+}
+.memo1 .masking-tape1 {
+  position: absolute;
+  display: inline-block;
+  top: -13px;
+  left: 10px;
+  padding: 0 9px;
+  line-height: 1;
+  font-size: 19px;
+  background: #FFF;
+  color: #eb596e;
+  font-weight: bold;
+}
+.memo1 p {
+  margin: 0; 
+  padding: 0;
+}
+
+
+//上級編
+.memo2 {
+  position: relative;
+  margin: 2em 0;
+  padding: 0.5em 1em;
+  border: solid 3px #f0a500;
+  border-radius: 8px;
+}
+.memo2 .masking-tape2 {
+  position: absolute;
+  display: inline-block;
+  top: -13px;
+  left: 10px;
+  padding: 0 9px;
+  line-height: 1;
+  font-size: 19px;
+  background: #FFF;
+  color: #f0a500;
+  font-weight: bold;
+}
+.memo2 p {
+  margin: 0; 
+  padding: 0;
+}
+
+// btnデザイン
+
+.btn-flat-border {
+  display: inline-block;
+  padding: 0.3em 1em;
+  text-decoration: none;
+  color: #29bb89;
+  border: solid 2px #9ede73;
+  border-radius: 3px;
+  transition: .4s;
+  margin-left: 83%;
+}
+
+.btn-flat-border:hover {
+  background: #9ede73;
+  color: #f9fbfe;
+}
+
+.btn-flat-border1{
+  display: inline-block;
+  padding: 0.3em 1em;
+  text-decoration: none;
+  color: #eb596e;
+  border: solid 2px #eb596e;
+  border-radius: 3px;
+  transition: .4s;
+  margin-left: 83%;
+}
+
+.btn-flat-border1:hover {
+  background: #eb596e;
+  color: #f9fbfe;}
+
+  .btn-flat-border2{
+    display: inline-block;
+    padding: 0.3em 1em;
+    text-decoration: none;
+    color: #f0a500;
+    border: solid 2px #f0a500;
+    border-radius: 3px;
+    transition: .4s;
+    margin-left: 83%;
   }
   
-  .memo1 {
-    margin-top: 30px;
-    position: relative;
-    background: #F8F0D7;
-    border-left:4px dotted rgba(0,0,0,.1);
-    border-right:4px dotted rgba(0,0,0,.1);
-    box-shadow:0 0 5px rgba(0,0,0,.2);
-    padding: 1px;
-    color: #65513f;
-    width: 300px;
-  }
+  .btn-flat-border2:hover {
+    background:#f0a500;
+    color: #f9fbfe;}
+
+
+// long-taskの選択肢のボタン
+
+.btn-1 {
+  border: 2px solid #4aa96c;
+  color: #4aa96c;
+  background-color: #f9fbfe;
+  width: 97%;
+  height: 20px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+.btn-1:hover {
+  background: #4aa96c;
+  color: #f9fbfe;
+}
+.btn-1:active {
+  top: 2px;
+}
+
+// 応用編のボタン
+.btn-2{
+  border: 2px solid  #907fa4;
+  color:  #907fa4;
+  background-color: #f9fbfe;
+  width: 97%;
+  height: 20px;
+}
+
+.btn-2:hover {
+  background: #907fa4;
+  color: #f9fbfe;
+}
+.btn-2:active {
+  top: 2px;
+}

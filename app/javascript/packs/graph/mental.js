@@ -8,10 +8,10 @@ var myChart = new Chart(ctx, {
         datasets: [{
             data: physicals,
             backgroundColor: [
-                'rgba(255, 99, 132, 0.2)'
+                'rgba(251,194,131)'
             ],
             borderColor: [
-                'rgba(255, 159, 64, 1)'
+                'rgba(249,132,4)'
             ],
             borderWidth: 1
         }]

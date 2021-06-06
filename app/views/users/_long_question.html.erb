@@ -1,46 +1,45 @@
 <div id="memo" style="display: none;">
-<div class="col-md-11">
 <div class="memo">
     <span class="masking-tape">
+      基礎編！
     </span>
-    
     <% if user.physical_gage < 10 %>
         <p>仕事を行うメンタルが残っていません。</p>
         <p>休息をとるか、回復アイテムを使用しメンタルを回復してください</p>
     <% else %>
-        <button type="button" class="first_question_start btn btn-outline-secondary w-75" >
-            初級編
-        </button>
         <p>まずは自身のストレスをコントロールする所から!</p>
         <p>負けない心を作っていこう！</p>
+        <button type="button" class="first_question_start btn-flat-border">Start!</button>
     <% end %>
 </div>
 
+
+
 <div class="memo1">
-    <span class="masking-tape">
+    <span class="masking-tape1">
+        中級編！
     </span>
     <% if user.physical_gage < 20 %>
         <p>仕事を行うメンタルが残っていません。</p>
         <p>休息をとるか、回復アイテムを使用しメンタルを回復してください</p>
     <% else %>
-        <button type="button" class="second_question_start btn btn-outline-secondary w-75" >
-            中級編
-        </button>
         <p>実際に現場の事案を元に勉強していこう!</p>
         <p>部下の気持ちを考えてみて！</p>
+        <button type="button" class="second_question_start btn-flat-border1">Start!</button>
     <% end %>
 </div>
 
-<div class="memo1">
-    <span class="masking-tape">
+<div class="memo2">
+    <span class="masking-tape2">
+        上級編！
     </span>
-    <p>上級編！</p>
     <p>難易度の高い事案をあなたの働き方と照らして考えてみて!</p>
     <p>かなりレベルアップしてるぞ</p>
+    <button type="button" class="third_question_start btn-flat-border2">実装中</button>
 </div>
 
 </div>
-</div>
+
 
 <div class="recovery-memo" style="display: none;">
     <div class="col-md-11">

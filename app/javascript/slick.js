@@ -1,7 +1,7 @@
 $(document).on('turbolinks:load', function() {
   $(function() {
     $('.swiper-wrapper').slick({
-      autoplay: true,
+      autoplay: true,　
       autoplaySpeed: 0,
       speed: 20000,
       cssEase: "linear",
@@ -13,5 +13,14 @@ $(document).on('turbolinks:load', function() {
       variableWidth: true,
     });
   });
+
+  $(function() {
+  $('.slider').slick({
+    dots: true,　　　　　　//スライドしたのドット
+    arrows: false,          //左右の矢印
+    infinite: true,　　　　//スライドのループ
+    pauseOnHover: false,   //ホバーしたときにスライドを一時停止しない　
+  });
+  })
 });
 

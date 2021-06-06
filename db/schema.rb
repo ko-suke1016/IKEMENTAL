@@ -67,22 +67,6 @@ ActiveRecord::Schema.define(version: 2021_05_31_050103) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "third_answers", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.integer "answer", null: false
-    t.integer "score", null: false
-    t.bigint "third_question_id", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["third_question_id"], name: "index_third_answers_on_third_question_id"
-  end
-
-  create_table "third_questions", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.string "question", null: false
-    t.string "comentary", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name", null: false
     t.string "email", null: false
@@ -105,5 +89,4 @@ ActiveRecord::Schema.define(version: 2021_05_31_050103) do
   add_foreign_key "question_results", "users"
   add_foreign_key "recovery_answers", "recovery_questions"
   add_foreign_key "second_answers", "second_questions"
-  add_foreign_key "third_answers", "third_questions"
 end
