@@ -3,10 +3,6 @@ class UsersController < ApplicationController
         # ユーザー情報の取得
         @user = User.find_by(id: current_user)
 
-        # recovery_question & recovery_answerの取得
-        @recovery_question = RecoveryQuestion.where( 'id >= ?', rand(RecoveryQuestion.first.id..RecoveryQuestion.last.id) ).first
-        @recovery_answers = RecoveryAnswer.where(recovery_question_id: @recovery_question)
-
         # physical_gageの値取得
         @user_physical_gage = User.where(id: current_user.id).pluck(:physical_gage)
         # experience_gageの値取得
@@ -29,6 +25,10 @@ class UsersController < ApplicationController
         # 応用の問題の抽出
         @second_question = SecondQuestion.all
         @second_answers = SecondAnswer.all
+
+        # recovery_question & recovery_answerの取得
+        @recovery_question = RecoveryQuestion.where( 'id >= ?', rand(RecoveryQuestion.first.id..RecoveryQuestion.last.id) ).first
+        @recovery_answers = RecoveryAnswer.where(recovery_question_id: @recovery_question)
     end
 
     def new
