@@ -1,4 +1,4 @@
-
+// 基礎編のSwiper設定
   .swiper-container {
   .swiper-wrapper {
         border-radius: 5px;
@@ -16,6 +16,7 @@
 
   }
 
+  // 応用編のSwiper設定
   .swiper-container2 {
     .swiper-wrapper {
       border-radius: 5px;
@@ -32,11 +33,25 @@ img {
   }
 
   }
-//   // スワイパーの処理は最後に
-  // レスポンシブデザインも最後
-  // 画像をここならで注文
-  // 問題も作成
-  // ローディング画面の実装準備
+
+  // 実践編のSwiper設定
+
+  .swiper-container3 {
+    .swiper-wrapper {
+      border-radius: 5px;
+      width:100%;
+      padding: 0;
+      border: 5px solid #ffd571;
+      position: relative;
+      z-index: 1;
+      margin: 1px;
+  }
+
+img {
+    height: 300px;
+  }
+
+  }
 
   .sec_inner{
     width:95%;

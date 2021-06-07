@@ -5,6 +5,8 @@
   padding: 0.5em 1em;
   border: solid 3px #9ede73;
   border-radius: 8px;
+  box-shadow:0 6px 0 0 #005400;
+  transform: translateY(-6px);
 }
 .memo .masking-tape {
   position: absolute;
@@ -30,6 +32,8 @@
   padding: 0.5em 1em;
   border: solid 3px #eb596e;
   border-radius: 8px;
+  box-shadow:0 6px 0 0 #99154e;
+  transform: translateY(-6px);
 }
 .memo1 .masking-tape1 {
   position: absolute;
@@ -56,6 +60,8 @@
   padding: 0.5em 1em;
   border: solid 3px #f0a500;
   border-radius: 8px;
+  box-shadow:0 6px 0 0 #e1701a;
+  transform: translateY(-6px);
 }
 .memo2 .masking-tape2 {
   position: absolute;
@@ -158,3 +164,21 @@
 .btn-2:active {
   top: 2px;
 }
+
+// 実践編のボタン
+.btn-3{
+  border: 2px solid  #ff9d72;
+  color:  #ff9d72;
+  background-color: #f9fbfe;
+  width: 97%;
+  height: 20px;
+}
+
+.btn-3:hover {
+  background: #ff9d72;
+  color: #f9fbfe;
+}
+.btn-3:active {
+  top: 2px;
+}
+

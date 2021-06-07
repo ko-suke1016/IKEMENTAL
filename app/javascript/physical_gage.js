@@ -17,6 +17,19 @@ $(document).on('turbolinks:load', function() {
 
     // 実践編のスタートボタンの発火
     $(".second_question_start").on('click',function(){
+        var result = 15
+        var params = {
+            id: result
+        }
+        // ajaxで送信処理
+        $.ajax({
+            url: "/thirds",
+            type: "post",
+            data: params,
+        })
+    })
+
+    $(".third_question_start").on('click',function(){
         var result = 20
         var params = {
             id: result

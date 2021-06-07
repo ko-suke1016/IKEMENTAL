@@ -29,4 +29,16 @@ $(document).on('turbolinks:load', function() {
         $('#second_question').fadeOut();
     })
 
+    // 実践編の問題を表示
+    $('.third_question_start').on('click',function(){
+        $('#memo').fadeOut(function(){
+            $('#third_question').fadeIn();
+    });
+    })
+
+    // 実践編終了後問題を消す
+    $('.finish-task').on('click',function(){
+        $('#third_question').fadeOut();
+    })
+
 });
