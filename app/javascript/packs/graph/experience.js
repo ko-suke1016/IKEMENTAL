@@ -8,10 +8,10 @@ $(document).on('turbolinks:load', function() {
             datasets: [{
                 data: experiences,
                 backgroundColor: [
-                    'rgba(54, 162, 235, 0.2)'
+                    'rgba(171,195,241)'
                 ],
                 borderColor: [
-                    'rgba(54, 162, 235, 1)'
+                    'rgba(24,90,219)'
                 ],
                 borderWidth: 1
             }]
@@ -36,7 +36,7 @@ $(document).on('turbolinks:load', function() {
 
 // 問題を解くたびに経験値が反映
 
-　　$(".experience").on('click',function(){
+　　$(".btn-1, .btn-2 , .btn-3").on('click',function(){
     var target = $(this);
     var score = target.data("send-id");
     if (score == 0) {

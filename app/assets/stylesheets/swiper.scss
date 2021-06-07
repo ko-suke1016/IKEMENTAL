@@ -1,39 +1,152 @@
-
+// 基礎編のSwiper設定
   .swiper-container {
   .swiper-wrapper {
         border-radius: 5px;
-        width:97%;
+        width:100%;
         padding: 0;
         border: 5px solid #248888;
         position: relative;
         z-index: 1;
-        margin: 3px;
+        margin: 1px;
     }
 
   img {
-      height: 220px;
+      height: 300px;
     }
 
   }
 
+  // 応用編のSwiper設定
   .swiper-container2 {
     .swiper-wrapper {
       border-radius: 5px;
-      width:97%;
+      width:100%;
       padding: 0;
-      border: 5px solid #E7475E;
+      border: 5px solid #a9294f;
       position: relative;
       z-index: 1;
-      margin: 3px;
+      margin: 1px;
   }
 
 img {
-    height: 220px;
+    height: 300px;
   }
 
   }
-//   // スワイパーの処理は最後に
-  // レスポンシブデザインも最後
-  // 画像をここならで注文
-  // 問題も作成
-  // ローディング画面の実装準備
+
+  // 実践編のSwiper設定
+
+  .swiper-container3 {
+    .swiper-wrapper {
+      border-radius: 5px;
+      width:100%;
+      padding: 0;
+      border: 5px solid #ffd571;
+      position: relative;
+      z-index: 1;
+      margin: 1px;
+  }
+
+img {
+    height: 300px;
+  }
+
+  }
+
+  .sec_inner{
+    width:95%;
+    height: 500px;
+    margin:0 auto;
+}
+
+.slider{
+  border-radius: 5px;
+        width:90%;
+        padding: 0;
+        border-right: 5px solid #bbbfca;
+        border-left:5px solid #bbbfca;
+        border-bottom: 5px solid #bbbfca;
+        border-top: 5px solid #bbbfca;
+        position: relative;
+        z-index: 1;
+        margin: 3px;
+        margin:0 auto;
+}
+
+.gif-img{
+  border-radius: 5px;
+        width:85%;
+        padding: 0;
+        border-right: 5px solid #bbbfca;
+        border-left: 5px solid #bbbfca;
+        border-bottom: 5px solid #bbbfca;
+        border-top: 5px solid #bbbfca;
+        position: relative;
+        z-index: 1;
+        margin: 3px;
+        margin:0 auto;
+}
+
+.size{
+  width: 100%;
+  height: 500px;
+}
+
+.size2{
+  width: 100%;
+  height: 500px;
+}
+
+// slickのdotsをカスタマイズ.
+.slick-dots{
+  width: 100px;
+  text-align: center;
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display:flex;
+}
+.slick-dots button{
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+.slick-dots button:before{
+  font-family: slick;
+  font-size: 6px;
+  line-height: 20px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 12px;
+  height: 12px;
+  content: "";
+  border-radius: 50%;
+  display:block;
+  background: #cfa7cd;
+  text-align: center;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+}
+.slick-dots .slick-active button:before{
+  background: #e973e3;
+}
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}

@@ -13,7 +13,7 @@
     <script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script
   </head>
   <body>
-  <header>
+  <header class="sticky-top">
     <%= render 'shared/header' %>
   </header>
     <% if flash.any? %>
@@ -25,11 +25,10 @@
         <% end %>
       </script>
     <% end %>
-    <div class="container">
       <%= yield %>
-    </div>
-  <footer>
+  <footer class="footer">
     <%= render 'shared/footer' %>
   </footer>
+  </div>
   </body>
 </html>

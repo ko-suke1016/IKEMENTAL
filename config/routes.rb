@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
   root to: 'tops#index'
 
+  #利用規約
+  get 'terms' => 'tops#terms'
+  #プライバシーポリシー
+  get 'privacy' => 'tops#privacy'
+
   #ユーザー登録
   resources :users
   get 'level_up' => 'users#level_up'

@@ -1,27 +1,33 @@
+
 <div class="row">
     <div class="letter">
         <div class="row">
             <div class="col-md-5">
                 <div class="status-page">
 
-                    <div>
+                    <div class="status-position">
                         <p>Worker Name</p>
+                    </div>
+                    <div class="text-center"> 
                         <h4><%= @user.name %></h4>
                     </div>
-
-                    <p>Position</p>
+                    <div class="status-position" %>
+                        <p>Position</p>
+                    </div>
                     <div id="position">
                         <%= render 'position', user: @user %>
                     </div>
 
-                    <div>
+                    <div class="status-position" %>
                         <p>Status</p>
-                        <%= render 'graph', user_physical_gage: @user_physical_gage, user_experience_gage: @user_experience_gage %>
                     </div>
+                        <%= render 'graph', user_physical_gage: @user_physical_gage, user_experience_gage: @user_experience_gage %>
 
 
                     <div class="task-btn">
+                    <div class="status-position" %>
                         <p>Task</p>
+                    </div>
                         <div class="text-center task-menu">
                             <div>
                                 <button type="button" class="btn btn-outline-secondary w-75 long-task">
@@ -44,6 +50,7 @@
                     <%= render 'long_question', user: @user%>
                     <%= render 'firsts_question'%>
                     <%= render 'second_question'%>
+                    <%= render 'third_question' %>
                     <%= render 'recovery_question', recovery_question: @recovery_question, recovery_answers: @recovery_answers %>
                 </div>
             </div>

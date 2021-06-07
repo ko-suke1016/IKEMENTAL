@@ -1,13 +1,5 @@
 class CuresController < ApplicationController
 
-    def recovery
-        @recovery_items = RecoveryItem.all
-        respond_to do |format|
-            format.html
-            format.js {render 'users/recovery.js.erb'}
-        end
-    end
-
     def recovery_icon
         @user = User.find_by(id: current_user)
         @user_mental = @user.physical_gage
@@ -16,7 +8,11 @@ class CuresController < ApplicationController
         #現在dbにある値と足して保存
         @update_score = @user_mental + @score_data.to_i
         #update
-        @user.update_column(:physical_gage, @update_score)
+        if @update_score >= 100
+            @user.update_column(:physical_gage, 100 )
+        else
+            @user.update_column(:physical_gage, @update_score)
+        end
     end
 
 end

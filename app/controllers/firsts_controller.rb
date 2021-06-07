@@ -1,18 +1,18 @@
 class FirstsController < ApplicationController
 
     def create
-        @total_score = QuestionResult.find_by(user_id: current_user.id, question_type: 0)
+        # @total_score = QuestionResult.find_by(user_id: current_user.id, question_type: 0)
         @user = User.find_by(id: current_user.id)
         # nilだった場合DBにnilではなく0を代入
-        if @total_score.total == nil
-            @total_score.total = 100
-        end
+        # if @total_score.total == nil
+        #     @total_score.total = 100
+        # end
         #ajaxで送られてきたデータを代入
         @score_data = params[:id]
         #現在dbにある値と足して保存
-        @update_score = @total_score.total - @score_data.to_i
+        # @update_score = @total_score.total - @score_data.to_i
         #update
-        @total_score.update_column(:total, @update_score)
+        # @total_score.update_column(:total, @update_score)
         #送られてきた値を5でわって経験値を出し現在の経験値とたす
         @experience_score = if @score_data.to_i == 0
             @user.experience_gage + 2
@@ -33,7 +33,5 @@ class FirstsController < ApplicationController
             end
             @user.update_column(:position, @user_position)
         end
-
-        #@user.positionが２だ
     end
 end

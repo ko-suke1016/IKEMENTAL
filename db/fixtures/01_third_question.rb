@@ -1,20 +1,84 @@
 ThirdQuestion.seed do |s|
     s.id = 1
-    s.question = "女性が職場などで男性から受ける、性的なことばや行為のことをモラルハラスメントという。"
-    s.comentary = "モラルハラスメントは道徳的な嫌がらせのこと。今回の場合はセクシャルハラスメント。"
+    s.question = "アシスタントの彼女は先輩の指導がきつく体調を崩し始めています。あなたならどのような対応をとりますか？"
+    s.age = "20代前半"
+    s.sex = "女性"
+    s.profession = "美容師"
 end
+
 ThirdQuestion.seed do |s|
     s.id = 2
-    s.question = "良識とされる道徳や倫理によって行われるハラスメントのことをモラルハラスメントという。"
-    s.comentary = "モラルハラスメントは道徳的な嫌がらせのことなので正解"
+    s.question = "シフトが被った際にいつも胸を凝縮してくる従業員がいます。あなたならどのように対応しますか？"
+    s.age = "20代前半"
+    s.sex = "女性"
+    s.profession = "接客業"
 end
+
 ThirdQuestion.seed do |s|
     s.id = 3
-    s.question = "あなたは仕事中、頭痛やだるさ、肩こりなどに悩まされています。これらはメンタル不調の初期症状である。"
-    s.comentary = "メンタル不調の要因の身体的側面に当てはまります。他にも睡眠障害やお酒、タバコなどが挙げられます。"
+    s.question = "あなたは体育会系の会社に勤めています。仕事で部下がミスをしてしまった際、あなたはどのように指導しますか？"
+    s.age = "20代前半"
+    s.sex = "女性"
+    s.profession = "接客業"
 end
+
 ThirdQuestion.seed do |s|
     s.id = 4
-    s.question = "メンタルのケアの中にはネガティブな感情を抑えるため呼吸法による日常的なケアが推奨されている。"
-    s.comentary = "メンタル不調の要因の身体的側面に当てはまります。他にも睡眠障害やお酒、タバコなどが挙げられます。"
+    s.question = "あなたは接待で二次会に参加しなかったという理由で怒鳴られ殴られてしまいました。あなたなら今後このようなことが起きないようどう対処しますか？"
+    s.age = "20代前半"
+    s.sex = "女性"
+    s.profession = "接客業"
 end
+
+ThirdQuestion.seed do |s|
+    s.id = 5
+    s.question = "アシスタントの彼女は先輩の指導がきつく体調を崩し始めています。あなたならどのような対応をとりますか？"
+    s.age = "20代前半"
+    s.sex = "女性"
+    s.profession = "美容師"
+end
+
+ThirdQuestion.seed do |s|
+    s.id = 6
+    s.question = "アシスタントの彼女は先輩の指導がきつく体調を崩し始めています。あなたならどのような対応をとりますか？"
+    s.age = "20代前半"
+    s.sex = "女性"
+    s.profession = "美容師"
+end
+
+ThirdQuestion.seed do |s|
+    s.id = 7
+    s.question = "アシスタントの彼女は先輩の指導がきつく体調を崩し始めています。あなたならどのような対応をとりますか？"
+    s.age = "20代前半"
+    s.sex = "女性"
+    s.profession = "美容師"
+end
+
+ThirdQuestion.seed do |s|
+    s.id = 8
+    s.question = "アシスタントの彼女は先輩の指導がきつく体調を崩し始めています。あなたならどのような対応をとりますか？"
+    s.age = "20代前半"
+    s.sex = "女性"
+    s.profession = "美容師"
+end
+
+ThirdQuestion.seed do |s|
+    s.id = 9
+    s.question = "アシスタントの彼女は先輩の指導がきつく体調を崩し始めています。あなたならどのような対応をとりますか？"
+    s.age = "20代前半"
+    s.sex = "女性"
+    s.profession = "美容師"
+end
+
+ThirdQuestion.seed do |s|
+    s.id = 10
+    s.question = "アシスタントの彼女は先輩の指導がきつく体調を崩し始めています。あなたならどのような対応をとりますか？"
+    s.age = "20代前半"
+    s.sex = "女性"
+    s.profession = "美容師"
+end
+
+
+
+
+

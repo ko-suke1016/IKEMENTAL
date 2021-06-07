@@ -12,8 +12,4 @@ class UserSessionsController < ApplicationController
             render :new
         end
     end
-
-    def destroy
-    end
-
 end
