@@ -8,22 +8,22 @@
     </div>
         <%= form_with model: @inquiry, local: true do |f| %>
             <div class="form-group">
-                <%= f.label :category, class: "form-label"%>
+                <%= f.label :category, t('inquiries.new.category'), class: "form-label"%>
                 <%= f.select :category, Inquiry.categories.keys, {prompt: "選択してください"}, class: "prefecture-select form-control"%>
             </div>
             <div class="form-group">
-                <%= f.label :name, class: "form-label" %>
+                <%= f.label :name, t('inquiries.new.name'), class: "form-label" %>
                 <%= f.text_field :name, class: "form-control"  %>
             </div>
             <div class="form-group">
-                <%= f.label :email, class: "form-label" %>
+                <%= f.label :email, t('inquiries.new.email'), class: "form-label" %>
                 <%= f.email_field :email, class: "form-control"  %>
             </div>
             <div class="form-group">
-                <%= f.label :message, class: "form-label" %>
+                <%= f.label :message, t('inquiries.new.message'), class: "form-label" %>
                 <%= f.text_field :message, class: "form-control"%>
             </div>
-            <%= f.submit "Send Mail", class: "btn btn-info" %>
+            <%= f.submit t('inquiries.new.send_mail'), class: "btn btn-info" %>
         <% end %>
 </div>
 

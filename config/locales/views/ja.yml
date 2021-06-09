@@ -1,0 +1,21 @@
+ja: 
+  helpers:
+    submit:
+        create: '登録する'
+        update: '更新する'
+        submit: '保存する'
+  simple_form:
+    required:
+        html: '<abbr class="nec">必須</abbr>'
+    labels:
+      user:
+        email: 'メールアドレス'
+        password: 'パスワード'
+    hints:
+      user:
+        email: 'サインインするメールアドレスを入力してください'
+        password: '半角英数字のみ使えます'
+    placeholders:
+      user:
+        email: 'メールアドレス'
+        password: 'パスワード'
