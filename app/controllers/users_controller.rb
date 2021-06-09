@@ -1,4 +1,6 @@
 class UsersController < ApplicationController
+    before_action  :require_login, only: [:index, :level_up, :less_mental]
+
     def index
         # ユーザー情報の取得
         @user = User.find_by(id: current_user)

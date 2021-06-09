@@ -1,4 +1,5 @@
 class CuresController < ApplicationController
+    before_action  :require_login, only: [:recovery_icon]
 
     def recovery_icon
         @user = User.find_by(id: current_user)

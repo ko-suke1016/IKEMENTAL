@@ -46,6 +46,11 @@ gem 'whenever', require: false
 # 画像の加工
 gem 'mini_magick', '~> 4.8'
 
+#環境変数管理
+gem 'dotenv-rails', groups: [:development, :production]
+
+
+
 
 group :development, :test do
   # デバック関連

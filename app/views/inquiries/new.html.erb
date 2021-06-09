@@ -1,0 +1,32 @@
+<div class="container">
+<div class="row d-flex align-items-center justify-content-center">
+<div class="col-md-5 ">
+
+<div class="login-title">
+    <div class="text-center">
+        <h3>お問い合わせフォーム</h3>
+    </div>
+        <%= form_with model: @inquiry, local: true do |f| %>
+            <div class="form-group">
+                <%= f.label :category, class: "form-label"%>
+                <%= f.select :category, Inquiry.categories.keys, {prompt: "選択してください"}, class: "prefecture-select form-control"%>
+            </div>
+            <div class="form-group">
+                <%= f.label :name, class: "form-label" %>
+                <%= f.text_field :name, class: "form-control"  %>
+            </div>
+            <div class="form-group">
+                <%= f.label :email, class: "form-label" %>
+                <%= f.email_field :email, class: "form-control"  %>
+            </div>
+            <div class="form-group">
+                <%= f.label :message, class: "form-label" %>
+                <%= f.text_field :message, class: "form-control"%>
+            </div>
+            <%= f.submit "Send Mail", class: "btn btn-info" %>
+        <% end %>
+</div>
+
+</div>
+</div>
+</div>

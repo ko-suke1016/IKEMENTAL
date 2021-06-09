@@ -1,3 +1,12 @@
 <nav class="header navbar">
-  <a class="navbar-brand" href="#">Buka Mental</a>
+  <a class="navbar-brand" href="/">Buka Mental</a>
+      <% if logged_in? %>
+        <div class="header-position" >
+          <%= link_to 'ログアウト', logout_path, method: :post, class: "btn btn-outline-secondary" %>
+      <% else %>
+        <div class="text-right header-position">
+          <%= link_to '新規登録', new_user_path, class: "btn btn-outline-secondary" %>
+          <%= link_to 'ログイン', login_path, class: "btn btn-outline-secondary" %>
+        </div>
+      <% end %>
 </nav>
