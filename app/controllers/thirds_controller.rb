@@ -1,4 +1,6 @@
 class ThirdsController < ApplicationController
+    before_action  :require_login, only: [:create, :physical, :experience, :execution]
+
     def create
         @user = User.find_by(id: current_user.id)
         # @total_score = QuestionResult.find_by(user_id: current_user.id, question_type: 0)

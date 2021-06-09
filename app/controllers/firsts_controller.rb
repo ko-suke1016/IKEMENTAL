@@ -1,4 +1,5 @@
 class FirstsController < ApplicationController
+    before_action  :require_login, only: [:create]
 
     def create
         # @total_score = QuestionResult.find_by(user_id: current_user.id, question_type: 0)

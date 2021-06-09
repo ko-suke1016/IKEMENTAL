@@ -1,5 +1,7 @@
 class PasswordResetsController < ApplicationController
 
+  skip_before_action :require_login, only: [:new, :create, :edit, :update], raise: false
+
   # パスワードリセット申請フォーム用のアクション
   def new; end
 

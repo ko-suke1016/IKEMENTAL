@@ -5,7 +5,6 @@ Rails.application.routes.draw do
   get 'terms' => 'tops#terms'
   #プライバシーポリシー
   get 'privacy' => 'tops#privacy'
-
   #ユーザー登録
   resources :users
   get 'level_up' => 'users#level_up'
@@ -29,11 +28,14 @@ Rails.application.routes.draw do
   post 'logout' => 'user_sessions#destroy', :as => :logout
   #パスワードリセット
   resources :password_resets, only: %i[new create edit update]
+  #お問い合わせフォームの実装
+  resources :inquiries, only: %i[new create]
+
 
   # パスワードリセットのテストのためLetter＿openerへのPath
   mount LetterOpenerWeb::Engine, at: '/letter_opener' if Rails.env.development?
 
   # 例外処理を披露Path
-  get '*path', to: 'application#render_404'
+  # get '*path', to: 'application#render_404'
 
 end
