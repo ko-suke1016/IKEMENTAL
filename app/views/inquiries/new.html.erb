@@ -4,24 +4,28 @@
 <div class="col-md-5 ">
 
 <div class="login-title">
-    <div class="text-center">
+    <div class="text-center title-position">
         <h3>お問い合わせフォーム</h3>
     </div>
         <%= form_with model: @inquiry, local: true do |f| %>
             <div class="form-group">
                 <%= f.label :category, t('inquiries.new.category'), class: "form-label"%>
+                <span class="badge badge-danger">必須</span>
                 <%= f.select :category, Inquiry.categories.keys, {prompt: "選択してください"}, class: "prefecture-select form-control"%>
             </div>
             <div class="form-group">
                 <%= f.label :name, t('inquiries.new.name'), class: "form-label" %>
+                <span class="badge badge-warning">任意</span>
                 <%= f.text_field :name, class: "form-control"  %>
             </div>
             <div class="form-group">
                 <%= f.label :email, t('inquiries.new.email'), class: "form-label" %>
+                <span class="badge badge-warning">任意</span>
                 <%= f.email_field :email, class: "form-control"  %>
             </div>
             <div class="form-group">
                 <%= f.label :message, t('inquiries.new.message'), class: "form-label" %>
+                <span class="badge badge-danger">必須</span>
                 <%= f.text_field :message, class: "form-control"%>
             </div>
             <%= f.submit t('inquiries.new.send_mail'), class: "btn btn-info" %>
