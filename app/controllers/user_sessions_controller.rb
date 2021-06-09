@@ -9,7 +9,7 @@ class UserSessionsController < ApplicationController
             flash[:success] = 'ログインに成功しました'
             redirect_to users_path
         else
-            flash[:warning] = 'ログインに失敗しました'
+            flash[:error] = 'メールアドレスかパスワードに誤りがあります。'
             render :new
         end
     end
@@ -17,6 +17,6 @@ class UserSessionsController < ApplicationController
     def destroy
         logout
         redirect_to root_path
-        flash[:success] = 'ログアウトしました'
+        flash[:warning] = 'ログアウトしました'
     end
 end

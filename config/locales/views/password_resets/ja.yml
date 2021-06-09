@@ -1,0 +1,10 @@
+ja:
+  password_resets:
+    new:
+      email: 'メールアドレス'
+      send_mail: '送信'
+    edit:
+      email: 'メールアドレス'
+      password: 'パスワード'
+      password_confirmation: 'パスワード(確認)'
+      submit: '更新'

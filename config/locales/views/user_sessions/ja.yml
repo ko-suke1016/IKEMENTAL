@@ -1,0 +1,6 @@
+ja:
+  user_sessions:
+    new:
+      email: 'メールアドレス'
+      password: 'パスワード'
+      login: 'ログイン'
