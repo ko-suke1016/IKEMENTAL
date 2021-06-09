@@ -16,15 +16,7 @@
   <header class="sticky-top">
     <%= render 'shared/header' %>
   </header>
-    <% if flash.any? %>
-      <script type="text/javascript">
-        <% flash.each do |key, value| %>
-          <% key = "success" if key == "notice" %>
-          <% key = "error" if key == "alert" %>
-          toastr['<%= key %>']('<%= value %>');
-        <% end %>
-      </script>
-    <% end %>
+    <%= render 'shared/flash_message' %>
       <%= yield %>
   <footer class="footer">
     <%= render 'shared/footer' %>
