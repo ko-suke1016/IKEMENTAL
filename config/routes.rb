@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   get 'terms' => 'tops#terms'
   #プライバシーポリシー
   get 'privacy' => 'tops#privacy'
+  #遊び方
+  get 'play_role' => 'tops#play_role'
   #ユーザー登録
   resources :users
   get 'level_up' => 'users#level_up'
