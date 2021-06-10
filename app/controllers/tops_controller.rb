@@ -1,5 +1,5 @@
 class TopsController < ApplicationController
-    skip_before_action :require_login, only: [:index, :terms, :privacy], raise: false
+    skip_before_action :require_login, only: [:index, :terms, :privacy, :play_role], raise: false
     def index
     end
 
@@ -7,5 +7,8 @@ class TopsController < ApplicationController
     end
 
     def privacy
+    end
+
+    def play_role
     end
 end
