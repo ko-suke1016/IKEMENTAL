@@ -11,7 +11,7 @@
     <%= form_with model: @user, url: password_reset_path(@token), local: true do |f| %>
         <div class="form-group">
             <%= f.label :email, t('password_resets.edit.email') , class: "form-label" %>
-            <%= f.text_field :email, class: "form-control" %>
+            <h4><%= @user.email %></h4>
         </div>
         <div class="form-group">
             <%= f.label :password, t('password_resets.edit.password') , class: "form-label" %>
