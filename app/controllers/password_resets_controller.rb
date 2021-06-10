@@ -16,8 +16,7 @@ class PasswordResetsController < ApplicationController
 
     # フォームに入力したemailがアプリ(DB)内に存在するか否かを問わず、リダイレクトして成功メッセージを表示させる。
     # DBに存在した時だけ成功メッセージを表示させると、DB内にそのemailが存在するかどうかを悪意ある第三者でさえも確認できてしまう。
-    flash[:success] = '登録されたメールアドレスにメールを送信しました'
-    redirect_to login_path
+    redirect_to login_path, success: "成功しました"
   end
 
   # パスワードリセットフォームページへ遷移するアクション
@@ -40,10 +39,9 @@ class PasswordResetsController < ApplicationController
 
     @user.password_confirmation = params[:user][:password_confirmation]
     if @user.change_password(params[:user][:password])
-      flash[:success] = 'パスワードの更新に成功しました'
-      redirect_to login_path
+      redirect_to login_path, success: t('.success')
     else
-      flash[:warning] = 'パスワードの更新に失敗しました'
+      flash.now[:danger] = t('.fail')
       render :edit
     end
   end
