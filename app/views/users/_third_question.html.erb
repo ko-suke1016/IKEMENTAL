@@ -5,10 +5,10 @@
 
     <div class="swiper-container3">
         <div class="swiper-wrapper">
-            <div class="slide"><%= image_tag 'ofise4.jpg'%></div>
-            <div class="slide"><%= image_tag 'ofise4.jpg'%></div>
-            <div class="slide"><%= image_tag 'ofise4.jpg'%></div>
-            <div class="slide"><%= image_tag 'ofise4.jpg'%></div>
+            <div class="slide"><%= image_tag 'ofise2.jpg'%></div>
+            <div class="slide"><%= image_tag 'ofise2.jpg'%></div>
+            <div class="slide"><%= image_tag 'ofise2.jpg'%></div>
+            <div class="slide"><%= image_tag 'ofise2.jpg'%></div>
         </div>
     </div>
    
@@ -20,7 +20,8 @@
         <% else %>
             <div class="q_<%= third_question.id %>">
         <% end %>
-        <div style="margin: 2px;">Q<%= third_question.id %> <%= third_question.question %></div>
+        <div class="question-field">
+        <div style="margin: 10px;" class="text-style">Q<%= third_question.id %> <%= third_question.question %></div>
             <%= form_with model: @total, method: :post, remote: true do %>
                 <% @third_answers.each do |third_answer| %>
                     <% if third_question.id == third_answer.third_question_id %>
@@ -30,6 +31,7 @@
                     <% end %>
                 <% end %>
             <% end %>
+        </div>
         </div>
     <% end %>
 

@@ -49,6 +49,8 @@ gem 'mini_magick', '~> 4.8'
 #環境変数管理
 gem 'dotenv-rails', groups: [:development, :production]
 
+gem 'enum_help'
+
 
 
 

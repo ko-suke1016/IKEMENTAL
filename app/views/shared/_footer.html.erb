@@ -1,8 +1,8 @@
 
 <nav class="footer navbar">
   <div class="inner mx-auto">
-    <a class="navbar-brand" href="terms"><p class="text-size1">利用規約</p></a>
-    <a class="navbar-brand" href="privacy"><p class="text-size1">プライバシーポリシー</p></a>
-    <a class="navbar-brand" href="inquiries/new"><p class="text-size1">お問い合わせ</p></a>
+    <%= link_to '利用規約', terms_tops_path, class: "navbar-brand"%>
+    <%= link_to 'プライバシーポリシー', privacy_tops_path, class: "navbar-brand" %>
+    <%= link_to 'お問い合わせ', new_inquiry_path, class: "navbar-brand" %>
   </div>
 </nav>

@@ -11,12 +11,12 @@
             <div class="form-group">
                 <%= f.label :name, t('users.new.name') , class: "form-label"%>
                 <span class="badge badge-danger">必須</span>
-                <%= f.text_field :name, class: "form-control"%>
+                <%= f.text_field :name, class: "form-control", placeholder:"例: さとう たろう" %>
             </div>
             <div class="form-group">
                 <%= f.label :email, t('users.new.email'), class: "form-label"%>
                 <span class="badge badge-danger">必須</span>
-                <%= f.email_field :email, class: "form-control"%>
+                <%= f.email_field :email, class: "form-control", placeholder:"例: ***@example.com"%>
             </div>
             <div class="form-group">
                 <%= f.label :password, t('users.new.password'), class: "form-label" %>

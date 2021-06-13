@@ -11,15 +11,15 @@ $(document).on('turbolinks:load', function() {
         var result = target.data("send-id");
         // 吹き出しの表示
         if (result == 0){
-            $(".hukidasi1").fadeIn(function(){
+            $(".hukidasi1, .experience-hukidasi-10").fadeIn(function(){
                 $(this).delay(1500).fadeOut();
             });
         } else if (result == 5){
-            $(".hukidasi2").fadeIn(function(){
+            $(".hukidasi2, ..experience-hukidasi-5").fadeIn(function(){
                 $(this).delay(1500).fadeOut();
             });
         } else if (result == 10){
-            $(".hukidasi3").fadeIn(function(){
+            $(".hukidasi3, .experience-hukidasi-0").fadeIn(function(){
                 $(this).delay(1500).fadeOut();
             });
         }
@@ -64,15 +64,15 @@ $(document).on('turbolinks:load', function() {
         var result = target.data("send-id");
         // 吹き出しの表示
         if (result == 0){
-            $(".hukidasi1").fadeIn(function(){
+            $(".hukidasi1, .experience-hukidasi-10").fadeIn(function(){
                 $(this).delay(1500).fadeOut();
             });
         } else if (result == 5){
-            $(".hukidasi2").fadeIn(function(){
+            $(".hukidasi2, .experience-hukidasi-5").fadeIn(function(){
                 $(this).delay(1500).fadeOut();
             });
         } else if (result == 10){
-            $(".hukidasi3").fadeIn(function(){
+            $(".hukidasi3, .experience-hukidasi-0").fadeIn(function(){
                 $(this).delay(1500).fadeOut();
             });
         }
@@ -116,15 +116,15 @@ $(document).on('turbolinks:load', function() {
         var result = target.data("send-id");
         // 吹き出しの表示
         if (result == 0){
-            $(".hukidasi1").fadeIn(function(){
+            $(".hukidasi1, .experience-hukidasi-10").fadeIn(function(){
                 $(this).delay(1500).fadeOut();
             });
         } else if (result == 5){
-            $(".hukidasi2").fadeIn(function(){
+            $(".hukidasi2, .experience-hukidasi-5").fadeIn(function(){
                 $(this).delay(1500).fadeOut();
             });
         } else if (result == 10){
-            $(".hukidasi3").fadeIn(function(){
+            $(".hukidasi3, .experience-hukidasi-0").fadeIn(function(){
                 $(this).delay(1500).fadeOut();
             });
         }
@@ -168,15 +168,15 @@ $(document).on('turbolinks:load', function() {
         var result = target.data("send-id");
         // 吹き出しの表示
         if (result == 0){
-            $(".hukidasi1").fadeIn(function(){
+            $(".hukidasi1, .experience-hukidasi-10").fadeIn(function(){
                 $(this).delay(1500).fadeOut();
             });
         } else if (result == 5){
-            $(".hukidasi2").fadeIn(function(){
+            $(".hukidasi2, .experience-hukidasi-5").fadeIn(function(){
                 $(this).delay(1500).fadeOut();
             });
         } else if (result == 10){
-            $(".hukidasi3").fadeIn(function(){
+            $(".hukidasi3, .experience-hukidasi-0").fadeIn(function(){
                 $(this).delay(1500).fadeOut();
             });
         }
@@ -220,15 +220,15 @@ $(document).on('turbolinks:load', function() {
         var result = target.data("send-id");
         // 吹き出しの表示
         if (result == 0){
-            $(".hukidasi1").fadeIn(function(){
+            $(".hukidasi1, .experience-hukidasi-10").fadeIn(function(){
                 $(this).delay(1500).fadeOut();
             });
         } else if (result == 5){
-            $(".hukidasi2").fadeIn(function(){
+            $(".hukidasi2, .experience-hukidasi-5").fadeIn(function(){
                 $(this).delay(1500).fadeOut();
             });
         } else if (result == 10){
-            $(".hukidasi3").fadeIn(function(){
+            $(".hukidasi3, .experience-hukidasi-0").fadeIn(function(){
                 $(this).delay(1500).fadeOut();
             });
         }
@@ -272,15 +272,15 @@ $(document).on('turbolinks:load', function() {
         var result = target.data("send-id");
         // 吹き出しの表示
         if (result == 0){
-            $(".hukidasi1").fadeIn(function(){
+            $(".hukidasi1, .experience-hukidasi-10").fadeIn(function(){
                 $(this).delay(1500).fadeOut();
             });
         } else if (result == 5){
-            $(".hukidasi2").fadeIn(function(){
+            $(".hukidasi2, .experience-hukidasi-5").fadeIn(function(){
                 $(this).delay(1500).fadeOut();
             });
         } else if (result == 10){
-            $(".hukidasi3").fadeIn(function(){
+            $(".hukidasi3, .experience-hukidasi-0").fadeIn(function(){
                 $(this).delay(1500).fadeOut();
             });
         }
@@ -324,15 +324,15 @@ $(document).on('turbolinks:load', function() {
         var result = target.data("send-id");
         // 吹き出しの表示
         if (result == 0){
-            $(".hukidasi1").fadeIn(function(){
+            $(".hukidasi1, .experience-hukidasi-10").fadeIn(function(){
                 $(this).delay(1500).fadeOut();
             });
         } else if (result == 5){
-            $(".hukidasi2").fadeIn(function(){
+            $(".hukidasi2, .experience-hukidasi-5").fadeIn(function(){
                 $(this).delay(1500).fadeOut();
             });
         } else if (result == 10){
-            $(".hukidasi3").fadeIn(function(){
+            $(".hukidasi3, .experience-hukidasi-0").fadeIn(function(){
                 $(this).delay(1500).fadeOut();
             });
         }
@@ -376,15 +376,15 @@ $(document).on('turbolinks:load', function() {
         var result = target.data("send-id");
         // 吹き出しの表示
         if (result == 0){
-            $(".hukidasi1").fadeIn(function(){
+            $(".hukidasi1, .experience-hukidasi-10").fadeIn(function(){
                 $(this).delay(1500).fadeOut();
             });
         } else if (result == 5){
-            $(".hukidasi2").fadeIn(function(){
+            $(".hukidasi2, .experience-hukidasi-5").fadeIn(function(){
                 $(this).delay(1500).fadeOut();
             });
         } else if (result == 10){
-            $(".hukidasi3").fadeIn(function(){
+            $(".hukidasi3, .experience-hukidasi-0").fadeIn(function(){
                 $(this).delay(1500).fadeOut();
             });
         }
@@ -429,15 +429,15 @@ $(document).on('turbolinks:load', function() {
         var result = target.data("send-id");
         // 吹き出しの表示
         if (result == 0){
-            $(".hukidasi1").fadeIn(function(){
+            $(".hukidasi1, .experience-hukidasi-10").fadeIn(function(){
                 $(this).delay(1500).fadeOut();
             });
         } else if (result == 5){
-            $(".hukidasi2").fadeIn(function(){
+            $(".hukidasi2, .experience-hukidasi-5").fadeIn(function(){
                 $(this).delay(1500).fadeOut();
             });
         } else if (result == 10){
-            $(".hukidasi3").fadeIn(function(){
+            $(".hukidasi3, .experience-hukidasi-0").fadeIn(function(){
                 $(this).delay(1500).fadeOut();
             });
         }
@@ -481,15 +481,15 @@ $(document).on('turbolinks:load', function() {
         var result = target.data("send-id");
         // 吹き出しの表示
         if (result == 0){
-            $(".hukidasi1").fadeIn(function(){
+            $(".hukidasi1, .experience-hukidasi-10").fadeIn(function(){
                 $(this).delay(1500).fadeOut();
             });
         } else if (result == 5){
-            $(".hukidasi2").fadeIn(function(){
+            $(".hukidasi2, .experience-hukidasi-5").fadeIn(function(){
                 $(this).delay(1500).fadeOut();
             });
         } else if (result == 10){
-            $(".hukidasi3").fadeIn(function(){
+            $(".hukidasi3, .experience-hukidasi-0").fadeIn(function(){
                 $(this).delay(1500).fadeOut();
             });
         }
@@ -532,7 +532,22 @@ $(document).on('turbolinks:load', function() {
 	            $('#result_score span').text(Math.ceil(this.count));
 	            }
         });
+        //点数別コメントの表示
+        if (life_score == 100){
+            $(".comment1").fadeIn();
+        } else if (result <= 80 && result < 100){
+            $(".comment2").fadeIn();
+        } else if (result <= 60 && result < 80){
+            $(".comment3").fadeIn();
+        } else if (result <= 40 && result < 60){
+            $(".comment4").fadeIn();
+        } else if (result <= 20 && result < 40){
+            $(".comment5").fadeIn();
+        } else if (result <= 0 && result < 20){
+            $(".comment6").fadeIn();
+        }
+        // 
         $(".hukidasi4").fadeIn();
-        $("#life").fadeOut();
+        // $("#life").fadeOut();
     });
 });

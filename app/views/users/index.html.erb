@@ -1,65 +1,38 @@
 <% content_for(:html_title) { 'タスク' } %>
-<div class="row">
-    <div class="letter">
-        <div class="all-position">
-        <div class="row">
-            <div class="col-md-5">
-                <div class="status-page">
+    <div class="row"> 
+        <div class="letter">
+            <div class="all-position">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="status-page">
 
-                    <div class="status-position">
-                        <p>Worker Name</p>
-                    </div>
-                    <div class="text-center"> 
-                        <h4><%= @user.name %></h4>
-                    </div>
-                    <div class="status-position" %>
-                        <p>Position</p>
-                    </div>
-                    <div id="position">
-                        <%= render 'position', user: @user %>
-                    </div>
-
-                    <div class="status-position" %>
-                        <p>Status</p>
-                    </div>
-                        <%= render 'graph', user_physical_gage: @user_physical_gage, user_experience_gage: @user_experience_gage %>
-
-
-                    <div class="task-btn">
-                    <div class="status-position" %>
-                        <p>Task</p>
-                    </div>
-                        <div class="text-center task-menu">
-                            <div>
-                                <button type="button" class="btn btn-outline-secondary w-75 long-task">
-                                    出張タスク
-                                </button>
+                            <div class="status-position question-start-text2">
+                                <p>氏名： <%= @user.name %></p>
+                                <p>役職： <%= render 'position', user: @user %></p>
                             </div>
+                            <%= render 'graph', user_physical_gage: @user_physical_gage, user_experience_gage: @user_experience_gage %>
+                        </div>
+                        <div class="charactor-position" >
+                            <%= render 'hukidasi2' %>
+                        </div>
+                    </div>
 
-                            <div>
-                                <button type="button" class=" btn btn-outline-secondary w-75 recovery-item">
-                                    回復アイテム
-                                </button>
+                    <div class="col-md-7">
+                        <div class="light-page">
+                            <div class="light_page_top">
+                                <%= render 'long_question', user: @user%>
+                                <%= render 'firsts_question'%>
+                                <%= render 'second_question'%>
+                                <%= render 'third_question' %>
+                                <%= render 'recovery_question', recovery_question: @recovery_question, recovery_answers: @recovery_answers %>
                             </div>
                         </div>
                     </div>
+
+                    <%= render "modal" %>
                 </div>
             </div>
-
-            <div class="col-md-7">
-                <div class="light-page">
-                    <%= render 'long_question', user: @user%>
-                    <%= render 'firsts_question'%>
-                    <%= render 'second_question'%>
-                    <%= render 'third_question' %>
-                    <%= render 'recovery_question', recovery_question: @recovery_question, recovery_answers: @recovery_answers %>
-                </div>
-            </div>
-
-            <%= render "modal" %>
         </div>
-        </div>
-</div>
-</div>
+    </div>
 
 

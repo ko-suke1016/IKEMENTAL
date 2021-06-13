@@ -11,7 +11,7 @@
     <%= form_with url: password_resets_path, local: true, method: :post do |form| %>
       <div class="form-group">
         <%= form.label :email, t('password_resets.new.email') %>
-        <%= form.text_field :email, class: 'form-control' %>
+        <%= form.text_field :email, class: 'form-control', placeholder:"登録したメールアドレスを入力してください" %>
       </div>
         <%= form.submit t('password_resets.new.send_mail'), class: 'btn btn-info' %>
     <% end %>

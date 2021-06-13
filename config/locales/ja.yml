@@ -6,6 +6,12 @@ ja:
         restrict_dependent_destroy:
           has_one: "%{record}が存在しているので削除できません"
           has_many: "%{record}が存在しているので削除できません"
+  enums: # <= HERE!
+    inquiry:
+      category:
+        bug: "バグや問題の報告"
+        request: "機能追加等の申請"
+        other: "その他のお問い合わせ"
   date:
     abbr_day_names:
     - 日

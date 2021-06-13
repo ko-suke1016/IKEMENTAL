@@ -37,6 +37,7 @@ $(document).on('turbolinks:load', function() {
 // 問題を解くたびに経験値が反映
 
 　　$(".btn-1, .btn-2 , .btn-3").on('click',function(){
+    console.log("neko");
     var target = $(this);
     var score = target.data("send-id");
     if (score == 0) {
@@ -58,7 +59,7 @@ $(document).on('turbolinks:load', function() {
         $('#overlay, .modal-window').fadeOut();
         $.ajax({
             type: "get",
-            url: "level_up",
+            url: "level_up_users",
             detaType: "json",
         })
       });
