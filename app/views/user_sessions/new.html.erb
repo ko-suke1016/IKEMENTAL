@@ -12,12 +12,12 @@
             <div class="form-group">
                 <%= f.label :email, t('user_sessions.new.email'), class: "form-label"%>
                 <span class="badge badge-danger">必須</span>
-                <%= f.email_field :email, class: "form-control"%>
+                <%= f.email_field :email, class: "form-control", placeholder:"登録したメールアドレスを入力してください"%>
             </div>
             <div class="form-group">
                 <%= f.label :password, t('user_sessions.new.password'), class: "form-label" %>
                 <span class="badge badge-danger">必須</span>
-                <%= f.password_field :password, class: "form-control"  %>
+                <%= f.password_field :password, class: "form-control", placeholder:"登録したパスワードを入力してください"%>
             </div>
             <%= f.submit t('user_sessions.new.login'), class: "btn btn-info" %>
         <% end %>

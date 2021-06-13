@@ -1,16 +1,18 @@
 $(document).on('turbolinks:load', function() {
 
    // 説明画面が出力
-   $(".recovery-item").on('click',function(){
-      $(".recovery-memo").fadeIn();
-      $(".task-menu").fadeOut();
-   })
+   // $(".recovery-item").on('click',function(){
+   //    $(".light_page_top").fadeOut(function(){
+   //       $('.recovery-memo').fadeIn();
+   //    });
+   // })
 
    // 問題と解答が出力
    $(".recovery_question_start").on('click',function(){
-      $('.recovery-memo').fadeOut(function(){
-         $("#recovery-item").fadeIn();
-     });
+      $('#memo').fadeOut(function(){
+         $('#recovery-item').fadeIn();
+         $(".question-field4").fadeIn();
+      });
    })
 
    // 解答した際の挙動
@@ -38,12 +40,14 @@ $(document).on('turbolinks:load', function() {
      ).done(function(){
       if ( result == 7 ) {
          $('.recovery-true').fadeIn();
+         $(".mental-hukidasi-7").fadeIn(function(){
+            $(this).delay(1250).fadeOut();
+        });
       }else{
          $('.recovery-false').fadeIn();
       }
       $('.recovery-comentary').fadeIn();
       $('.remove').fadeIn();
+      })
    })
-})
-
 })

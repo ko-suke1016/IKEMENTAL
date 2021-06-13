@@ -1,16 +1,28 @@
 Rails.application.routes.draw do
+
+  #top画面の表示
   root to: 'tops#index'
 
-  #利用規約
-  get 'terms' => 'tops#terms'
-  #プライバシーポリシー
-  get 'privacy' => 'tops#privacy'
-  #遊び方
-  get 'play_role' => 'tops#play_role'
+  resources :tops do
+    collection do
+      #利用規約
+      get :terms
+      #プライバシーポリシー
+      get :privacy
+      #遊び方
+      get :play_role
+    end
+  end
+
   #ユーザー登録
-  resources :users
-  get 'level_up' => 'users#level_up'
-  get 'less_mental' => 'users#less_mental'
+  resources :users do
+    collection do
+      # モーダルの表示
+      get :level_up
+      # メンタルの値によって問題選択肢画面の表記を変更
+      get :less_mental
+    end
+  end
   #3択問題から選ばれたものの合計値を出す
   resources :firsts
   #二択問題の正解数を出す
@@ -23,7 +35,7 @@ Rails.application.routes.draw do
   get 'recovery' => 'cures#recovery'
   post 'recovery_icon' => 'cures#recovery_icon'
   #各回答の結果を保存するテーブル
-  resources :question_results
+  #resources :question_results
   #ユーザーログイン機能
   get 'login' => 'user_sessions#new', :as => :login
   post 'login' => "user_sessions#create"

@@ -1,14 +1,18 @@
 $(document).on('turbolinks:load', function() {
-    // taskの選択肢を表示
-    $('.long-task').on('click',function(){
-        $('#memo').fadeIn();
-        $(".task-menu").fadeOut();
-    })
+    // // taskの選択肢を表示
+    // $('.long-task').on('click',function(){
+    //     $(".light_page_top").fadeOut(function(){
+    //         $('#first_question').fadeIn();
+    //     });
+    // })
 
     // 基礎編の問題を表示
     $('.first_question_start').on('click',function(){
         $('#memo').fadeOut(function(){
             $('#first_question').fadeIn();
+            $(".mental-hukidasi-10").fadeIn(function(){
+                $(this).delay(1250).fadeOut();
+            });
     });
     })
 
@@ -21,6 +25,9 @@ $(document).on('turbolinks:load', function() {
     $('.second_question_start').on('click',function(){
         $('#memo').fadeOut(function(){
             $('#second_question').fadeIn();
+            $(".mental-hukidasi-15").fadeIn(function(){
+                $(this).delay(1250).fadeOut();
+            });
     });
     })
 
@@ -33,6 +40,9 @@ $(document).on('turbolinks:load', function() {
     $('.third_question_start').on('click',function(){
         $('#memo').fadeOut(function(){
             $('#third_question').fadeIn();
+            $(".mental-hukidasi-20").fadeIn(function(){
+                $(this).delay(1250).fadeOut();
+            });
     });
     })
 
