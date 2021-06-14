@@ -10,28 +10,12 @@ class UsersController < ApplicationController
         # experience_gageの値取得
         @user_experience_gage = User.where(id: current_user.id).pluck(:experience_gage)
 
-        # @total = QuestionResult.find_by(user_id: current_user.id, question_type: 0)
-        # if @total == nil
-        #     @total = QuestionResult.new(user_id: current_user.id, question_type: 0)
-        # elsif @total.total == nil
-        #     @total.total = 0
-        # elsif @total.total != 0
-        #     @total.total = 0
-        # end
-        # @total.save
-
         # 基礎問題の問題と回答の抽出
-        @first_question = FirstQuestion.all
-        @first_answers = FirstAnswer.all
-
+        @first_question = FirstQuestion.all.includes(:first_answers)
         # 応用の問題の抽出
-        @second_question = SecondQuestion.all
-        @second_answers = SecondAnswer.all
-
+        @second_question = SecondQuestion.all.includes(:second_answers)
         # 実践問題の抽出
-        @third_question = ThirdQuestion.all
-        @third_answers = ThirdAnswer.all
-
+        @third_question = ThirdQuestion.all.includes(:third_answers)
         # recovery_question & recovery_answerの取得
         @recovery_question = RecoveryQuestion.where( 'id >= ?', rand(RecoveryQuestion.first.id..RecoveryQuestion.last.id) ).first
         @recovery_answers = RecoveryAnswer.where(recovery_question_id: @recovery_question)

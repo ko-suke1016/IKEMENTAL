@@ -31,8 +31,15 @@ $(document).on('turbolinks:load', function() {
         $.ajax({
             url: "/firsts",
             type: "post",
-            data: params
-        });
+            data: params,
+            dataType: "json"
+        })
+        .done(function(data) {
+            console.log(data + "success");
+        })
+        .fail(function() {
+            alert("error!");  // 通信に失敗した場合はアラートを表示
+        })
         // フロントから送られてきた選択された数値
         var select_life = result*2;
         // 選択された数値から200を引いた値

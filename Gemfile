@@ -77,6 +77,8 @@ group :development do
   gem 'binding_of_caller'
   # パスワードリセットをメールで確認
   gem 'letter_opener_web'
+  # n+1問題の検知
+  gem 'bullet'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

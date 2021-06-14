@@ -1,7 +1,8 @@
 $(document).on('turbolinks:load', function() {
   $(function() {
     $('.swiper-wrapper').slick({
-      autoplay: true,　
+      autoplay: true,
+      infinite: true,　
       autoplaySpeed: 0,
       speed: 20000,
       cssEase: "linear",
