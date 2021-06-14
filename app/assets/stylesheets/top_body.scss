@@ -1,6 +1,13 @@
 
 // Top Titel画面の設定
+body {
+  background-color: #f9fbfe;
+  }
 
+.all-color{
+  background-color: #f9fbfe;
+  height: 700px;
+}
 
 .top-app{
   background-color: #f9fbfe;
@@ -139,4 +146,7 @@
   margin-bottom: 80px;
 }
 
-// top loginボタン
+// お問い合わせ
+.inquiry-padding{
+  margin-bottom: 100px;
+}

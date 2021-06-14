@@ -25,7 +25,7 @@ $(document).on('turbolinks:load', function() {
     $('.second_question_start').on('click',function(){
         $('#memo').fadeOut(function(){
             $('#second_question').fadeIn();
-            $(".mental-hukidasi-15").fadeIn(function(){
+            $(".mental-hukidasi-15").show(function(){
                 $(this).delay(1250).fadeOut();
             });
     });

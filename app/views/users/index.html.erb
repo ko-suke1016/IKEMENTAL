@@ -1,11 +1,10 @@
 <% content_for(:html_title) { 'タスク' } %>
-    <div class="row"> 
+    <div class="row all-color"> 
         <div class="letter">
             <div class="all-position">
                 <div class="row">
                     <div class="col-md-5">
                         <div class="status-page">
-
                             <div class="status-position question-start-text2">
                                 <p>氏名： <%= @user.name %></p>
                                 <p>役職： <%= render 'position', user: @user %></p>

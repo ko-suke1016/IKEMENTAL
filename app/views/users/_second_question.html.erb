@@ -8,8 +8,6 @@
   <div class="swiper-wrapper">
     <div class="slide"><%= image_tag 'ofise7.jpg'%></div>
     <div class="slide"><%= image_tag 'ofise7.jpg'%></div>
-    <div class="slide"><%= image_tag 'ofise7.jpg'%></div>
-    <div class="slide"><%= image_tag 'ofise7.jpg'%></div>
   </div>
 </div>
 
@@ -24,7 +22,7 @@
   <div class="question-field">
   <p style="margin: 10px;" class="text-style">Q<%= second_question.id %> <%= second_question.question %></p>
       <%= form_with model: @total, method: :post, remote: true do %>
-          <% @second_answers.each do |second_answer| %>
+          <% second_question.second_answers.each do |second_answer| %>
               <% if second_question.id == second_answer.second_question_id %>
                 <div style="margin-top: 2px;">
                   <button class="send_data_selection<%= second_answer.second_question_id %> btn-2 " style="padding:3px; margin:5px; height: 50px;" href=".q_<%= second_answer.second_question_id.to_i + 1 %>" type="submit" data-send-id = <%= second_answer.score %> ><%= second_answer.answer %></button>
