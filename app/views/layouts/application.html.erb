@@ -10,14 +10,20 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <link type="text/css" rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/cupertino/jquery-ui.min.css" />
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="og:url" content="http://localhost:3000/" />
+    <meta property="og:site_name" content="Buka Mental" />
+    <meta property="og:description" content="Buka Mentalはメンタルヘルスマネジメントを学ぶきっかけを作るサイトです。部下を労わり自分をストレスから守る人材を目指しましょう。" />
+    <meta property="og:image" content="https://i.gyazo.com/46dcf480fb1e805e0163eb2aaea8ec68.png" />
   </head>
   <body style="background-color: #f9fbfe;">
   <header class="sticky-top">
     <%= render 'shared/header' %>
   </header>
-    <%= render 'shared/flash_message' %>
       <%= yield %>
+      <%= render 'shared/flash_message' %>
   <footer class="footer">
     <%= render 'shared/footer' %>
   </footer>

@@ -4,6 +4,7 @@
             <div class="all-position">
                 <div class="row">
                     <div class="col-md-5">
+                    <div class="left-page-position">
                         <div class="status-page">
                             <div class="status-position question-start-text2">
                                 <p>氏名： <%= @user.name %></p>
@@ -13,10 +14,13 @@
                         </div>
                         <div class="charactor-position" >
                             <%= render 'hukidasi2' %>
+                            <%= render "sorcery" %>
+                            <%= image_tag "task_boy.png", :size =>'200x260', class: "boy" %>
                         </div>
                     </div>
+                    </div>
 
-                    <div class="col-md-7">
+                    <div class="col-md-7 d-flex align-items-center justify-content-center">
                         <div class="light-page">
                             <div class="light_page_top">
                                 <%= render 'long_question', user: @user%>
