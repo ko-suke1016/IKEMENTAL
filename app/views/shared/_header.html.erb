@@ -1,5 +1,5 @@
 <nav class="header navbar">
-  <a class="navbar-brand" href="/">Buka Mental</a>
+  <a class="navbar-brand" href="/"><%= image_tag "logo.png", size: "180x40" %></a>
       <% if logged_in? %>
         <div class="text-right header-position" >
           <%= link_to 'ログアウト', logout_path, method: :post, class: "btn btn-outline-light" %>

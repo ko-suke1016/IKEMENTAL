@@ -20,7 +20,7 @@ class InquiriesController < ApplicationController
         private
       
         def inquiry_params
-          params.require(:inquiry).permit(:name, :email, :message).merge(category: params[:inquiry][:category].to_i)
+          params.require(:inquiry).permit(:name, :message).merge(category: params[:inquiry][:category].to_i)
         end
     
 end
