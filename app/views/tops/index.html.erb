@@ -1,10 +1,25 @@
 <% content_for(:html_title) { 'トップ' } %>
-<div class="top-title d-flex align-items-center justify-content-center">
+<div class="top-title ">
 <div class="text-center ">
-        <h2 class="text-size text-family">Buka Mental</h2>
-        <p class="text-family">メンタルヘルスマネジメント可視化シュミレーションアプリ</p>
-    <div class="top-login ">
-        <%= link_to 'ログイン', login_path, class: 'btn btn-outline-secondary' %>
+    <div class="top-box">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="top-position mx-auto" >
+                        <h2 class="text-size text-family">Buka Mental</h2>
+                        <p class="text-family">メンタルヘルスマネジメント可視化シュミレーションアプリ</p>
+                        <%= image_tag "top_boy.png", :size =>'200x300', class: "top-buka-position" %>
+                        <div class="top-hukidasi">
+                            <p>あなたの働き方<br>メンタルにきてませんか？</p>
+                        </div>
+                        <div class="top-login-button">
+                            <a href="/login" class="btn btn-border">ゲームスタート！</a>
+                        </div>
+                        <div class="top-play-role-botton">
+                            <a href="/tops/play_role" class="btn btn-border">遊び方</a>
+                        </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 </div>

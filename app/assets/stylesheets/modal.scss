@@ -5,7 +5,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
-    height: 500px;
+    height: 76%;
+    max-height: 700px;
     background-color: white;
     border: 2px solid #78BBE6;
     border-width: 10px;
@@ -17,7 +18,7 @@
   /* 閉じるボタン */
   .button-close {
     position: absolute;
-    top: 80%;
+    margin-top: 100px;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 200px;
@@ -37,4 +38,55 @@
     width: 100%;
     height: 100%;
     z-index: 10;
+  }
+
+  .modal-boy-position{
+    position: absolute;
+    left: 66%;
+    top: 100px;
+  }
+
+  .modal-boy-position2{
+    position: absolute;
+    z-index: 70;
+    margin-left: 87%;
+    margin-top: 230px;
+  }
+
+  .modal-boy-position3{
+  }
+
+  .modal-text{
+    height : 500px;
+    background-image: url(ofise7.jpg);
+    height: 500px;
+    background-size:cover;
+  }
+
+  .modal-text2{
+    height : 500px;
+    background-image: url(ofise2.jpg);
+    height: 500px;
+    background-size:cover;
+  }
+
+  .modal-text3{
+    height : 500px;
+    background-image: url(top_bill.jpg);
+    height: 500px;
+    background-size:cover;
+  }
+
+  .modal-light-page{
+    position:relative;
+  }
+
+  .modal-light-page-text{
+    margin-top: 40px;
+    height: 100%;
+    font-size: 23px;
+  }
+
+  .modal-light-page-text2{
+    font-size: 8px;
   }

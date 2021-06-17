@@ -10,6 +10,7 @@ $(document).on('turbolinks:load', function() {
    // 問題と解答が出力
    $(".recovery_question_start").on('click',function(){
       $('#memo').fadeOut(function(){
+         $('.memory').fadeIn();
          $('#recovery-item').fadeIn();
          $(".question-field4").fadeIn();
       });

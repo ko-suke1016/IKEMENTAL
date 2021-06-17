@@ -54,14 +54,15 @@ img {
   }
 
   .sec_inner{
-    width:95%;
+    width:100%;
+    max-width: 750px;
     height: 500px;
     margin:0 auto;
 }
 
 .slider{
   border-radius: 5px;
-        width:90%;
+        width:100%;
         padding: 0;
         border-right: 5px solid #bbbfca;
         border-left:5px solid #bbbfca;
@@ -75,7 +76,8 @@ img {
 
 .gif-img{
   border-radius: 5px;
-        width:85%;
+        width:100%;
+        max-width: 750px;
         padding: 0;
         border-right: 5px solid #bbbfca;
         border-left: 5px solid #bbbfca;

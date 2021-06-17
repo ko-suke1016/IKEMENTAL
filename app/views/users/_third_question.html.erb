@@ -2,6 +2,7 @@
 
     <%= render 'hukidasi' %>
     <%= render 'life_bar' %>
+    <%= render 'boy' %>
 
     <div class="swiper-container3">
         <div class="swiper-wrapper">
@@ -14,9 +15,9 @@
 
     <% @third_question.each do |third_question| %>
         <% unless third_question.id == 1 %>
-            <div class="q_<%= third_question.id %>" style="display:none;">
+            <div class="<%= third_question.id %>" style="display:none;">
         <% else %>
-            <div class="q_<%= third_question.id %>">
+            <div class="<%= third_question.id %>">
         <% end %>
         <div class="question-field">
         <div style="margin: 10px;" class="text-style">Q<%= third_question.id %> <%= third_question.question %></div>
@@ -24,7 +25,7 @@
                 <% third_question.third_answers.each do |third_answer| %>
                     <% if third_question.id == third_answer.third_question_id %>
                       <div style="margin-top: 3px;">
-                        <button class="send_data_selection<%= third_answer.third_question_id %> btn-3 " style="padding:3px; margin:5px; height: 50px;" href=".q_<%= third_answer.third_question_id.to_i + 1 %>" type="submit" data-send-id = <%= third_answer.score %> ><%= third_answer.answer %></button>
+                        <button class="send_data_selection btn-3 " style="padding:3px; margin:5px; height: 50px;" href="<%= third_answer.third_question_id.to_i%>" type="submit" data-send-id = <%= third_answer.score %> ><%= third_answer.answer %></button>
                       </div>
                     <% end %>
                 <% end %>

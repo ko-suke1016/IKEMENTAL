@@ -2,7 +2,6 @@ class User < ApplicationRecord
   authenticates_with_sorcery!
 
   validates :name, presence: true
-  validates :email, presence: true
   validates :physical_gage, presence: true, numericality: {only_integer: true, greater_than_or_equal_to: 0, less_than_or_equal_to: 100}
   validates :experience_gage, presence: true, numericality: {only_integer: true, greater_than_or_equal_to: 0, less_than_or_equal_to: 50}
 
@@ -12,7 +11,10 @@ class User < ApplicationRecord
   validates :password, confirmation: true, if: -> { new_record? || changes[:crypted_password] }
   validates :password_confirmation, presence: true, if: -> { new_record? || changes[:crypted_password] }
 
-  validates :email, uniqueness: { case_sensitive: true }
+  before_save { self.email = email.downcase }
+  VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
+  validates :email, format: {with: VALID_EMAIL_REGEX}, allow_blank: true
+  validates :email, presence: true
 
   validates :reset_password_token, uniqueness: { case_sensitive: true }, allow_nil: true
 
