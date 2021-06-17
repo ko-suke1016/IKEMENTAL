@@ -2,57 +2,46 @@
     <div class="row">
         <div class="col-md-12 text-left">
             <div id="overlay" class="overlay"></div>
-                <div class="cherry-blossom-container">
-                </div>
+            <div class="cherry-blossom-container"></div>
                 <div class="modal-window question-start-text2">
-                    <% if @user.position == "ヨワヨワメンタル新入社員" %>
-                        <div class="row modal-text">
-                            <div class="col-md-6">
-                                <div class="gif-image">
-                                    <%= image_tag "second_question.gif", width: "100%", height: "100%" %>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="modal-light-page text-center">
-                                    <p class="modal-light-page-text">おめでとうございます!</p>
-                                    <h3 class="modal-light-page-text">中間管理職に昇進！</h3>
-                                    <p class="modal-light-page-text">新しいタスクが開放されました！<br>ぜひ挑戦してみてください！</p>
-                                    <button class="js-close button-close">タスクに戻る</button>
-                                    <div class="modal-light-page-text2 text-left">
+                        <% if @user.position == "ヨワヨワメンタル新入社員" %>
+                            <div class="row modal-text">
+                            <div class="col-md-12">
+                                <div class="modal-light-page">
+                                    <p class="modal-light-page-text text-center">おめでとうございます!</p>
+                                    <h3 class="modal-light-page-text text-center">中間管理職に昇進！</h3>
+                                    <p class="modal-light-page-text text-center">新しいタスクが開放されました！<br>ぜひ挑戦してみてください！</p>
+                                    <button class="js-close button-close text-center">タスクに戻る</button>
+                                    <div class="modal-light-page-text2 text-center">
                                         <p>(経験値をリセットします)</p>
                                         <p>* この問題の解答が終わり次第、経験値バーに反映されます</p>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="modal-boy-position text-right">
-                                <%= image_tag "top_boy.png",:size =>'210x340' %>
-                            </div>
-                        </div>
-                    <% elsif @user.position == "そこそこメンタル中間管理職" %>
-                        <div class="row modal-text">
-                            <div class="col-md-6">
-                                <div class="gif-image">
-                                    <%= image_tag "third_question.gif", width: "100%", height: "100%" %>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="modal-light-page text-center">
-                                    <p class="modal-light-page-text">おめでとうございます!</p>
-                                    <h3 class="modal-light-page-text">管理職に昇進！</h3>
-                                    <p class="modal-light-page-text">新しいタスクが開放されました！<br>ぜひ挑戦してみてください！</p>
-                                    <button class="js-close button-close">タスクに戻る</button>
-                                    <div class="modal-light-page-text2 text-left">
-                                        <p>(経験値をリセットします)</p>
-                                        <p>* この問題の解答が終わり次第、経験値バーに反映されます</p>
+                                    <div class= "modal-boy-position">
+                                        <%= image_tag "top_boy.png",:size =>'210x340'%>
                                     </div>
                                 </div>
                             </div>
-                            <div class="modal-boy-position2 text-right">
-                                <%= image_tag "happy_boy.png",:size =>'170x310' %>
                             </div>
-                        </div>
-                    <% else %>
-                        <div class="row modal-text">
+                        <% elsif @user.position == "そこそこメンタル中間管理職" %>
+                            <div class="row modal-text2">
+                            <div class="col-md-12">
+                                <div class="modal-light-page2">
+                                    <p class="modal-light-page-text text-center">おめでとうございます!</p>
+                                    <h3 class="modal-light-page-text text-center">管理職に昇進！</h3>
+                                    <p class="modal-light-page-text text-center">新しいタスクが開放されました！<br>ぜひ挑戦してみてください！</p>
+                                    <button class="js-close button-close text-center">タスクに戻る</button>
+                                    <div class="modal-light-page-text2 text-center">
+                                        <p>(経験値をリセットします)</p>
+                                        <p>* この問題の解答が終わり次第、経験値バーに反映されます</p>
+                                    </div>
+                                    <div class= "modal-boy-position">
+                                        <%= image_tag "happy_boy.png",:size =>'180x340'%>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        <% else %>
+                            <div class="row modal-text3">
                             <div class="col-md-12">
                                 <div class="modal-light-page text-center">
                                     <p>おめでとうございます!</p>
@@ -64,10 +53,8 @@
                                     <%= link_to "トップへ", root_path, class: "btn btn-outline-info text-right" %>
                                 </div>
                             </div>
-                        </div>
-                    <% end %>
-                </div>
-                </div>
+                            </div>
+                        <% end %>
             </div>
         </div>
     </div>
