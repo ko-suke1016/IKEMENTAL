@@ -19,11 +19,6 @@
                 <%= f.text_field :name, class: "form-control"  %>
             </div>
             <div class="form-group">
-                <%= f.label :email, t('inquiries.new.email'), class: "form-label" %>
-                <span class="badge badge-warning">任意</span>
-                <%= f.email_field :email, class: "form-control"  %>
-            </div>
-            <div class="form-group">
                 <%= f.label :message, t('inquiries.new.message'), class: "form-label" %>
                 <span class="badge badge-danger">必須</span>
                 <%= f.text_area :message, size: "20x10", class: "form-control"%>
