@@ -9,21 +9,21 @@ $(document).on('turbolinks:load', function() {
 
 
         if (result == 0){   // 吹き出しの表示
-            $(".boy-position1, .boy-position2, .boy-position3, .hukidasi1, .hukidasi2, .hukidasi3").fadeOut();
+            $(".boy-position1, .boy-position2, .boy-position3, .boy-position-first, .hukidasi1, .hukidasi2, .hukidasi3, .hukidasi-first").fadeOut();
                 $(".boy-position1").fadeIn();
                 $(".hukidasi1").fadeIn();
                 $(".experience-hukidasi-0").fadeIn(function(){
                     $(this).delay(1250).fadeOut();
                 })
         } else if (result == 5){
-            $(".boy-position1, .boy-position2, .boy-position3, .hukidasi1, .hukidasi2, .hukidasi3").fadeOut();
+            $(".boy-position1, .boy-position2, .boy-position3, .boy-position-first, .hukidasi1, .hukidasi2, .hukidasi3, .hukidasi-first").fadeOut();
                 $(".boy-position2").fadeIn();
                 $(".hukidasi2").fadeIn();
                 $(".experience-hukidasi-5").fadeIn(function(){
                     $(this).delay(1250).fadeOut();
                 })
         } else if (result == 10){
-            $(".boy-position1, .boy-position2, .boy-position3, .hukidasi1, .hukidasi2, .hukidasi3").fadeOut();
+            $(".boy-position1, .boy-position2, .boy-position3, .boy-position-first, .hukidasi1, .hukidasi2, .hukidasi3, .hukidasi-first").fadeOut();
                 $(".boy-position3").fadeIn();
                 $(".hukidasi3").fadeIn();
                 $(".experience-hukidasi-10").fadeIn(function(){
