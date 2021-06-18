@@ -30,19 +30,9 @@ ActiveRecord::Schema.define(version: 2021_06_08_062459) do
   create_table "inquiries", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name"
     t.string "message", null: false
-    t.string "email"
     t.integer "category", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "question_results", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.integer "question_type"
-    t.integer "total"
-    t.bigint "user_id", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["user_id"], name: "index_question_results_on_user_id"
   end
 
   create_table "recovery_answers", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -97,13 +87,13 @@ ActiveRecord::Schema.define(version: 2021_06_08_062459) do
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name", null: false
     t.string "email", null: false
-    t.string "crypted_password"
+    t.string "crypted_password", null: false
     t.string "salt"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
     t.integer "physical_gage", default: 100
     t.integer "experience_gage", default: 0
     t.integer "position", default: 0, null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
     t.string "reset_password_token"
     t.datetime "reset_password_token_expires_at"
     t.datetime "reset_password_email_sent_at"
@@ -113,7 +103,6 @@ ActiveRecord::Schema.define(version: 2021_06_08_062459) do
   end
 
   add_foreign_key "first_answers", "first_questions"
-  add_foreign_key "question_results", "users"
   add_foreign_key "recovery_answers", "recovery_questions"
   add_foreign_key "second_answers", "second_questions"
   add_foreign_key "third_answers", "third_questions"

@@ -2,15 +2,15 @@
 <div id="recovery-item" style="display:none;">
   <div class="balloon_l">
     <div class="faceicon">
-      <img src="/assets/megane.png" alt="" >
+      <img src="/assets/speak_boy.png" alt="" >
     </div>
     <p class="says1">Q1: <%= recovery_question.question %></p>
   </div>
   <div class="answer_after">
     <% recovery_answers.each do |recovery_answer| %>
       <div class="balloon_r">
-        <div class="faceicon">
-          <img src="/assets/buka.png" alt="" >
+        <div class="faceicon2">
+          <img src="/assets/top_boy.png" alt="" >
         </div>
         <div class="says send_selection " data-send-id = <%= recovery_answer.score %>><p>A. <%= recovery_answer.answer %></p></div>
       </div>
@@ -19,8 +19,8 @@
 
   <div class="not-btn" style="display: none;">
     <div class="balloon_r">
-      <div class="faceicon">
-        <img src="/assets/buka.png" alt="" >
+      <div class="faceicon2">
+        <img src="/assets/top_boy.png" alt="" >
       </div>
       <div class="says"><p>回答済み</p></div>
     </div>
@@ -30,7 +30,7 @@
 <div class="recovery-false" style="display: none;">
   <div class="balloon_l">
     <div class="faceicon">
-      <img src="/assets/but_jyusi.png" alt="" >
+      <img src="/assets/speak_boy.png" alt="" >
     </div>
     <p class="says1">不正解! メンタルは回復されません</p>
   </div>
@@ -39,7 +39,7 @@
 <div class="recovery-true" style="display: none;">
   <div class="balloon_l">
     <div class="faceicon">
-      <img src="/assets/nice_jyusi.png" alt="" >
+      <img src="/assets/speak_boy.png" alt="" >
     </div>
     <p class="says1">正解！！ メンタルが７回復！</p>
   </div>
@@ -48,7 +48,7 @@
 <div class="recovery-comentary" style="display: none;">
   <div class="balloon_l">
     <div class="faceicon">
-      <img src="/assets/megane.png" alt="" >
+      <img src="/assets/speak_boy.png" alt="" >
     </div>
     <p class="says1"> <%= recovery_question.comentary %></p>
   </div>
@@ -56,8 +56,8 @@
 
 <div class="remove" style="display: none;">
   <div class="balloon_r">
-    <div class="faceicon">
-      <img src="/assets/buka.png" alt="" >
+    <div class="faceicon2">
+      <img src="/assets/top_boy.png" alt="" >
     </div>
     <div class="says"><p><%= link_to 'Top', users_path%>へ戻る</P></div>
   </div>
