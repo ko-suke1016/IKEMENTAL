@@ -14,13 +14,19 @@
   width: 80px; /*任意のサイズ*/
   height: auto;
 }
-.balloon_r .faceicon{
+
+.faceicon2 img{
+  width: 50px; /*任意のサイズ*/
+  height: 80px;
+}
+
+.balloon_r .faceicon2{
   margin-left:25px;
 }
 .balloon_l .faceicon{
   margin-right:25px;
 }
-.balloon_r .faceicon{
+.balloon_r .faceicon2{
   order:2 !important;
 }
 .says {
