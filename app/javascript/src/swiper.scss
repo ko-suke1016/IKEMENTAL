@@ -135,13 +135,13 @@ img {
   content: "";
   border-radius: 50%;
   display:block;
-  background: #cfa7cd;
+  background-color: #cfa7cd;
   text-align: center;
   color: black;
   -webkit-font-smoothing: antialiased;
 }
 .slick-dots .slick-active button:before{
-  background: #e973e3;
+  background-color: #e973e3;
 }
 .slick-dots li {
   position: relative;
