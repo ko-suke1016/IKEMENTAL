@@ -14,7 +14,7 @@
     z-index: 30;
     padding: 2rem;
   }
-  
+
   /* 閉じるボタン */
   .button-close {
     position: absolute;
@@ -28,7 +28,7 @@
     border-radius: 20rem;
     cursor: pointer;
   }
-  
+
   .overlay {
     display: none;
     position: fixed;
@@ -53,26 +53,23 @@
     margin-top: 230px;
   }
 
-  .modal-boy-position3{
-  }
-
   .modal-text{
     height : 500px;
-    background-image: url(ofise7.jpg);
+    background-image: url(/assets/ofise7.jpg);
     height: 500px;
     background-size:cover;
   }
 
   .modal-text2{
     height : 500px;
-    background-image: url(ofise5.jpg);
+    background-image: url(/assets/ofise5.jpg);
     height: 500px;
     background-size:cover;
   }
 
   .modal-text3{
     height : 500px;
-    background-image: url(top_bill.jpg);
+    background-image: url(/assets/top_bill.jpg);
     height: 500px;
     background-size:cover;
   }
