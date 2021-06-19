@@ -36,7 +36,7 @@
   position: relative;
   padding: 17px 13px 15px 18px;
   border-radius: 12px;
-  background: #A7E8BD;/*色は任意*/
+  background-color: #A7E8BD;/*色は任意*/
   box-sizing:border-box;
   margin:0 !important;
   line-height:1.5;
@@ -67,7 +67,7 @@
   position: relative;
   padding: 17px 13px 15px 18px;
   border-radius: 12px;
-  background: #8fd6e1;/*色は任意*/
+  background-color: #8fd6e1;/*色は任意*/
   box-sizing:border-box;
   margin:0 !important;
   line-height:1.5;
@@ -93,7 +93,7 @@
 // リザルト画面の字体
 .text-style{
   font-size: 15px;
-  font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
+  // font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
   font-weight: bold;
   color: #2b546a;
 }
