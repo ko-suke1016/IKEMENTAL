@@ -51,6 +51,9 @@ test:
 #
 production:
   <<: *default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
   database: mentalhealth_management_test_production
   username: mentalhealth_management_test
   password: <%= ENV['MENTALHEALTH_MANAGEMENT_TEST_DATABASE_PASSWORD'] %>

@@ -63,6 +63,7 @@ group :development, :test do
   #テスト関連
   gem 'rspec-rails'
   gem 'factory_bot_rails'
+  gem 'sqlite3'
 end
 
 group :development do
@@ -79,6 +80,10 @@ group :development do
   gem 'letter_opener_web'
   # n+1問題の検知
   gem 'bullet'
+end
+
+group :production do
+  gem 'pg'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
