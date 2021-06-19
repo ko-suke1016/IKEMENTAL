@@ -63,7 +63,6 @@ group :development, :test do
   #テスト関連
   gem 'rspec-rails'
   gem 'factory_bot_rails'
-  gem 'sqlite3'
 end
 
 group :development do
