@@ -10,7 +10,7 @@ module ApplicationHelper
           canonical: request.original_url,
           og: {
             site_name: :site,
-            title: :title,
+            title: 'イケメンタル',
             description: :description,
             type: 'website',
             url: request.original_url,
@@ -19,6 +19,7 @@ module ApplicationHelper
           },
           twitter: {
             card: 'summary_large_image',
+            title: 'イケメンタル'
             site: '@kosuke54177851',
             image: image_url('twitter-top.png'),
           }
