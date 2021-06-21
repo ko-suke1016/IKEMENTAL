@@ -3,7 +3,7 @@ class UsersController < ApplicationController
 
     def index
         # ユーザー情報の取得
-        @user = User.find(current_user.id)
+        @user = current_user
 
         # physical_gageの値取得
         @user_physical_gage = User.where(id: current_user.id).pluck(:physical_gage)

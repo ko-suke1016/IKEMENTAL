@@ -15,6 +15,7 @@ require('physical_gage.js')
 require('chart.js')
 require('recovery_items.js')
 require('long_question.js')
+require('example.js')
 
 import 'bootstrap';
 import '../src/application.scss'

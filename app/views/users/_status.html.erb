@@ -1,0 +1,7 @@
+<div class="status-page">
+    <div class="status-position question-start-text2">
+        <p>氏名： <%= @user.name %></p>
+        <p>役職： <%= render 'position', user: @user %></p>
+    </div>
+    <%= render 'graph', user_physical_gage: @user_physical_gage, user_experience_gage: @user_experience_gage %>
+</div>

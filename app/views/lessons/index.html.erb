@@ -1,0 +1,27 @@
+<% content_for(:html_title) { '模擬タスク' } %>
+    <div class="row all-color"> 
+        <div class="letter">
+            <div class="all-position">
+                <div class="row">
+                    <div class="col-md-5">
+                    <div class="left-page-position">
+                      <%= render 'example_hukidasi' %>
+                    </div>
+                    <div class="example-charactor-position" >
+                        <%= image_tag "task_boy.png", :size =>'200x260', class: "boy3" %>
+                    </div>
+                    </div>
+
+                    <div class="col-md-7">
+                        <div class="light-page">
+                            <div class="light_page_top">
+                                <%= render 'example'%>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
