@@ -8,14 +8,14 @@ module ApplicationHelper
             charset: 'utf-8',
             description: 'イケメンタルはメンタルヘルスマネジメントを学ぶきっかけを提供するアプリです。クイズ形式で問題を解きながら出世街道を駆け上がりましょう！',
             keywords: 'メンタルヘルスマネジメント,メンタルヘルス,プログラミング,メンタル,ストレスケア',
-            canonical: request.original_url,
+            canonical: 'request.original_url',
             separator: '|',
           og: {
             site_name: :site,
             title: :title,
             description: :description,
             type: 'website',
-            url: request.original_url,
+            url: 'request.original_url',
             image: image_url('twitter-top.png'),
             local: 'ja-JP',
           },
@@ -29,5 +29,5 @@ module ApplicationHelper
             image: image_url('twitter-top.png'),
           }
         }
-      end
+    end
 end
