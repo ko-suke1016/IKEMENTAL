@@ -50,7 +50,8 @@ gem 'dotenv-rails', groups: [:development, :production]
 
 gem 'enum_help'
 
-
+#twitter card
+gem 'meta-tags', :require => 'meta_tags'
 
 
 group :development, :test do
