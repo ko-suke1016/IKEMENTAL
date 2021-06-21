@@ -9,7 +9,7 @@ module ApplicationHelper
           keywords: 'メンタルヘルスマネジメント,メンタルヘルス,プログラミング,メンタル,ストレスケア',
           canonical: request.original_url,
           og: {
-            site_name: :site,
+            site_name: '@kosuke54177851',
             title: 'イケメンタル',
             description: 'イケメンタルはメンタルヘルスマネジメントを学ぶきっかけを提供するアプリです。クイズ形式で問題を解きながら出世街道を駆け上がりましょう！',
             type: 'website',
@@ -19,6 +19,7 @@ module ApplicationHelper
           },
           twitter: {
             card: 'summary_large_image',
+            site: '@kosuke54177851'
             url: 'https://buka-mental.herokuapp.com/'
             description: 'イケメンタルはメンタルヘルスマネジメントを学ぶきっかけを提供するアプリです。クイズ形式で問題を解きながら出世街道を駆け上がりましょう！',
             title: 'イケメンタル',
