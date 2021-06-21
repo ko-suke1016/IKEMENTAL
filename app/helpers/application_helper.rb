@@ -10,10 +10,6 @@ module ApplicationHelper
             keywords: 'メンタルヘルスマネジメント,メンタルヘルス,プログラミング,メンタル,ストレスケア',
             canonical: request.original_url,
             separator: '|',
-            icon: [
-                { href: image_url('favicon.ico') },
-                { href: image_url('icon.jpg'), rel: 'apple-touch-icon', sizes: '180x180', type: 'image/jpg' },
-            ],
           og: {
             site_name: :site,
             title: :title,
