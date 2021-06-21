@@ -183,6 +183,25 @@
   color:white;}
 
 
+//example
+.btn-example {
+  border: 2px solid #ffaa64;
+  color: #ffaa64;
+  background-color: WHITE;
+  width: 97%;
+  height: 20px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+.btn-example:hover {
+  background: #ffaa64;
+  color: WHITE;
+}
+.btn-example:active {
+  top: 2px;
+}
+
+
 
 // long-taskの選択肢のボタン
 

@@ -5,13 +5,7 @@
                 <div class="row">
                     <div class="col-md-5">
                     <div class="left-page-position">
-                        <div class="status-page">
-                            <div class="status-position question-start-text2">
-                                <p>氏名： <%= @user.name %></p>
-                                <p>役職： <%= render 'position', user: @user %></p>
-                            </div>
-                            <%= render 'graph', user_physical_gage: @user_physical_gage, user_experience_gage: @user_experience_gage %>
-                        </div>
+                        <%= render 'status' %>
                         <div class="charactor-position" >
                             <%= render 'hukidasi2' %>
                             <%= render "sorcery" %>

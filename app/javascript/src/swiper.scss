@@ -1,3 +1,21 @@
+//example問題の設定
+.swiper-container-example{
+  .swiper-wrapper {
+        border-radius: 5px;
+        width:100%;
+        padding: 0;
+        border: 5px solid #ffaa64;
+        position: relative;
+        z-index: 1;
+        margin: 1px;
+    }
+
+  img {
+      height: 290px;
+    }
+
+  }
+
 // 基礎編のSwiper設定
   .swiper-container {
   .swiper-wrapper {

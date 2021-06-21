@@ -6,5 +6,4 @@ class TopsController < ApplicationController
 
     def privacy; end
 
-    def play_role; end
 end
