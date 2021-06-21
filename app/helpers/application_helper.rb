@@ -19,6 +19,7 @@ module ApplicationHelper
           },
           twitter: {
             card: 'summary_large_image',
+            description: :description,
             title: 'イケメンタル'
             site: '@kosuke54177851',
             image: image_url('twitter-top.png'),
