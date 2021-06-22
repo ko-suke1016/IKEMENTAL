@@ -18,8 +18,10 @@
   <header class="sticky-top">
     <%= render 'shared/header' %>
   </header>
+  <main>
       <%= yield %>
       <%= render 'shared/flash_message' %>
+  </main>
   <footer class="footer">
     <%= render 'shared/footer' %>
   </footer>

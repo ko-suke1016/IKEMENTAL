@@ -1,26 +1,26 @@
-<% content_for(:html_title) { 'トップ' } %>
-<div class="top-title ">
-<div class="text-center ">
-    <div class="top-box">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="top-position mx-auto" >
-                        <h2 class="text-size text-family">Buka Mental</h2>
-                        <p class="text-family">メンタルヘルスマネジメント可視化シュミレーションアプリ</p>
-                        <%= image_tag "top_boy.png", :size =>'200x300', class: "top-buka-position" %>
-                        <div class="top-hukidasi">
-                            <p>あなたの働き方<br>メンタルにきてませんか？</p>
-                        </div>
-                        <div class="top-login-button">
-                            <a href="/login" class="btn btn-border">ゲームスタート！</a>
-                        </div>
-                        <div class="top-play-role-botton">
-                            <a href="/lessons" class="btn btn-border">チュートリアル</a>
-                        </div>
-                </div>
+<div class="container">
+<div class="row">
+    <div class="col-md-12 text-center">
+        <div class="top-position mx-auto" >
+            <h2 class="text-size text-family">Buka Mental</h2>
+            <p class="text-family">メンタルヘルスマネジメント可視化シュミレーションアプリ</p>
+            <%= image_tag "top_boy.png", :size =>'200x300', class: "top-buka-position" %>
+            <div class="top-hukidasi">
+                <p>あなたの働き方<br>メンタルにきてませんか？</p>
+            </div>
+            <div class="top-login-button">
+            <% if logged_in? %>
+                <a href="/users" class="btn btn-border">ゲームスタート！</a>
+            <% else %>
+                <a href="/login" class="btn btn-border">ゲームスタート！</a>
+            <% end %>
+            </div>
+            <div class="top-play-role-botton">
+                <a href="/lessons" class="btn btn-border">チュートリアル</a>
             </div>
         </div>
     </div>
 </div>
 </div>
+
 

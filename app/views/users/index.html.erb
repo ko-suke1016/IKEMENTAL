@@ -4,18 +4,20 @@
             <div class="all-position">
                 <div class="row">
                     <div class="col-md-5">
-                    <div class="left-page-position">
-                        <%= render 'status' %>
+                        <%= render "sorcery" %>
+                        <div class="left-page">
+                        <div class="left-page-position2">
+                            <%= render 'status' %>
+                        </div>
                         <div class="charactor-position" >
                             <%= render 'hukidasi2' %>
-                            <%= render "sorcery" %>
                             <%= image_tag "task_boy.png", :size =>'200x260', class: "boy" %>
                         </div>
-                    </div>
+                        </div>
                     </div>
 
                     <div class="col-md-7">
-                        <div class="light-page">
+                        <div class="light-page2">
                             <div class="light_page_top">
                                 <%= render 'long_question', user: @user%>
                                 <%= render 'firsts_question'%>

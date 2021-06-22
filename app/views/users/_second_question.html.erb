@@ -26,7 +26,7 @@
           <% second_question.second_answers.each do |second_answer| %>
               <% if second_question.id == second_answer.second_question_id %>
                 <div style="margin-top: 2px;">
-                  <button class="send_data_selection btn-2 " style="padding:3px; margin:5px; height: 50px;" href="<%= second_answer.second_question_id.to_i%>" type="submit" data-send-id = <%= second_answer.score %> ><%= second_answer.answer %></button>
+                  <button class="send_data_selection btn-2 " style="padding:3px; margin:5px; height: 50px;" href="<%= second_answer.second_question_id.to_i%>" type="submit" data-send-id = <%= second_answer.score %> onclick="disabled = true;" ><%= second_answer.answer %></button>
                 </div>
               <% end %>
           <% end %>

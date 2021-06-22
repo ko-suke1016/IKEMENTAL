@@ -1,6 +1,55 @@
+// .header {
+//     position: fixed;
+//     background-color: #78BBE6;
+//     width: 100%;
+//     height: 60px;
+// }
+
+$width_max: 100vw;
+
+@mixin width_size {
+  width: $width_max;
+  background-color: #78bbe6;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+html body {
+  background-color: #f9fbfe;
+  width: $width_max;
+  margin-bottom: 60px;
+  padding-bottom: 0;
+}
+
+main {
+  flex: 1;
+  margin: 0;
+}
+
+.navbar-brand {
+  color: #f9fbfe;
+  padding: 0px;
+}
+
+.inner {
+  padding-top: 6px;
+}
 
 .header {
-    background-color: #78BBE6;
-    width: 100%;
-    height: 100%;
+  height: 60px;
+  @include width_size;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 0;
+  /* フッタの高さ */
+  height: 60px;
+  background: #fff;
+  color: #000;
+  @include width_size;
 }

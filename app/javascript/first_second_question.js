@@ -5,6 +5,7 @@ $(document).on('turbolinks:load', function() {
 
     $(".send_data_selection").on('click',function(){
         var target = $(this);
+        // $('button').prop("disabled", true);
         var result = target.data("send-id");   // クリックされた要素の指定するIDを取得
 
 

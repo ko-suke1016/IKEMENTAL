@@ -96,8 +96,8 @@ Rails.application.configure do
     port: 587,
     domain: 'gmail.com',
     #-----変更点---------------------------
-    user_name: ENV['SMTP_USERNAME'],
-    password: ENV['SMTP_PASSWORD'],
+    user_name: ENV['SENDGRID_USERNAME'],
+    password: ENV['SENDGRID_PASSWORD'],
     #----変更点ここまで-----------------------
     authentication: 'plain',
     enable_starttls_auto: true
