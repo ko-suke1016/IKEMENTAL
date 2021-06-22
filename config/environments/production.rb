@@ -89,7 +89,7 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
-  config.action_mailer.default_url_options = { host: 'buka-mental.herokuapp.com' }
+  config.action_mailer.default_url_options = { host: "buka-mental.herokuapp.com", protocol: 'https' }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
     address: 'smtp.gmail.com',
@@ -99,7 +99,7 @@ Rails.application.configure do
     user_name: ENV['SMTP_USERNAME'],
     password: ENV['SMTP_PASSWORD'],
     #----変更点ここまで-----------------------
-    authentication: 'plain',
+    authentication: :plain,
     enable_starttls_auto: true
   }
 
