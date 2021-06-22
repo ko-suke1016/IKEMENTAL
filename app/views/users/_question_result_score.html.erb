@@ -6,7 +6,8 @@
             <%= render "result_comment" %>
         </div>
         <%= link_to 'Top', users_path, class: 'btn btn-outline-primary'%>
-        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="shareList__link icon-twitter" data-show-count="false"　target="_blank"　title="Twitter">Twitter</a>
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <%= link_to "https://twitter.com/share?&url=https://buka-mental.herokuapp.com/&text=今日のおつまみはを試します！&hashtags=おつまみこ,今日のおつまみ&lang=ja", title: 'Twitter', target: :_blank, rel: 'noopener noreferrer', class: "twitter btn" do %>
+            <i class="fab fa-twitter share-button"></i>
+        <% end %>
     </div>
 </div>
