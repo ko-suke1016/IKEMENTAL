@@ -1,17 +1,18 @@
 <% content_for(:html_title) { 'お問い合わせ' } %>
+<section class="hero2">
 <div class="container">
-<div class="row d-flex align-items-center justify-content-center">
-<div class="col-md-7 ">
+<div class="row ">
+<div class="col-lg-12 col-md-12 col-sm-12 ">
 
-<div class="login-title inquiry-padding text-family2">
-    <div class="text-center title-position">
+<div class="inquiry-title text-family2 mx-auto mt-1">
+    <div class="text-center title-position mb-5">
         <h3>お問い合わせフォーム</h3>
     </div>
         <%= form_with model: @inquiry, local: true do |f| %>
             <div class="form-group">
                 <%= f.label :category, t('inquiries.new.category'), class: "form-label"%>
                 <span class="badge badge-danger">必須</span>
-                <%= f.select :category, Inquiry.categories.keys.map {|k| [I18n.t("enums.inquiry.category.#{k}"), k]}, { include_blank: '選択してください'}, class: "form-control"%>
+                <%= f.select :category, Inquiry.categories.keys.map {|k| [I18n.t("enums.inquiry.category.#{k}"), k]}, { include_blank: false}, class: "form-control"%>
             </div>
             <div class="form-group">
                 <%= f.label :name, t('inquiries.new.name'), class: "form-label" %>
@@ -23,10 +24,13 @@
                 <span class="badge badge-danger">必須</span>
                 <%= f.text_area :message, size: "20x10", class: "form-control"%>
             </div>
-            <%= f.submit t('inquiries.new.send_mail'), class: "btn btn-info" %>
+            <div class="login-button text-center">
+                <%= f.submit t('inquiries.new.send_mail'), class: "btn btn--orange btn--cubic btn--shadow w-25" %>
+            </div>
         <% end %>
 </div>
 
 </div>
 </div>
 </div>
+</section>

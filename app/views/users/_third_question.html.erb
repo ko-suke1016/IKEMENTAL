@@ -25,7 +25,7 @@
                 <% third_question.third_answers.each do |third_answer| %>
                     <% if third_question.id == third_answer.third_question_id %>
                       <div style="margin-top: 3px;">
-                        <button class="send_data_selection btn-3 " style="padding:3px; margin:5px; height: 50px;" href="<%= third_answer.third_question_id.to_i%>" type="submit" data-send-id = <%= third_answer.score %> ><%= third_answer.answer %></button>
+                        <button class="send_data_selection btn-3 " style="padding:3px; margin:5px; height: 50px;" href="<%= third_answer.third_question_id.to_i%>" type="submit" data-send-id = <%= third_answer.score %> onclick="disabled = true;"><%= third_answer.answer %></button>
                       </div>
                     <% end %>
                 <% end %>

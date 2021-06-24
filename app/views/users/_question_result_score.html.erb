@@ -1,12 +1,12 @@
 <div class="11" style="display: none;">
     <div class="question-field">
         <div id="result_score" class="question-result-score text-center text-style" style="text: center; padding-top: 20px;" >
-            <p>あなたのメンタルマネジメント力は</p>
-            <p><span class="spin-score"><%= 100 %></span>/100点です。</p>
+            <p class="mb-3">あなたのメンタルマネジメント力は</p>
+            <h3 class="mb-3"><span class="spin-score"><%= 100 %></span>/100点です。</h3>
             <%= render "result_comment" %>
         </div>
-        <%= link_to 'Top', users_path, class: 'btn btn-outline-primary'%>
-        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="shareList__link icon-twitter" data-show-count="false"　target="_blank"　title="Twitter">Twitter</a>
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <div class="text-center ">
+            <%= link_to '戻る', users_path, class: 'btn btn--orange btn--cubic btn--shadow w-25' %>
+        </div>
     </div>
 </div>
