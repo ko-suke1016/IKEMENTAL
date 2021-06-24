@@ -1,4 +1,4 @@
-$(document).on('turbolinks:load', function() {
+$(document).ready(function() {
 
     var ctx = document.getElementById('experience');
     var experience = new Chart(ctx, {

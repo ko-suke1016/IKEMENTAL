@@ -1,4 +1,4 @@
-$(document).on('turbolinks:load', function() {
+$(document).ready(function() {
 
 var ctx = document.getElementById('myChart');
 var myChart = new Chart(ctx, {
@@ -110,5 +110,6 @@ $(document).on('click','.recovery_up',function(){
         });
     }
 });
-});
 
+
+});

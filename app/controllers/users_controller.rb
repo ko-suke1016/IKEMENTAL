@@ -22,6 +22,7 @@ class UsersController < ApplicationController
     end
 
     def new
+        return redirect_to tops_path, warning: 'レッスンはPC専用です。' if request.from_smartphone?
         @user = User.new
     end
 
