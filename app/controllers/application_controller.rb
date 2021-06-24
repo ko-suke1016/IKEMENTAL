@@ -2,7 +2,6 @@ class ApplicationController < ActionController::Base
     helper_method :current_user
     protect_from_forgery with: :null_session
     before_action :require_login
-
     # if !Rails.env.development?
     #     binding.pry
     #     rescue_from Exception,                        with: :render_500
@@ -41,4 +40,5 @@ class ApplicationController < ActionController::Base
   def not_authenticated
     redirect_to login_path
   end
+
 end

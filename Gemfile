@@ -53,6 +53,9 @@ gem 'enum_help'
 #twitter card
 gem 'meta-tags', :require => 'meta_tags'
 
+#スマートフォンに対応しているか
+gem 'rack-user_agent'
+
 
 group :development, :test do
   gem 'mysql2', '>= 0.4.4'
