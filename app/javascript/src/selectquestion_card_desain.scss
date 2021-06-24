@@ -1,11 +1,11 @@
 //基礎編
 .memo {
   position: relative;
-  margin: 2em 0;
+  margin: 45px 0;
   padding: 0.5em 1em;
   border: solid 3px #e1e8eb;
   border-radius: 8px;
-  box-shadow:0 6px 0 0 #a7bbc7;
+  box-shadow: 0 6px 0 0 #a7bbc7;
   transform: translateY(-6px);
   height: 100px;
 }
@@ -17,12 +17,12 @@
   padding: 0 9px;
   line-height: 1;
   font-size: 19px;
-  background-color: #FFF;
+  background-color: #fff;
   color: #7692e4;
   font-weight: bold;
 }
 .memo p {
-  margin: 0; 
+  margin: 0;
   padding: 0;
 }
 
@@ -33,9 +33,9 @@
   padding: 0.5em 1em;
   border: solid 3px #e1e8eb;
   border-radius: 8px;
-  box-shadow:0 6px 0 0 #a7bbc7;
+  box-shadow: 0 6px 0 0 #a7bbc7;
   transform: translateY(-6px);
-  height: 100px
+  height: 100px;
 }
 .memo1 .masking-tape1 {
   position: absolute;
@@ -45,15 +45,14 @@
   padding: 0 9px;
   line-height: 1;
   font-size: 19px;
-  background-color: #FFF;
+  background-color: #fff;
   color: #f76a8c;
   font-weight: bold;
 }
 .memo1 p {
-  margin: 0; 
+  margin: 0;
   padding: 0;
 }
-
 
 //上級編
 .memo2 {
@@ -62,9 +61,9 @@
   padding: 0.5em 1em;
   border: solid 3px #e1e8eb;
   border-radius: 8px;
-  box-shadow:0 6px 0 0 #a7bbc7;
+  box-shadow: 0 6px 0 0 #a7bbc7;
   transform: translateY(-6px);
-  height: 100px
+  height: 100px;
 }
 .memo2 .masking-tape2 {
   position: absolute;
@@ -74,15 +73,14 @@
   padding: 0 9px;
   line-height: 1;
   font-size: 19px;
-  background-color: #FFF;
+  background-color: #fff;
   color: #ffaa64;
   font-weight: bold;
 }
 .memo2 p {
-  margin: 0; 
+  margin: 0;
   padding: 0;
 }
-
 
 // 回復アイテム
 
@@ -92,9 +90,9 @@
   padding: 0.5em 1em;
   border: solid 3px #e1e8eb;
   border-radius: 8px;
-  box-shadow:0 6px 0 0 #a7bbc7;
+  box-shadow: 0 6px 0 0 #a7bbc7;
   transform: translateY(-6px);
-  height: 100px
+  height: 100px;
 }
 .memo3 .masking-tape {
   position: absolute;
@@ -104,12 +102,12 @@
   padding: 0 9px;
   line-height: 1;
   font-size: 19px;
-  background-color: #FFF;
+  background-color: #fff;
   color: #f8a1d1;
   font-weight: bold;
 }
 .memo3 p {
-  margin: 0; 
+  margin: 0;
   padding: 0;
 }
 
@@ -123,65 +121,67 @@
   color: #7692e4;
   border: solid 2px #7692e4;
   border-radius: 3px;
-  transition: .4s;
+  transition: 0.4s;
   margin-left: 83%;
 }
 
 .btn-flat-border:hover {
   background-color: #7692e4;
-  color:white;
+  color: white;
 }
 
 // 中間管理職
-.btn-flat-border1{
+.btn-flat-border1 {
   display: inline-block;
   padding: 0.3em 1em;
   text-decoration: none;
   color: #f76a8c;
   border: solid 2px #f76a8c;
   border-radius: 3px;
-  transition: .4s;
+  transition: 0.4s;
   margin-left: 83%;
 }
 
 .btn-flat-border1:hover {
   background: #f76a8c;
-  color:white;}
+  color: white;
+}
 
 // 幹部社員
 
-  .btn-flat-border2{
-    display: inline-block;
-    padding: 0.3em 1em;
-    text-decoration: none;
-    color: #ffaa64;
-    border: solid 2px #ffaa64;
-    border-radius: 3px;
-    transition: .4s;
-    margin-left: 83%;
-  }
-  
-  .btn-flat-border2:hover {
-    background: #ffaa64;
-    color:white;}
+.btn-flat-border2 {
+  display: inline-block;
+  padding: 0.3em 1em;
+  text-decoration: none;
+  color: #ffaa64;
+  border: solid 2px #ffaa64;
+  border-radius: 3px;
+  transition: 0.4s;
+  margin-left: 83%;
+}
+
+.btn-flat-border2:hover {
+  background: #ffaa64;
+  color: white;
+}
 
 // 回復アイテム
 
-.btn-flat-border3{
+.btn-flat-border3 {
   display: inline-block;
   padding: 0.3em 1em;
   text-decoration: none;
   color: #f8a1d1;
   border: solid 2px #f8a1d1;
   border-radius: 3px;
-  transition: .4s;
+  transition: 0.4s;
   margin-left: 83%;
 }
 
 .btn-flat-border3:hover {
-  background:#f8a1d1;
-  color:white;}
-
+  background: #f8a1d1;
+  color: white;
+}
 
 //example
 .btn-example {
@@ -200,8 +200,6 @@
 .btn-example:active {
   top: 2px;
 }
-
-
 
 // long-taskの選択肢のボタン
 
@@ -223,9 +221,9 @@
 }
 
 // 応用編のボタン
-.btn-2{
-  border: 2px solid  #907fa4;
-  color:  #907fa4;
+.btn-2 {
+  border: 2px solid #907fa4;
+  color: #907fa4;
   background-color: WHITE;
   width: 97%;
   height: 20px;
@@ -240,10 +238,10 @@
 }
 
 // 実践編のボタン
-.btn-3{
-  border: 2px solid  #ffaa64;
-  color:  #ffaa64;
-  background-color:WHITE;
+.btn-3 {
+  border: 2px solid #ffaa64;
+  color: #ffaa64;
+  background-color: WHITE;
   width: 97%;
   height: 20px;
 }
@@ -260,22 +258,29 @@
 .question-start-text {
   padding: 27px;
   text-align: center;
-  font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
+  font-family: 'ヒラギノ丸ゴ Pro W4', 'ヒラギノ丸ゴ Pro',
+    'Hiragino Maru Gothic Pro', 'ヒラギノ角ゴ Pro W3',
+    'Hiragino Kaku Gothic Pro', 'HG丸ｺﾞｼｯｸM-PRO', 'HGMaruGothicMPRO';
   font-weight: bold;
   font-size: 20px;
   color: #2b546a;
 }
 
-.question-start-text2{
+.question-start-text2 {
   padding: 17px;
-  font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
+  font-family: 'ヒラギノ丸ゴ Pro W4', 'ヒラギノ丸ゴ Pro',
+    'Hiragino Maru Gothic Pro', 'ヒラギノ角ゴ Pro W3',
+    'Hiragino Kaku Gothic Pro', 'HG丸ｺﾞｼｯｸM-PRO', 'HGMaruGothicMPRO';
   font-weight: bold;
   font-size: 20px;
   color: #2b546a;
 }
 
-.question-start-text3{
-  // font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
+.question-start-text3 {
+  font-family: 'ヒラギノ丸ゴ Pro W4', 'ヒラギノ丸ゴ Pro',
+    'Hiragino Maru Gothic Pro', 'ヒラギノ角ゴ Pro W3',
+    'Hiragino Kaku Gothic Pro', 'HG丸ｺﾞｼｯｸM-PRO', 'HGMaruGothicMPRO';
+  font-weight: bold;
   font-size: 17px;
   color: #2b546a;
   margin-top: 15px;

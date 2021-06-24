@@ -1,11 +1,11 @@
 <% content_for(:html_title) { 'パスワードリセット' } %>
-<div class="container">
-<div class="row d-flex align-items-center justify-content-center">
-<div class="col-md-5 ">
+<div class="container mt-2">
+<div class="row ">
+<div class="col-lg-12 col-md-12 col-sm-12">
 
-<div class="login-title">
-    <div class="text-center">
-      <h3>パスワードリセット<h3>
+<div class="reset-title text-family2 mx-auto">
+    <div class="text-center title-position">
+      <h3>パスワード変更画面<h3>
     </div>
 
     <%= form_with url: password_resets_path, local: true, method: :post do |form| %>
@@ -13,7 +13,9 @@
         <%= form.label :email, t('password_resets.new.email') %>
         <%= form.text_field :email, class: 'form-control', placeholder:"登録したメールアドレスを入力してください" %>
       </div>
-        <%= form.submit t('password_resets.new.send_mail'), class: 'btn btn-info' %>
+      <div class="login-button text-center mt-5">
+        <%= form.submit t('password_resets.new.send_mail'), class: 'btn btn--orange btn--cubic btn--shadow w-25' %>
+      </div>
     <% end %>
 </div>
 

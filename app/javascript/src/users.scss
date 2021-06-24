@@ -1,30 +1,43 @@
-.btn{
-    margin-bottom: 10px;
+.btn {
+  margin-bottom: 10px;
 }
 
-.status-page{
-    margin-bottom: 5px;
-    height: 230px;
+.status-page {
+  margin-bottom: 5px;
+  height: 230px;
 }
 
-.task-btn{
-    margin-top: 60px;
+.task-btn {
+  margin-top: 60px;
 }
 
 .letter {
-    background-color:#f9fbfe;
-    margin: 10px auto 0;
-    max-width: 1200px;
-    position: relative;
-    width: 85%;
-    padding: 1px 20px 90px 20px;
+  background-color: #f9fbfe;
+  border: solid 3px #78bbe6;
+  border-radius: 10px;
+  //   s
+  max-width: 1200px;
+  //   position: relative;
+  width: 100%;
+  padding: 10px 20px 0px 20px;
+  //   height: 650px;
 }
 
-.graph-position{
-    margin-bottom: 60px;
+.graph-position {
+  margin-bottom: 60px;
 }
 
 .graph-style {
-    // margin-bottom: 35px;
-    height: 150px
+  // margin-bottom: 35px;
+  height: 150px;
+}
+
+.privacy-border {
+  border: solid 3px #78bbe6;
+  border-radius: 10px;
+  max-width: 1000px;
+}
+
+.arror-color {
+  color: #ff7a00;
 }

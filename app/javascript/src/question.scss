@@ -1,255 +1,257 @@
 .position {
-    position: absolute;
-    z-index: 20;
+  position: absolute;
+  z-index: 20;
 }
 
 // プログレスバー
 #life {
-    position: absolute;
-    z-index: 10;
-    margin-top: 20px;
-    margin-left: 6%;
-    // font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
-    color: #2b546a;
-    font-weight: bold;
+  position: absolute;
+  z-index: 10;
+  margin-top: 20px;
+  margin-left: 6%;
+  font-family: 'ヒラギノ丸ゴ Pro W4', 'ヒラギノ丸ゴ Pro',
+    'Hiragino Maru Gothic Pro', 'ヒラギノ角ゴ Pro W3',
+    'Hiragino Kaku Gothic Pro', 'HG丸ｺﾞｼｯｸM-PRO', 'HGMaruGothicMPRO';
+  color: #2b546a;
+  font-weight: bold;
 }
 
 // 吹き出し(result=0)
 
 .balloon1 {
-    position: absolute;
-    display: inline-block;
-    width: 40%;
-    margin-top: 20px;
-    padding: 7px 10px;
-    color: #78BBE6;
-    font-size: 16px;
-    background: #FFF;
-    border: solid 3px #78BBE6;
-    box-sizing: border-box;
-    padding: 10px;
-    z-index: 20;
-    margin-left: 45%;
-  }
-  
-  .balloon1:before {
-    content: "";
-    position: absolute;
-    bottom: -24px;
-    left: 50%;
-    margin-left: -15px;
-    border: 12px solid transparent;
-    border-top: 12px solid #FFF;
-    z-index: 20;
-  }
-  
-  .balloon1:after {
-    content: "";
-    position: absolute;
-    bottom: -30px;
-    left: 50%;
-    margin-left: -17px;
-    border: 14px solid transparent;
-    border-top: 14px solid #78BBE6;
-    z-index: 2;
-  }
-  
-  .balloon1 p {
-    margin: 0;
-    padding: 0;
-  }
+  position: absolute;
+  display: inline-block;
+  width: 40%;
+  margin-top: 20px;
+  padding: 7px 10px;
+  color: #78bbe6;
+  font-size: 16px;
+  background: #fff;
+  border: solid 3px #78bbe6;
+  box-sizing: border-box;
+  padding: 10px;
+  z-index: 20;
+  margin-left: 45%;
+}
+
+.balloon1:before {
+  content: '';
+  position: absolute;
+  bottom: -24px;
+  left: 50%;
+  margin-left: -15px;
+  border: 12px solid transparent;
+  border-top: 12px solid #fff;
+  z-index: 20;
+}
+
+.balloon1:after {
+  content: '';
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  margin-left: -17px;
+  border: 14px solid transparent;
+  border-top: 14px solid #78bbe6;
+  z-index: 2;
+}
+
+.balloon1 p {
+  margin: 0;
+  padding: 0;
+}
 
 // 吹き出し(result=5)
 
 .balloon2 {
-    position: absolute;
-    display: inline-block;
-    width: 40%;
-    margin-top: 20px;
-    padding: 7px 10px;
-    color: #f0ca6d;
-    font-size: 16px;
-    background-color: #FFF;
-    border: solid 3px #f0ca6d;
-    box-sizing: border-box;
-    padding: 10px;
-    z-index: 20;
-    margin-left: 45%;
-  }
-  
-  .balloon2:before {
-    content: "";
-    position: absolute;
-    bottom: -24px;
-    left: 50%;
-    margin-left: -15px;
-    border: 12px solid transparent;
-    border-top: 12px solid #FFF;
-    z-index: 20;
-  }
-  
-  .balloon2:after {
-    content: "";
-    position: absolute;
-    bottom: -30px;
-    left: 50%;
-    margin-left: -17px;
-    border: 14px solid transparent;
-    border-top: 14px solid #f0ca6d;
-    z-index: 2;
-  }
-  
-  .balloon2 p {
-    margin: 0;
-    padding: 0;
-  }
+  position: absolute;
+  display: inline-block;
+  width: 40%;
+  margin-top: 20px;
+  padding: 7px 10px;
+  color: #f0ca6d;
+  font-size: 16px;
+  background-color: #fff;
+  border: solid 3px #f0ca6d;
+  box-sizing: border-box;
+  padding: 10px;
+  z-index: 20;
+  margin-left: 45%;
+}
+
+.balloon2:before {
+  content: '';
+  position: absolute;
+  bottom: -24px;
+  left: 50%;
+  margin-left: -15px;
+  border: 12px solid transparent;
+  border-top: 12px solid #fff;
+  z-index: 20;
+}
+
+.balloon2:after {
+  content: '';
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  margin-left: -17px;
+  border: 14px solid transparent;
+  border-top: 14px solid #f0ca6d;
+  z-index: 2;
+}
+
+.balloon2 p {
+  margin: 0;
+  padding: 0;
+}
 
 // 吹き出し(result=10)
 
 .balloon3 {
-    position: absolute;
-    display: inline-block;
-    width: 40%;
-    margin-top: 20px;
-    padding: 7px 10px;
-    color: #f76a8c;
-    font-size: 16px;
-    background-color: #FFF;
-    border: solid 3px #f76a8c;
-    box-sizing: border-box;
-    padding: 10px;
-    z-index: 20;
-    margin-left: 45%;
-  }
-  
-  .balloon3:before {
-    content: "";
-    position: absolute;
-    bottom: -24px;
-    left: 50%;
-    margin-left: -15px;
-    border: 12px solid transparent;
-    border-top: 12px solid #FFF;
-    z-index: 20;
-  }
-  
-  .balloon3:after {
-    content: "";
-    position: absolute;
-    bottom: -30px;
-    left: 50%;
-    margin-left: -17px;
-    border: 14px solid transparent;
-    border-top: 14px solid #f76a8c;
-    z-index: 2;
-  }
-  
-  .balloon3 p {
-    margin: 0;
-    padding: 0;
-  }
+  position: absolute;
+  display: inline-block;
+  width: 40%;
+  margin-top: 20px;
+  padding: 7px 10px;
+  color: #f76a8c;
+  font-size: 16px;
+  background-color: #fff;
+  border: solid 3px #f76a8c;
+  box-sizing: border-box;
+  padding: 10px;
+  z-index: 20;
+  margin-left: 45%;
+}
 
-  // 吹き出し(最後の結果表示画面)
+.balloon3:before {
+  content: '';
+  position: absolute;
+  bottom: -24px;
+  left: 50%;
+  margin-left: -15px;
+  border: 12px solid transparent;
+  border-top: 12px solid #fff;
+  z-index: 20;
+}
+
+.balloon3:after {
+  content: '';
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  margin-left: -17px;
+  border: 14px solid transparent;
+  border-top: 14px solid #f76a8c;
+  z-index: 2;
+}
+
+.balloon3 p {
+  margin: 0;
+  padding: 0;
+}
+
+// 吹き出し(最後の結果表示画面)
 
 .balloon4 {
-    position: absolute;
-    display: inline-block;
-    width: 40%;
-    margin-top: 20px;
-    padding: 7px 10px;
-    color: #2b546a;
-    font-size: 16px;
-    background-color: #FFF;
-    border: solid 3px #2b546a;
-    box-sizing: border-box;
-    padding: 10px;
-    z-index: 20;
-    margin-left: 45%;
-  }
-  
-  .balloon4:before {
-    content: "";
-    position: absolute;
-    bottom: -24px;
-    left: 50%;
-    margin-left: -15px;
-    border: 12px solid transparent;
-    border-top: 12px solid #FFF;
-    z-index: 20;
-  }
-  
-  .balloon4:after {
-    content: "";
-    position: absolute;
-    bottom: -30px;
-    left: 50%;
-    margin-left: -17px;
-    border: 14px solid transparent;
-    border-top: 14px solid #2b546a;
-    z-index: 2;
-  }
-  
-  .balloon4 p {
-    margin: 0;
-    padding: 0;
-  }
+  position: absolute;
+  display: inline-block;
+  width: 40%;
+  margin-top: 20px;
+  padding: 7px 10px;
+  color: #2b546a;
+  font-size: 16px;
+  background-color: #fff;
+  border: solid 3px #2b546a;
+  box-sizing: border-box;
+  padding: 10px;
+  z-index: 20;
+  margin-left: 45%;
+}
+
+.balloon4:before {
+  content: '';
+  position: absolute;
+  bottom: -24px;
+  left: 50%;
+  margin-left: -15px;
+  border: 12px solid transparent;
+  border-top: 12px solid #fff;
+  z-index: 20;
+}
+
+.balloon4:after {
+  content: '';
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  margin-left: -17px;
+  border: 14px solid transparent;
+  border-top: 14px solid #2b546a;
+  z-index: 2;
+}
+
+.balloon4 p {
+  margin: 0;
+  padding: 0;
+}
 
 // Last Q終了後に表示
 
 .bubble04 {
-    position: absolute;
-    display: inline-block;
-    width: 170px;
-    text-align: center;
-    color:#FFF;
-    padding: 10px;
-    background-color: #50C1E9;
-    border-radius: 5px;
-    z-index: 20;
-    margin-left: 55%;
-    margin-top: 30px;
+  position: absolute;
+  display: inline-block;
+  width: 170px;
+  text-align: center;
+  color: #fff;
+  padding: 10px;
+  background-color: #50c1e9;
+  border-radius: 5px;
+  z-index: 20;
+  margin-left: 55%;
+  margin-top: 30px;
 }
 .bubble04:before {
-    content: '';
-    position: absolute;
-    display: block;
-    z-index: 1;
-    border-style: solid;
-    border-color: #50C1E9 transparent;
-    border-width: 10px 10px 0 10px;
-    bottom: -10px;
-    left: 50%;
-    margin-left: -10px;
+  content: '';
+  position: absolute;
+  display: block;
+  z-index: 1;
+  border-style: solid;
+  border-color: #50c1e9 transparent;
+  border-width: 10px 10px 0 10px;
+  bottom: -10px;
+  left: 50%;
+  margin-left: -10px;
 }
 
 // 結果画面の表示
 
-.question-result-score{
-    margin-top: 10px;
+.question-result-score {
+  margin-top: 10px;
 }
 
-.spin-score{
-    padding-top: 3px;
-    font-size: 30px;
+.spin-score {
+  padding-top: 3px;
+  font-size: 30px;
 }
 
 // クエスチョンの囲枠
-.question-field{
-    border: solid 3px #e1e8eb;
-    border-radius: 8px;
-    box-shadow:0 6px 0 0 #a7bbc7;
-    margin-top: 10px;
-    padding: 5px;
+.question-field {
+  border: solid 3px #e1e8eb;
+  border-radius: 8px;
+  box-shadow: 0 6px 0 0 #a7bbc7;
+  margin-top: 15px;
+  padding: 5px;
+  height: 280px;
 }
 
-.question-field4{
-    border: solid 3px #e1e8eb;
-    border-radius: 8px;
-    box-shadow:0 6px 0 0 #a7bbc7;
-    margin-top: 5px;
-    padding: 5px;
-    height: 560px;
+.question-field4 {
+  border: solid 3px #e1e8eb;
+  border-radius: 8px;
+  box-shadow: 0 6px 0 0 #a7bbc7;
+  margin-top: 5px;
+  padding: 5px;
+  height: 560px;
 }
 
 // thirdクエスチョンの吹き出し
-

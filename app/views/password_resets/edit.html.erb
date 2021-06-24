@@ -21,7 +21,9 @@
             <%= f.label :password_confirmation, t('password_resets.edit.password_confirmation') , class: "form-label" %>
             <%= f.password_field :password_confirmation, class: 'form-control' %>
         </div>
-        <%= f.submit t('password_resets.edit.submit'), class: 'btn btn-info' %>
+        <div class="login-button text-center mt-5">
+            <%= f.submit t('password_resets.edit.submit'), class: 'btn btn--orange btn--cubic btn--shadow w-25' %>
+        </div>
     <% end %>
 
 </div>

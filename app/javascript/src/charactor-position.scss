@@ -1,122 +1,124 @@
 // キャラクターを配置できるスペース
-.container{
+.container {
   min-height: 100vh;
 }
 
-.charactor-position{
-    width: 100%;
-    height: 200px;
-    // border:1px solid #78BBE6;
+.charactor-position {
+  width: 100%;
+  height: 200px;
+  // border:1px solid #78BBE6;
 }
 
-.text-family3{
-    // font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
-    color: #FBC283;
-    font-weight: bold;
-  }
+.text-family3 {
+  font-family: 'ヒラギノ丸ゴ Pro W4', 'ヒラギノ丸ゴ Pro',
+    'Hiragino Maru Gothic Pro', 'ヒラギノ角ゴ Pro W3',
+    'Hiragino Kaku Gothic Pro', 'HG丸ｺﾞｼｯｸM-PRO', 'HGMaruGothicMPRO';
+  color: #fbc283;
+  font-weight: bold;
+}
 
-  .text-family4{
-    // font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
-    color: #ABC3F1;
-    font-weight: bold;
-  }
+.text-family4 {
+  font-family: 'ヒラギノ丸ゴ Pro W4', 'ヒラギノ丸ゴ Pro',
+    'Hiragino Maru Gothic Pro', 'ヒラギノ角ゴ Pro W3',
+    'Hiragino Kaku Gothic Pro', 'HG丸ｺﾞｼｯｸM-PRO', 'HGMaruGothicMPRO';
+  color: #abc3f1;
+  font-weight: bold;
+}
 
 // hukidasi-mental-10,15,20
 
 .balloon10 {
-    position: absolute;
-    display: inline-block;
-    width: 22%;
-    margin-top: 10%;
-    padding: 7px 10px;
-    color: #FBC283;
-    font-size: 16px;
-    background-color: #FFF;
-    border: solid 3px #FBC283;
-    border-radius: 20px;
-    box-sizing: border-box;
-    padding: 10px;
-    z-index: 20;
-    margin-left: 10%;
-  }
-  
-  .balloon10:before {
-    content: "";
-    position: absolute;
-    bottom: -24px;
-    left: 50%;
-    margin-left: -15px;
-    border: 12px solid transparent;
-    border-top: 12px solid #FFF;
-    z-index: 20;
-  }
-  
-  .balloon10:after {
-    content: "";
-    position: absolute;
-    bottom: -30px;
-    left: 50%;
-    margin-left: -17px;
-    border: 14px solid transparent;
-    border-top: 14px solid #FBC283;
-    z-index: 2;
-  }
-  
-  .balloon10 p {
-    margin: 0;
-    padding: 0;
-  }
+  position: absolute;
+  display: inline-block;
+  width: 22%;
+  margin-top: 10%;
+  padding: 7px 10px;
+  color: #fbc283;
+  font-size: 16px;
+  background-color: #fff;
+  border: solid 3px #fbc283;
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 10px;
+  z-index: 20;
+  margin-left: 10%;
+}
 
+.balloon10:before {
+  content: '';
+  position: absolute;
+  bottom: -24px;
+  left: 50%;
+  margin-left: -15px;
+  border: 12px solid transparent;
+  border-top: 12px solid #fff;
+  z-index: 20;
+}
 
-  // 問題の解答結果の値＝１０
-  .balloon0 {
-    position: absolute;
-    display: inline-block;
-    width: 22%;
-    margin-top: 10%;
-    padding: 7px 10px;
-    color:  #ABC3F1;
-    font-size: 16px;
-    background: #FFF;
-    border: solid 3px  #ABC3F1;
-    border-radius: 20px;
-    box-sizing: border-box;
-    padding: 10px;
-    z-index: 20;
-    margin-left: 10%;
-  }
-  
-  .balloon0:before {
-    content: "";
-    position: absolute;
-    bottom: -24px;
-    left: 50%;
-    margin-left: -15px;
-    border: 12px solid transparent;
-    border-top: 12px solid #FFF;
-    z-index: 20;
-  }
-  
-  .balloon0:after {
-    content: "";
-    position: absolute;
-    bottom: -30px;
-    left: 50%;
-    margin-left: -17px;
-    border: 14px solid transparent;
-    border-top: 14px solid  #ABC3F1;
-    z-index: 2;
-  }
-  
-  .balloon0 p {
-    margin: 0;
-    padding: 0;
-  }
+.balloon10:after {
+  content: '';
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  margin-left: -17px;
+  border: 14px solid transparent;
+  border-top: 14px solid #fbc283;
+  z-index: 2;
+}
 
-  .boy {
-      // margin-top: 40px;
-      padding-top: 20px;
-      margin-left: 28%;
-      margin-bottom: 30px;
-  }
+.balloon10 p {
+  margin: 0;
+  padding: 0;
+}
 
+// 問題の解答結果の値＝１０
+.balloon0 {
+  position: absolute;
+  display: inline-block;
+  width: 22%;
+  margin-top: 10%;
+  padding: 7px 10px;
+  color: #abc3f1;
+  font-size: 16px;
+  background: #fff;
+  border: solid 3px #abc3f1;
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 10px;
+  z-index: 20;
+  margin-left: 10%;
+}
+
+.balloon0:before {
+  content: '';
+  position: absolute;
+  bottom: -24px;
+  left: 50%;
+  margin-left: -15px;
+  border: 12px solid transparent;
+  border-top: 12px solid #fff;
+  z-index: 20;
+}
+
+.balloon0:after {
+  content: '';
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  margin-left: -17px;
+  border: 14px solid transparent;
+  border-top: 14px solid #abc3f1;
+  z-index: 2;
+}
+
+.balloon0 p {
+  margin: 0;
+  padding: 0;
+}
+
+.boy {
+  // margin-top: 40px;
+  padding-top: 20px;
+  margin-left: 28%;
+  margin-bottom: 30px;
+}

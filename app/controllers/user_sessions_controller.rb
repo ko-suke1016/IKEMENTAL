@@ -15,8 +15,12 @@ class UserSessionsController < ApplicationController
     end
 
     def destroy
-        logout
+        if logout
         redirect_to root_path
         flash[:warning] = 'ログアウトしました'
+        else
+        flash[:error] = 'ログアウトでいませんでした'
+        render :new
+        end
     end
 end

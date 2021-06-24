@@ -1,144 +1,144 @@
 // hukidasi-mental-10,15,20
 
 .balloon20 {
-    position: absolute;
-    display: inline-block;
-    width: 100%;
-    height: 335px;
-    padding: 10px;
-    // margin-top: 10%;
-    color:  #2b546a;
-    font-size: 16px;
-    background-color: #FFF;
-    border: solid 3px  #2b546a;
-    border-radius: 20px;
-    box-sizing: border-box;
-    z-index: 20;
-   }
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  height: 335px;
+  padding: 10px;
+  // margin-top: 10%;
+  color: #2b546a;
+  font-size: 16px;
+  background-color: #fff;
+  border: solid 3px #8f9299;
+  border-radius: 20px;
+  box-sizing: border-box;
+  z-index: 20;
+}
 
 .balloon20:before {
-    content: "";
-    position: absolute;
-    bottom: -24px;
-    left: 50%;
-    margin-left: -15px;
-    border: 12px solid transparent;
-    border-top: 12px solid #FFF;
-    z-index: 20;
-  }
-  
-  .balloon20:after {
-    content: "";
-    position: absolute;
-    bottom: -30px;
-    left: 50%;
-    margin-left: -17px;
-    border: 14px solid transparent;
-    border-top: 14px solid #2b546a;
-    z-index: 2;
-  }
-  
-  .balloon20 p {
-    margin: 0;
-    padding: 0;
-  }
-
-  .life-gazo{
-    border: 2px solid #78BBE6;
-  }
-
-  .left-page-position {
-      height: 350px;
-      width: 100%;
-  }
-
-  .boy3 {
-    margin-left: 28%;
-    margin-bottom: 30px;
-  }
-
-  .example-charactor-position{
-    width: 100%;
-    height: 270px;
-    // border:1px solid #78BBE6;
+  content: '';
+  position: absolute;
+  bottom: -24px;
+  left: 50%;
+  margin-left: -15px;
+  border: 12px solid transparent;
+  border-top: 12px solid #fff;
+  z-index: 20;
 }
 
-.example-text-position{
-    margin: 0 auto;
+.balloon20:after {
+  content: '';
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  margin-left: -17px;
+  border: 14px solid transparent;
+  border-top: 14px solid #2b546a;
+  z-index: 2;
 }
 
-.example-text1{
-    margin: 10px 10px 10px 10px;
-    font-size: 20px;
+.balloon20 p {
+  margin: 0;
+  padding: 0;
 }
 
-.example-text2{
-    margin: 55px 10px 10px 10px;
-    font-size: 20px;
+.life-gazo {
+  border: 2px solid #78bbe6;
 }
 
-.example-text3{
-    margin: 55px 10px 10px 10px;
-    font-size: 20px;
+.left-page-position {
+  height: 350px;
+  width: 100%;
 }
 
-.example-text4{
-    margin: 75px 10px 10px 10px;
-    font-size: 20px;
+.boy3 {
+  margin-left: 28%;
+  margin-bottom: 30px;
 }
 
-.example-text5{
-    margin: 5px 10px 10px 10px;
-    font-size: 20px;
+.example-charactor-position {
+  width: 100%;
+  height: 270px;
+  // border:1px solid #78BBE6;
 }
 
-.example-text6{
-    margin: 5px 10px 10px 10px;
-    font-size: 20px;
+.example-text-position {
+  margin: 0 auto;
 }
 
-.example-text7{
-    margin: 5px 10px 10px 10px;
-    font-size: 20px;
+.example-text1 {
+  margin: 10px 10px 10px 10px;
+  font-size: 20px;
 }
 
-.example-text8{
-    margin: 70px 10px 10px 10px;
-    font-size: 20px;
+.example-text2 {
+  margin: 55px 10px 10px 10px;
+  font-size: 20px;
 }
 
-.example-text9{
-    margin: 70px 10px 10px 10px;
-    font-size: 20px;
+.example-text3 {
+  margin: 55px 10px 10px 10px;
+  font-size: 20px;
 }
 
-.example-text10{
-    margin: 70px 10px 10px 10px;
-    font-size: 20px;
+.example-text4 {
+  margin: 75px 10px 10px 10px;
+  font-size: 20px;
 }
 
-.example-text11{
-    margin: 30px 10px 10px 10px;
-    font-size: 20px;
-    height: 300px;
+.example-text5 {
+  margin: 5px 10px 10px 10px;
+  font-size: 20px;
+}
+
+.example-text6 {
+  margin: 5px 10px 10px 10px;
+  font-size: 20px;
+}
+
+.example-text7 {
+  margin: 5px 10px 10px 10px;
+  font-size: 20px;
+}
+
+.example-text8 {
+  margin: 70px 10px 10px 10px;
+  font-size: 20px;
+}
+
+.example-text9 {
+  margin: 70px 10px 10px 10px;
+  font-size: 20px;
+}
+
+.example-text10 {
+  margin: 70px 10px 10px 10px;
+  font-size: 20px;
+}
+
+.example-text11 {
+  margin: 30px 10px 10px 10px;
+  font-size: 20px;
+  height: 300px;
 }
 
 a.btn-border2 {
-    border: 3px solid #ffaa64;
-    border-radius: 10;
-    background: #fff;
-    width: 280px;
-    // font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
-    color: #ffaa64;
-    font-weight: bold;
-  }
-  
-  a.btn-border2:hover {
-    color: #fff;
-    background-color: #ffaa64;
-  }
-  
+  border: 3px solid #ffaa64;
+  border-radius: 10;
+  background: #fff;
+  width: 280px;
+  font-family: 'ヒラギノ丸ゴ Pro W4', 'ヒラギノ丸ゴ Pro',
+    'Hiragino Maru Gothic Pro', 'ヒラギノ角ゴ Pro W3',
+    'Hiragino Kaku Gothic Pro', 'HG丸ｺﾞｼｯｸM-PRO', 'HGMaruGothicMPRO';
+  color: #ffaa64;
+  font-weight: bold;
+}
 
+a.btn-border2:hover {
+  color: #fff;
+  background-color: #ffaa64;
+}
 
 // .example-new-button{
 //     margin-top: 15px;
@@ -153,9 +153,8 @@ a.btn-border2 {
 //     color: #ffaa64;
 //     font-weight: bold;
 //   }
-  
+
 //   a.btn-example:hover {
 //     color: #fff;
 //     background-color: #ffaa64;
 //   }
-  

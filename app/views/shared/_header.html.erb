@@ -1,14 +1,23 @@
-<nav class="header navbar">
-  <a class="navbar-brand" href="/"><%= image_tag "logo.png", size: "180x40" %></a>
-      <% if logged_in? %>
-        <div class="text-right header-position" >
-          <%= link_to 'ログアウト', logout_path, method: :post, class: "btn btn-outline-light" %>
-        </div>
-      <% else %>
-        <div class="text-right header-position">
-          <%= link_to '新規登録', new_user_path, class: "btn btn-outline-light" %>
-          <%= link_to 'ログイン', login_path, class: "btn btn-outline-light" %>
-        </div>
-      <% end %>
-</nav>
 
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<a class="navbar-brand ml-0" href="/"><%= image_tag "logo.png", size: "220x45" %></a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+  <ul class="navbar-nav ml-auto">
+    <% if logged_in? %>
+    <li class="nav-item mt-2">
+    <%= link_to "ユーザー情報", user_path(current_user.id), class: "btn btn--orange btn--cubic btn--shadow" %>
+  </li>
+    <% else %>
+    <li class="nav-item mr-3 mt-2">
+      <a href="/login" class="btn btn--orange btn--cubic btn--shadow">ログイン</a>
+    </li>
+    <li class="nav-item mt-2">
+      <a href="/users/new" class="btn btn--orange btn--cubic btn--shadow">新規登録</a>
+    </li>
+    <% end %>
+  </ul>
+</div>
+</nav>

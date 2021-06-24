@@ -1,28 +1,31 @@
 ja:
   activerecord: &activerecord
     models:
-      user: "ユーザー"
+      user: 'ユーザー'
+      inquiry: 'お問い合わせ'
     attributes:
       user:
-        id: "ID"
-        name: "名前"
-        password: "パスワード"
-        password_confirmation: "パスワード(確認)"
-        email: "メールアドレス"
-        crypted_password: "パスワード"
-        salt: "Salt"
-        created_at: "登録日時"
-        updated_at: "更新日時"
+        id: 'ID'
+        name: '名前'
+        password: 'パスワード'
+        password_confirmation: 'パスワード(確認)'
+        email: 'メールアドレス'
+        crypted_password: 'パスワード'
+        salt: 'Salt'
+        created_at: '登録日時'
+        updated_at: '更新日時'
+      inquiry:
+        message: 'お問い合わせ内容'
     errors:
       models:
         user:
           attributes:
             email:
-              blank: "が入力されていません。"
-              taken: "は既に登録されています。"
+              blank: 'が入力されていません。'
+              taken: 'は既に登録されています。'
             password:
-              blank: "が入力されていません。"
-              too_short: "が短すぎます。"
+              blank: 'が入力されていません。'
+              too_short: 'が短すぎます。'
             password_confirmation:
-              blank: "が入力されていません。"
-              confirmation: "がパスワードと一致しません"
+              blank: 'が入力されていません。'
+              confirmation: 'がパスワードと一致しません'

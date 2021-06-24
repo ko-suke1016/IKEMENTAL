@@ -12,19 +12,11 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-
   </head>
   <body style="background-color: #f9fbfe;">
-  <header class="sticky-top">
     <%= render 'shared/header' %>
-  </header>
-  <main>
+    <%= render 'shared/flash_message' %>
       <%= yield %>
-      <%= render 'shared/flash_message' %>
-  </main>
-  <footer class="footer">
     <%= render 'shared/footer' %>
-  </footer>
-  </div>
   </body>
 </html>

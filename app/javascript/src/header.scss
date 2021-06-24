@@ -1,8 +1,8 @@
 // .header {
-//     position: fixed;
-//     background-color: #78BBE6;
-//     width: 100%;
-//     height: 60px;
+//   position: fixed;
+//   background-color: #78bbe6;
+//   width: 100%;
+//   height: 60px;
 // }
 
 $width_max: 100vw;
@@ -13,23 +13,41 @@ $width_max: 100vw;
 }
 
 html {
+  min-height: 100vh;
+}
+
+.main {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.container {
   position: relative;
+  width: 100%;
+  height: auto !important;
+  height: 100%;
   min-height: 100%;
 }
 
 html body {
-  background-color: #f9fbfe;
-  width: $width_max;
-  margin-bottom: 60px;
-  padding-bottom: 0;
+  background-image: url(/assets/top_bill-min.jpg);
+  background-position: center cover;
+  background-size: cover;
+  min-height: 100vh;
+  margin: 0px;
 }
 
 main {
-  flex: 1;
+  // flex: 1;
   margin: 0;
 }
 
 .navbar-brand {
+  color: #f9fbfe;
+  padding: 0px;
+}
+
+.navbar-brand2 {
   color: #f9fbfe;
   padding: 0px;
 }
@@ -39,17 +57,65 @@ main {
 }
 
 .header {
-  height: 60px;
   @include width_size;
 }
 
 .footer {
-  position: fixed;
+  // position: fixed;
   bottom: 0;
   margin-bottom: 0;
   /* フッタの高さ */
-  height: 60px;
+  height: 40px;
   background: #fff;
   color: #000;
   @include width_size;
+}
+
+.hero {
+  align-items: stretch;
+  display: absolute;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 600px;
+}
+
+.hero2 {
+  align-items: stretch;
+  display: absolute;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hero3 {
+  align-items: stretch;
+  display: absolute;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 110px;
+}
+
+.btn--orange {
+  color: #fff;
+  background-color: #eb6100;
+  border-bottom: 5px solid #b84c00;
+}
+.btn--orange:hover {
+  margin-top: 3px;
+  color: #fff;
+  background: #f56500;
+  border-bottom: 2px solid #b84c00;
+}
+
+.bg-light {
+  background-color: #78bbe6 !important;
+}
+
+.navbar-light .navbar-toggler-icon {
+  /* 三本線 */
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,122,0)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-light .navbar-toggler {
+  /* 枠線 */
+  border-color: #ff7a00;
 }
