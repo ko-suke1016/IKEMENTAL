@@ -12,6 +12,7 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= analytics_init if Rails.env.production? %>
   </head>
   <body style="background-color: #f9fbfe;">
     <%= render 'shared/header' %>
