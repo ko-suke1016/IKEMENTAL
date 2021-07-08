@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.6.5'
+ruby '3.0.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.4'
@@ -31,7 +31,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 gem 'rubocop','~> 0.82.0', require: false
 
 # ユーザーログイン管理
-gem 'sorcery', '0.14.0'
+gem 'sorcery'
 
 # 初期データの格納
 gem 'seed-fu'
@@ -58,7 +58,7 @@ gem 'rack-user_agent'
 
 
 group :development, :test do
-  gem 'mysql2', '>= 0.4.4'
+  gem 'pg'
   # デバック関連
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'pry-rails'
