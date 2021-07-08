@@ -18,5 +18,8 @@
   "version": "0.1.0",
   "devDependencies": {
     "webpack-dev-server": "^3.11.2"
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/ko-suke1016/mentalhealth_management_test.git",
+  "license": "MIT"
 }

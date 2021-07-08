@@ -12,7 +12,10 @@
 
 ActiveRecord::Schema.define(version: 2021_06_08_062459) do
 
-  create_table "first_answers", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
+  create_table "first_answers", force: :cascade do |t|
     t.string "answer", null: false
     t.integer "score", null: false
     t.bigint "first_question_id", null: false
@@ -21,13 +24,13 @@ ActiveRecord::Schema.define(version: 2021_06_08_062459) do
     t.index ["first_question_id"], name: "index_first_answers_on_first_question_id"
   end
 
-  create_table "first_questions", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+  create_table "first_questions", force: :cascade do |t|
     t.string "question", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "inquiries", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+  create_table "inquiries", force: :cascade do |t|
     t.string "name"
     t.string "message", null: false
     t.integer "category", null: false
@@ -35,7 +38,7 @@ ActiveRecord::Schema.define(version: 2021_06_08_062459) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "recovery_answers", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+  create_table "recovery_answers", force: :cascade do |t|
     t.string "answer", null: false
     t.integer "score", null: false
     t.bigint "recovery_question_id", null: false
@@ -44,14 +47,14 @@ ActiveRecord::Schema.define(version: 2021_06_08_062459) do
     t.index ["recovery_question_id"], name: "index_recovery_answers_on_recovery_question_id"
   end
 
-  create_table "recovery_questions", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+  create_table "recovery_questions", force: :cascade do |t|
     t.string "question", null: false
     t.string "comentary", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "second_answers", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+  create_table "second_answers", force: :cascade do |t|
     t.string "answer", null: false
     t.integer "score", null: false
     t.bigint "second_question_id", null: false
@@ -60,13 +63,13 @@ ActiveRecord::Schema.define(version: 2021_06_08_062459) do
     t.index ["second_question_id"], name: "index_second_answers_on_second_question_id"
   end
 
-  create_table "second_questions", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+  create_table "second_questions", force: :cascade do |t|
     t.string "question", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "third_answers", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+  create_table "third_answers", force: :cascade do |t|
     t.string "answer", null: false
     t.integer "score", null: false
     t.bigint "third_question_id", null: false
@@ -75,7 +78,7 @@ ActiveRecord::Schema.define(version: 2021_06_08_062459) do
     t.index ["third_question_id"], name: "index_third_answers_on_third_question_id"
   end
 
-  create_table "third_questions", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+  create_table "third_questions", force: :cascade do |t|
     t.string "question", null: false
     t.string "age", null: false
     t.string "sex", null: false
@@ -84,7 +87,7 @@ ActiveRecord::Schema.define(version: 2021_06_08_062459) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+  create_table "users", force: :cascade do |t|
     t.string "name", null: false
     t.string "email", null: false
     t.string "crypted_password", null: false

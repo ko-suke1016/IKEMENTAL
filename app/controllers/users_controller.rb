@@ -42,7 +42,7 @@ class UsersController < ApplicationController
     end
 
     def create
-        @user = User.create(user_params)
+        @user = User.new(user_params)
         if @user.save
             auto_login(@user)
             flash[:success] = 'ユーザー登録が完了しました'
