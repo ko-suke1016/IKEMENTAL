@@ -60,6 +60,14 @@ main {
   @include width_size;
 }
 
+.header-text{
+  font-size: 35px;
+  color: #f56500;
+  font-family: 'ヒラギノ丸ゴ Pro W4', 'ヒラギノ丸ゴ Pro',
+    'Hiragino Maru Gothic Pro', 'ヒラギノ角ゴ Pro W3',
+    'Hiragino Kaku Gothic Pro', 'HG丸ｺﾞｼｯｸM-PRO', 'HGMaruGothicMPRO';
+}
+
 .footer {
   // position: fixed;
   bottom: 0;
@@ -68,6 +76,7 @@ main {
   height: 40px;
   background: #fff;
   color: #000;
+  z-index: 100;
   @include width_size;
 }
 
