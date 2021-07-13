@@ -82,19 +82,19 @@ end
 FirstAnswer.seed do |s|
     s.id = 13
     s.answer = '放置'
-    s.score = 5
+    s.score = 10
     s.first_question_id = 5
 end
 FirstAnswer.seed do |s|
     s.id = 14
     s.answer = '顔がむかつくからハイキック'
-    s.score = 0
+    s.score = 10
     s.first_question_id = 5
 end
 FirstAnswer.seed do |s|
     s.id = 15
     s.answer = '無理をさせず簡単な仕事からやってもらう'
-    s.score = 10
+    s.score = 0
     s.first_question_id = 5
 end
 
