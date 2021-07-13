@@ -1,4 +1,4 @@
-<div id="first_question">
+<div id="lesson_question">
 
     <%= render 'users/hukidasi' %>
     <%= render 'users/life_bar' %>
@@ -11,19 +11,19 @@
         </div>
     </div>
 
-    <% @first_question.each do |first_question| %>
-        <% unless first_question.id == 1 %>
-            <div class="<%= first_question.id %> mt-3" style="display:none;">
+    <% @lesson_question.each do |lesson_question| %>
+        <% unless lesson_question.id == 1 %>
+            <div class="<%= lesson_question.id %> mt-3" style="display:none;">
         <% else %>
-            <div class="<%= first_question.id %>" mt-3">
+            <div class="<%= lesson_question.id %>" mt-3">
         <% end %>
         <div class="question-field">
-        <div style="margin: 10px;" class="text-style">Q<%= first_question.id %> <%= first_question.question %></div>
+        <div style="margin: 10px;" class="text-style">Q<%= lesson_question.id %> <%= lesson_question.question %></div>
             <%= form_with model: @total, method: :post, remote: true do %>
-                <% first_question.first_answers.each do |first_answer| %>
-                    <% if first_question.id == first_answer.first_question_id %>
+                <% lesson_question.lesson_answers.each do |lesson_answer| %>
+                    <% if lesson_question.id == lesson_answer.lesson_question_id %>
                       <div style="margin-top: 3px;">
-                        <button class="send_data_example btn-example" style="padding:3px; margin:5px; height: 50px;" href="<%= first_answer.first_question_id.to_i %>" type="submit" data-send-id = <%= first_answer.score %> ><%= first_answer.answer %></button>
+                        <button class="send_data_example btn-example" style="padding:3px; margin:5px; height: 50px;" href="<%= lesson_answer.lesson_question_id.to_i %>" type="submit" data-send-id = <%= lesson_answer.score %> ><%= lesson_answer.answer %></button>
                       </div>
                     <% end %>
                 <% end %>

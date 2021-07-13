@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_06_08_062459) do
+ActiveRecord::Schema.define(version: 2021_07_13_082006) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -34,6 +34,21 @@ ActiveRecord::Schema.define(version: 2021_06_08_062459) do
     t.string "name"
     t.string "message", null: false
     t.integer "category", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "lesson_answers", force: :cascade do |t|
+    t.string "answer"
+    t.integer "score"
+    t.bigint "lesson_question_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["lesson_question_id"], name: "index_lesson_answers_on_lesson_question_id"
+  end
+
+  create_table "lesson_questions", force: :cascade do |t|
+    t.string "question", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -106,6 +121,7 @@ ActiveRecord::Schema.define(version: 2021_06_08_062459) do
   end
 
   add_foreign_key "first_answers", "first_questions"
+  add_foreign_key "lesson_answers", "lesson_questions"
   add_foreign_key "recovery_answers", "recovery_questions"
   add_foreign_key "second_answers", "second_questions"
   add_foreign_key "third_answers", "third_questions"
