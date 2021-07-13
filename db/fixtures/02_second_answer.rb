@@ -1,19 +1,19 @@
 #問題１に対する回答
 SecondAnswer.seed do |s|
     s.id = 1
-    s.answer = 'とりあえず病院にいかせ、場合によっては診断書をもらうよういう'
+    s.answer = 'とりあえず病院にいき、場合によっては診断書をもらうよういう'
     s.score = 0
     s.second_question_id = 1
 end
 SecondAnswer.seed do |s|
     s.id = 2
-    s.answer = '病は気からと言って気合で押し切らせる'
+    s.answer = '寝れてないわけじゃないし気にしない'
     s.score = 5
     s.second_question_id = 1
 end
 SecondAnswer.seed do |s|
     s.id = 3
-    s.answer = 'どうせ大したことないだろうと聞く耳を持たない'
+    s.answer = '根性が足りないからだと思い精神統一'
     s.score = 10
     s.second_question_id = 1
 end
@@ -21,119 +21,119 @@ end
 #問題２に対する回答
 SecondAnswer.seed do |s|
     s.id = 4
-    s.answer = '腫れていたが人手が足りないのでデスクワークを回した'
+    s.answer = '非常に嬉しいので心理的には絶好調だ！'
     s.score = 10
     s.second_question_id = 2
 end
 SecondAnswer.seed do |s|
     s.id = 5
-    s.answer = 'とりあえず冷やすようにいってから早退させた'
-    s.score = 0
+    s.answer = '気にすることなんて特にない！'
+    s.score = 5
     s.second_question_id = 2
 end
 SecondAnswer.seed do |s|
     s.id = 6
-    s.answer = '聞く耳を持たず要領が悪いと評価を下げる'
-    s.score = 5
+    s.answer = '過度な負担はかかってないかストレスチェックする'
+    s.score = 0
     s.second_question_id = 2
 end
 
 #問題３に対する回答
 SecondAnswer.seed do |s|
     s.id = 7
-    s.answer = '出勤途中なら自己負担なので会社は関係ないという'
-    s.score = 10
+    s.answer = '意地でも自己解決に持ち込む'
+    s.score = 5
     s.second_question_id = 3
 end
 SecondAnswer.seed do |s|
     s.id = 8
-    s.answer = '領収書などはとっておくように言い、診断書は提出するよう促す'
+    s.answer = '上司や同僚に思いきって相談する'
     s.score = 0
     s.second_question_id = 3
 end
 SecondAnswer.seed do |s|
     s.id = 9
-    s.answer = '会社に遅刻して連絡が遅れるとは何事だと怒鳴りつける'
-    s.score = 5
+    s.answer = '自分の中に溜め込む。'
+    s.score = 10
     s.second_question_id = 3
 end
 
 #問題４に対する回答
 SecondAnswer.seed do |s|
     s.id = 10
-    s.answer = 'クレームが来てるぞなんでなんだと叱りつける'
+    s.answer = 'どんな状態か面談を組んで聞いてみる'
     s.score = 5
     s.second_question_id = 4
 end
 SecondAnswer.seed do |s|
     s.id = 11
-    s.answer = '仕事から外し社内ニートにする'
-    s.score = 10
+    s.answer = 'カウンセラーや専門機関にかかるよう打診する'
+    s.score = 0
     s.second_question_id = 4
 end
 SecondAnswer.seed do |s|
     s.id = 12
-    s.answer = '自分で反省点を探らせるなどのPDCAのアドバイスをする'
-    s.score = 0
+    s.answer = 'どんまい！そう言う時もあるさ！と思い放置する'
+    s.score = 10
     s.second_question_id= 4
 end
 
 #問題５に対する回答
 SecondAnswer.seed do |s|
     s.id = 13
-    s.answer = '放置'
+    s.answer = 'yahoo知恵袋に書き込む'
     s.score = 10
     s.second_question_id = 5
 end
 SecondAnswer.seed do |s|
     s.id = 14
-    s.answer = '時短勤務で簡単な作業から行うよう仕事を回す'
-    s.score = 0
+    s.answer = '自分がストレスを感じた時を思い出す'
+    s.score = 5
     s.second_question_id= 5
 end
 SecondAnswer.seed do |s|
     s.id = 15
-    s.answer = '以前と同じ仕事を渡しこなしてもらう'
-    s.score = 5
+    s.answer = '職場の労災認定基準を確認する'
+    s.score = 0
     s.second_question_id= 5
 end
 
 #問題6に対する回答
 SecondAnswer.seed do |s|
     s.id = 16
-    s.answer = 'グーパンチ'
-    s.score = 5
+    s.answer = 'うつ病や精神疾患にかかる'
+    s.score = 0
     s.second_question_id= 6
 end
 SecondAnswer.seed do |s|
     s.id = 17
-    s.answer = '陰口をいい自主退社させる方向でみんなと話し合う'
+    s.answer = '一周回って元気になる'
     s.score = 10
     s.second_question_id = 6
 end
 SecondAnswer.seed do |s|
     s.id = 18
-    s.answer = '一度本人にクレームの内容を話し心当たりがあるのかというところから確認する'
-    s.score = 0
+    s.answer = '精神的に強くなる'
+    s.score = 5
     s.second_question_id = 6
 end
 
 #問題7に対する回答
 SecondAnswer.seed do |s|
     s.id = 19
-    s.answer = '人と比べることに意味なんかないんだから1日を大切にがんばれと励ます'
-    s.score = 0
-    s.second_question_id = 7
-end
-SecondAnswer.seed do |s|
-    s.id = 20
-    s.answer = 'お前は鈍臭くて鈍い奴だからなと傷口に塩をぬる'
+    s.answer = '自己負担でよろしくな！'
     s.score = 10
     s.second_question_id = 7
 end
 SecondAnswer.seed do |s|
+    s.id = 20
+    s.answer = '大丈夫？痛くない？'
+    s.score = 5
+    s.second_question_id = 7
+end
+SecondAnswer.seed do |s|
     s.id = 21
-    s.answer = 'そっとしておき相談を持ちかけてくるのを待つ'
+    s.answer = '労災がおりるから病院で診断書はもらうんだよ'
     s.score = 0
     s.second_question_id = 7
 end
@@ -141,48 +141,48 @@ end
 #問題8に対する回答
 SecondAnswer.seed do |s|
     s.id = 22
-    s.answer = '俺の時代はそんなの当たり前だったよと聞き流す'
+    s.answer = '「俺に迷惑はかけるな」と突っぱねる'
     s.score = 10
     s.second_question_id = 8
 end
 SecondAnswer.seed do |s|
     s.id = 23
-    s.answer = '詳しい内容と情報をヒアリングして確認する'
-    s.score = 0
+    s.answer = '聞くだけ聞いて行動しない'
+    s.score = 5
     s.second_question_id = 8
 end
 SecondAnswer.seed do |s|
     s.id = 24
-    s.answer = '大丈夫だよ。気にすんなと対処はしないが励ます。'
-    s.score = 5
+    s.answer = '状況を聞き上司に相談し改善を図る'
+    s.score = 0
     s.second_question_id = 8
 end
 
 #問題9に対する回答
 SecondAnswer.seed do |s|
     s.id = 25
-    s.answer = '明日から出社しなくていいよ'
+    s.answer = '「精神が弱い！！この軟弱者！！」と怒鳴り散らす'
     s.score = 10
     s.second_question_id = 9
 end
 SecondAnswer.seed do |s|
     s.id = 26
-    s.answer = '厳正な処置をとるために詳細を確認する'
+    s.answer = 'ストレス面で不安がないか話を聞いてみる'
     s.score = 0
     s.second_question_id = 9
 end
 SecondAnswer.seed do |s|
     s.id = 27
-    s.answer = '自身の評価もあるので叱るだけに止める'
-    s.score = 5
+    s.answer = '「やる気ないなら帰っていいよ」で一蹴'
+    s.score = 10
     s.second_question_id = 9
 end
 
 #問題10に対する回答
 SecondAnswer.seed do |s|
     s.id = 28
-    s.answer = '今後もがんばれよと今のままの仕事を振り続ける'
-    s.score = 10
+    s.answer = 'できているところは認めてあげる'
+    s.score = 0
     s.second_question_id = 10
 end
 SecondAnswer.seed do |s|
@@ -193,7 +193,7 @@ SecondAnswer.seed do |s|
 end
 SecondAnswer.seed do |s|
     s.id = 30
-    s.answer = '適切な評価を行うために数字をおい評価に反映する'
-    s.score = 0
+    s.answer = '他人の成長など興味がないので放置'
+    s.score = 10
     s.second_question_id = 10
 end
