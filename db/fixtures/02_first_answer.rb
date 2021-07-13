@@ -87,8 +87,8 @@ FirstAnswer.seed do |s|
 end
 FirstAnswer.seed do |s|
     s.id = 14
-    s.answer = '顔がむかつくからハイキック'
-    s.score = 10
+    s.answer = '話を聞かずフルタイムで働かせる'
+    s.score = 5
     s.first_question_id = 5
 end
 FirstAnswer.seed do |s|
