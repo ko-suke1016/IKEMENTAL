@@ -18,7 +18,7 @@
             <div class="<%= lesson_question.id %>" mt-3">
         <% end %>
         <div class="question-field">
-        <div style="margin: 10px;" class="text-style">Q<%= lesson_question.id %> <%= lesson_question.question %></div>
+        <div style="margin: 10px;" class="text-style">Q<%= lesson_question.id %>/10 <%= lesson_question.question %></div>
             <%= form_with model: @total, method: :post, remote: true do %>
                 <% lesson_question.lesson_answers.each do |lesson_answer| %>
                     <% if lesson_question.id == lesson_answer.lesson_question_id %>

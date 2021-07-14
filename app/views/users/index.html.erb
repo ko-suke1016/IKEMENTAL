@@ -1,5 +1,5 @@
 <% content_for(:html_title) { 'タスク' } %>
-<section class="hero mt-3 mb-3">
+<section class="hero mt-3 ">
 <div class="container">
     <div class="row">
     <div class="col-lg-11 col-md-11 col-sm-12 mx-auto">
@@ -27,7 +27,6 @@
                                 <%= render 'third_question' %>
                                 <%= render 'recovery_question', recovery_question: @recovery_question, recovery_answers: @recovery_answers %>
                             </div>
-                        
                     </div>
 
                     <%= render "modal" %>

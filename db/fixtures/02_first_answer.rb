@@ -21,7 +21,7 @@ end
 #問題２に対する回答
 FirstAnswer.seed do |s|
     s.id = 4
-    s.answer = '喝入れで引っ叩く'
+    s.answer = '喝を入れるため引っ叩く'
     s.score = 10
     s.first_question_id = 2
 end
@@ -113,7 +113,7 @@ FirstAnswer.seed do |s|
 end
 FirstAnswer.seed do |s|
     s.id = 18
-    s.answer = 'ストレスの原因を切り分けて本数を減らしに行く'
+    s.answer = 'ストレスの原因を切り分けて本数を減らす'
     s.score = 0
     s.first_question_id = 6
 end

@@ -1,10 +1,10 @@
 SecondQuestion.seed do |s|
     s.id = 1
-    s.question = "あなたは約2週間寝つきが悪く寝不足です。病院にはかかっていません。あなたならどうしますか？"
+    s.question = "あなたは約2週間、寝つきが悪く寝不足です。病院にはかかっていません。あなたならどうしますか？"
 end
 SecondQuestion.seed do |s|
     s.id = 2
-    s.question = "あなたは来週末昇進することになりました。心理的にあなたが気をつけることはなんでしょう？"
+    s.question = "あなたは来週末、昇進することになりました。心理的にあなたが気をつけることはなんでしょう？"
 end
 SecondQuestion.seed do |s|
     s.id = 3
@@ -24,7 +24,7 @@ SecondQuestion.seed do |s|
 end
 SecondQuestion.seed do |s|
     s.id = 7
-    s.question = "あなたの部下は仕事中に骨折してしまいました。あなたはどう言うふうに声をかけますか？"
+    s.question = "あなたの部下は仕事中に骨折してしまいました。あなたはどのように声をかけますか？"
 end
 SecondQuestion.seed do |s|
     s.id = 8
@@ -36,5 +36,5 @@ SecondQuestion.seed do |s|
 end
 SecondQuestion.seed do |s|
     s.id = 10
-    s.question = "あなたの部下は少しづつ仕事を覚えるようになってきました。詰めのあまいところもありますが成長しています。あなたならどうしますか？"
+    s.question = "あなたの部下は少しずつ仕事を覚えるようになってきました。詰めのあまいところもありますが成長しています。あなたならどうしますか？"
 end

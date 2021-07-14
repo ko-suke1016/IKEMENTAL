@@ -20,11 +20,11 @@ FirstQuestion.seed do |s|
 end
 FirstQuestion.seed do |s|
     s.id = 6
-    s.question = "あなたは最近ストレスでタバコの本数が急激に増えました。どうしますか？"
+    s.question = "あなたは最近、ストレスでタバコの本数が急激に増えました。どうしますか？"
 end
 FirstQuestion.seed do |s|
     s.id = 7
-    s.question = "あなたは部下に対して指導の一環として暴言を使います。この後部下はどうなると思いますか？"
+    s.question = "あなたは部下に対して指導の一環として暴言を使います。この後、部下はどうなると思いますか？"
 end
 FirstQuestion.seed do |s|
     s.id = 8
@@ -36,5 +36,5 @@ FirstQuestion.seed do |s|
 end
 FirstQuestion.seed do |s|
     s.id = 10
-    s.question = "あなたはイライラして部下にローキックをかましました。これはどんなハラスメントにあたるでしょう？"
+    s.question = "あなたはイライラして部下にローキックをかましました。これはどのようなハラスメントにあたるでしょう？"
 end

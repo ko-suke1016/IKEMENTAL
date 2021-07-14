@@ -21,7 +21,7 @@ class FirstsController < ApplicationController
         end
 
         #experience_gageの値が50を超えたら0にする
-        if @user.experience_gage >= 50
+        if @user.experience_gage >= 35
             @user.update_column(:experience_gage, 0 )
             if @user.position_before_type_cast == 2
                 @user_position = @user.position_before_type_cast * 0

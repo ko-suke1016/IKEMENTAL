@@ -14,3 +14,10 @@
 .terms-text-subtitle{
     margin-bottom: 30px;
 }
+
+//お問い合わせフォームのtext-areaの幅
+textarea {
+    resize: none;
+    width:300px;
+    height:200px;
+  }

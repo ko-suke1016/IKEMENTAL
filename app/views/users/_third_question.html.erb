@@ -20,7 +20,7 @@
             <div class="<%= third_question.id %>">
         <% end %>
         <div class="question-field">
-        <div style="margin: 10px;" class="text-style">Q<%= third_question.id %> <%= third_question.question %></div>
+        <div style="margin: 10px;" class="text-style">Q<%= third_question.id %>/10 <%= third_question.question %></div>
             <%= form_with model: @total, method: :post, remote: true do %>
                 <% third_question.third_answers.each do |third_answer| %>
                     <% if third_question.id == third_answer.third_question_id %>

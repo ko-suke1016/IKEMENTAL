@@ -1,7 +1,7 @@
 #問題１に対する回答
 SecondAnswer.seed do |s|
     s.id = 1
-    s.answer = 'とりあえず病院にいき、場合によっては診断書をもらうよういう'
+    s.answer = 'とりあえず病院にいき、場合によっては診断書をもらう'
     s.score = 0
     s.second_question_id = 1
 end
@@ -33,7 +33,7 @@ SecondAnswer.seed do |s|
 end
 SecondAnswer.seed do |s|
     s.id = 6
-    s.answer = '過度な負担はかかってないかストレスチェックする'
+    s.answer = '過度な負担がかかってないかストレスチェックする'
     s.score = 0
     s.second_question_id = 2
 end
@@ -61,7 +61,7 @@ end
 #問題４に対する回答
 SecondAnswer.seed do |s|
     s.id = 10
-    s.answer = 'どんな状態か面談を組んで聞いてみる'
+    s.answer = 'どのような状態か面談を組んで聞いてみる'
     s.score = 5
     s.second_question_id = 4
 end
@@ -73,7 +73,7 @@ SecondAnswer.seed do |s|
 end
 SecondAnswer.seed do |s|
     s.id = 12
-    s.answer = 'どんまい！そう言う時もあるさ！と思い放置する'
+    s.answer = '働いてたらそういう時もあると思い放置する'
     s.score = 10
     s.second_question_id= 4
 end
@@ -187,7 +187,7 @@ SecondAnswer.seed do |s|
 end
 SecondAnswer.seed do |s|
     s.id = 29
-    s.answer = '少し今までの仕事よりも難易度が高いものをふる'
+    s.answer = '今までの仕事よりも少し難易度が高いものをふる'
     s.score = 0
     s.second_question_id = 10
 end

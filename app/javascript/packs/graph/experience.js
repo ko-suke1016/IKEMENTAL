@@ -24,7 +24,7 @@ $(document).ready(function() {
                 xAxes: [{
                     ticks: {
                         min: 0,
-                        max: 50
+                        max: 35
                     }
                 }]
             },
@@ -47,7 +47,7 @@ $(document).ready(function() {
         var result = 0
     }
     experience.data.datasets[0].data = experience.data.datasets[0].data.map(function(X){return X + result})
-    if (experience.data.datasets[0].data >= 50) {
+    if (experience.data.datasets[0].data >= 35) {
         experience.data.datasets[0].data = 0
         $('#overlay, .modal-window').fadeIn();
     }
