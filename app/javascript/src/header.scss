@@ -80,13 +80,14 @@ main {
   @include width_size;
 }
 
-.hero {
-  align-items: stretch;
-  display: absolute;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 600px;
-}
+// .hero {
+//   align-items: stretch;
+//   display: absolute;
+//   flex-direction: column;
+//   justify-content: space-between;
+//   height: 100%;
+// }
+
 
 .hero2 {
   align-items: stretch;
@@ -100,7 +101,7 @@ main {
   display: absolute;
   flex-direction: column;
   justify-content: space-between;
-  margin-top: 110px;
+  margin-top: 7rem;
 }
 
 .btn--orange {

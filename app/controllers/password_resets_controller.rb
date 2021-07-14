@@ -11,7 +11,7 @@ class PasswordResetsController < ApplicationController
     # form_withで送られてきたemailをparamsで受け取る
     @user = User.find_by(email: params[:email])
     # DBからデータを受け取れていれば、パスワードリセットの方法を記載したメールをユーザーに送信する（ランダムトークン付きのURL/有効期限付き）
-    @user&.deliver_reset_password_instructions! 
+    @user.deliver_reset_password_instructions! if @user
     # 上記は、@user.deliver_reset_password_instructions! if @user と同じ
 
     # フォームに入力したemailがアプリ(DB)内に存在するか否かを問わず、リダイレクトして成功メッセージを表示させる。

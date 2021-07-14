@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-    before_action  :require_login, only: [:index, :level_up, :less_mental]
+    before_action  :require_login, only: [:index, :level_up, :less_mental, :show, :update]
 
     def index
         # ユーザー情報の取得
