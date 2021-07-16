@@ -34,7 +34,6 @@ class UsersController < ApplicationController
     end
 
     def update
-        binding.pry
         @user = User.find(params[:id])
         unless @user == current_user
             redirect_to login_path
