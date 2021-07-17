@@ -10,14 +10,14 @@
                 <p>あなたの働き方<br>メンタルにきてませんか？</p>
             </div>
             <div class="top-login-button">
+            <div>
+                <a href="/lessons" class="btn btn-border">チュートリアル</a>
+            </div>
             <% if logged_in? %>
                 <a href="/users" class="btn btn-border">ゲームスタート！</a>
             <% else %>
-                <a href="/login" class="btn btn-border">ゲームスタート！</a>
+                <a href="/login" class="btn btn-border">ログインしてゲームスタート！</a>
             <% end %>
-            </div>
-            <div class="top-play-role-botton">
-                <a href="/lessons" class="btn btn-border">チュートリアル</a>
             </div>
         </div>
     </div>
