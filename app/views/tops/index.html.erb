@@ -1,6 +1,6 @@
 <section class="hero3 ">
-    <div class="container "　>
-    <div class="row ">
+    <div class="container"　>
+    <div class="row">
     <div class="col-md-12 text-center">
         <div class="mx-auto" >
             <h2 class="text-size text-family">IKEMENTAL</h2>
@@ -10,21 +10,131 @@
                 <p>あなたの働き方<br>メンタルにきてませんか？</p>
             </div>
             <div class="top-login-button">
+            <div>
+                <a href="/lessons" class="btn btn-border">チュートリアル</a>
+            </div>
             <% if logged_in? %>
                 <a href="/users" class="btn btn-border">ゲームスタート！</a>
             <% else %>
-                <a href="/login" class="btn btn-border">ゲームスタート！</a>
+                <a href="/login" class="btn btn-border">ログインしてゲームスタート！</a>
             <% end %>
-            </div>
-            <div class="top-play-role-botton">
-                <a href="/lessons" class="btn btn-border">チュートリアル</a>
             </div>
         </div>
     </div>
 </div>
 </div>
+</section>
+<section class="top-derection" style="margin-top: 140px; margin-bottom: 30px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class=" text-center pt-5 pb-4">
+                    <h3><span class="text-border">メンタルヘルスマネジメントで出世街道を駆け上がろう！</span></h3>
+                    <h5><span class="text-border">楽しく学べる３つの役職とステージ！</span></h5>
+                </div>
+            </div>
+        </div>
+    </div>
 
+
+<section style="margin-top: 40px; margin-bottom: 80px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+            <div class="card-deck">
+                <div class="card">
+                    <img src="assets/first-question.png" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title card-font-first card-font">新入社員編</h5>
+                        <p class="card-text card-direction">メンタルヘルスマネジメントの導入として基礎的な知識問題からスタート！</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/second-question.png" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title card-font-second card-font">中間管理職編</h5>
+                        <p class="card-text card-direction">中間管理職編では部下をもつことを想定し指導の仕方についてのヘルスマネジメントの問題に挑戦！</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/third-question.png" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title card-font-third card-font">幹部編</h5>
+                        <p class="card-text card-direction">幹部編では現場のリアルな問題に挑戦！<br>様々な職業の方にインタビューをし問題として登場！</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
 </section>
 
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class=" text-center pt-３ pb-4">
+                    <h3><span class="text-border">メンタルが減ったらストレスケアで回復！</span></h3>
+                    <h5><span class="text-border">まずはチュートリアルで機能を把握しよう！</span></h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section style="margin-top: 40px; margin-bottom: 80px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-sm-12 mx-auto">
+            <div class="card-deck">
+                <div class="card">
+                    <img src="assets/recovery.png" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title card-font-recovery card-font">メンタル回復</h5>
+                        <p class="card-text card-direction">メンタルが減ったら回復だ！上司とLINEをしながらストレスケアの方法を学んでいこう！</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/tyutoriar.png" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title card-font-tyutorial card-font">チュートリアル編</h5>
+                        <p class="card-text card-direction">アプリの操作方法や機能の紹介をしているぞ！ログインなしで簡単始められるのでまずはここから！</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class=" text-center pt-３ pb-4">
+                    <h3><span class="text-border">みんなで作る新しい働き方！</apan></h3>
+                    <h5><span class="text-border">負けないメンタルを作りいけてる社会人を目指そう！</span></h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class=" text-center pt-３ pb-4">
+                    <%= image_tag "speak_boy.png",:size =>'380x320' %>
+                    <div class="mt-5">
+                        <a href="/lessons" class="btn btn-border">チュートリアル</a>
+                        <% if logged_in? %>
+                            <a href="/users" class="btn btn-border">ゲームスタート！</a>
+                        <% else %>
+                            <a href="/users/new" class="btn btn-border">会員登録をしてゲームスタート！</a>
+                        <% end %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</section>
 
 
